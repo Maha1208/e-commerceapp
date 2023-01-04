@@ -3,55 +3,55 @@ import axios from 'axios';
 
 export default class SignUp extends Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
-  this.forms=createRef()
-  this.submitdata=this.submitdata.bind(this)
+    this.forms = createRef()
+    this.submitdata = this.submitdata.bind(this)
 
   }
-  submitdata(event){
-   
-      axios.get("http://localhost:4000/SignUp?email=" + this.forms.email.value)
-      .then (data=>{
-        if(data.data.length === 0){
-          axios.post("http://localhost:4000/SignUp", {name:this.forms.name.value,email:this.forms.email.value,password:this.forms.password.value,phoneno:this.forms.phoneno.value,})
-            .then(()=>{
+  submitdata(event) {
+
+    axios.get("http://localhost:4000/SignUp?email=" + this.forms.email.value)
+      .then(data => {
+        if (data.data.length === 0) {
+          axios.post("http://localhost:4000/SignUp", { name: this.forms.name.value, email: this.forms.email.value, password: this.forms.password.value, phoneno: this.forms.phoneno.value, })
+            .then(() => {
               alert("Account created successfully please login again")
             })
-            .catch(error=>
-              {
+            .catch(error => {
               alert(error)
             })
         }
-        else{
+        else {
           alert("Account already exist")
         }
       })
-      
+
     event.preventDefault()
   }
- 
-    render() {
+
+  render() {
     return (
       <div>
+        <link rel='stylesheet' href='CSS/SignUp.css'></link>
         <div className="container">
-<form onSubmit={this.submitdata} ref={ref => this.forms=ref} >
-<h1>SignUp Page</h1>
-<br/>
-Enter your name<br/>
-<input style={{width:"300px",height:"30px"}} type="text" placeholder="name" name="name"/><br/><br/>
-Enter your Email<br/>
-<input  style={{width:"300px",height:"30px"}} type="text" placeholder="email" name="email"/><br/><br/>
-Enter your password<br/>
-<input style={{width:"300px",height:"30px"}}type="password" name="password" placeholder="Password"/><br/><br/>
-Enter your PhoneNo<br/>
-<input style={{width:"300px",height:"30px"}} type="text" placeholder="phoneno" name="phoneno"/><br/>
-<br/>
+          <form onSubmit={this.submitdata} ref={ref => this.forms = ref} >
+            <h1>Register</h1>
+            <br />
+            <label>Name</label><br />
+            <input style={{ width: "300px", height: "30px" }} type="text" placeholder="name" name="name" /><br /><br />
+            <label> Email </label><br />
+            <input style={{ width: "300px", height: "30px" }} type="text" placeholder="email" name="email" /><br /><br />
+            <label>password</label><br />
+            <input style={{ width: "300px", height: "30px" }} type="password" name="password" placeholder="Password" /><br /><br />
+            <label>PhoneNo</label><br />
+            <input style={{ width: "300px", height: "30px" }} type="text" placeholder="phoneno" name="phoneno" /><br />
+            <br />
 
-<input type="submit" value="Sign up"/>
-<br/>
-</form>
-</div>
+            <button type="submit" value="Sign up">Register</button> <button />
+            <br />
+          </form>
+        </div>
       </div>
     )
   }
