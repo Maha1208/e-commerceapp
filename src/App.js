@@ -6,6 +6,8 @@ import Category from './components/Category'
 import WomenEthnic from "./components/WomenEthnic"
 import WomenWestern from "./components/WomenWestern"
 import MenWears from "./components/MenWears"
+import KidsWears from "./components/KidsWears"
+
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="WomenEthnic" element={<WomenEthnic/>}/>
         <Route path="WomenWestern" element={<WomenWestern/>}/>
         <Route path="MenWears" element={<MenWears/>}/>
+        <Route path="KidsWears" element={<KidsWears/>}/>
+
       </Routes>
     </div>
   )
