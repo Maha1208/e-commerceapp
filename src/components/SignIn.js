@@ -27,28 +27,25 @@ export default class SignIn extends Component {
     render() {
         return (
             <div>
-                <form className="modal-content animate" ref={ref => this.forms = ref}
+                <link rel='stylesheet' href='CSS/Login.css'></link>
+                <form className="modal" ref={ref => this.forms = ref}
                     onSubmit={this.onformsubmit} onChange={() => { document.getElementById("incorrectcred").style.display = "none" }} >
-
-                    <div className="imgcontainer">
-                        <span className="close" title="Close Modal">&times;</span>
-                    </div>
 
                     <div className="container">
                         <label htmlFor="email"><b>Email</b></label><br />
-                        <input type="text" placeholder="Enter EmailId" name="email" required /><br />
+                        <input type="text" placeholder="Enter Emailid" name="email" required /><br />
 
                         <label htmlFor="password"><b>Password</b></label><br />
                         <input type="password" placeholder="Enter Password" name="password" required /><br />
 
-                        <button type="submit">Login</button><br />
+                        <button type="submit" >Login</button><br />
                         <label>
                             <input type="checkbox" defaultChecked name="remember" value="Remember me" />Remember me
                         </label>
                     </div>
-                    <div className="container" style={{ backgroundColor: "black" }}>
-                        <button type="button" className="cancelbtn">Cancel</button>
-                        <span className="psw">Forgot <a href="/">password?</a></span>
+                    <div className="container">
+                        <button type="button" className="cancelbtn"><a href="/">Cancel</a></button>
+                        <span className="SignUp"><a href="SignUp">SignUp</a></span>
                     </div>
                 </form>
             </div>

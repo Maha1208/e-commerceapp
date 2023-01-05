@@ -3,30 +3,16 @@
     {
       "name": "Maha",
       "email": "emahe1208@gmail.com",
-      "password": ";hghj",
-      "phoneno": "lkjhgvvjkl",
+      "password": "Maha1208!",
+      "phoneno": "9176310412",
       "id": 1
     },
     {
       "name": "Mahalakshmi",
       "email": "rajamahalakshmi786@gmail.com",
-      "password": "gfdfghj",
+      "password": "Maha1208!lak",
       "phoneno": "9876543211",
       "id": 2
-    },
-    {
-      "name": "sharmi",
-      "email": "asdfh@gmail.com",
-      "password": ";kjhgfdfghjkl;",
-      "phoneno": "987654321",
-      "id": 3
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "phoneno": "",
-      "id": 4
     }
   ]
 }

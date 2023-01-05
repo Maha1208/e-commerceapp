@@ -35,21 +35,24 @@ export default class SignUp extends Component {
       <div>
         <link rel='stylesheet' href='CSS/SignUp.css'></link>
         <div className="container">
-          <form onSubmit={this.submitdata} ref={ref => this.forms = ref} >
+          <form id='form' onSubmit={this.submitdata} ref={ref => this.forms = ref} >
             <h1>Register</h1>
-            <br />
-            <label>Name</label><br />
-            <input style={{ width: "300px", height: "30px" }} type="text" placeholder="name" name="name" /><br /><br />
-            <label> Email </label><br />
-            <input style={{ width: "300px", height: "30px" }} type="text" placeholder="email" name="email" /><br /><br />
-            <label>password</label><br />
-            <input style={{ width: "300px", height: "30px" }} type="password" name="password" placeholder="Password" /><br /><br />
-            <label>PhoneNo</label><br />
-            <input style={{ width: "300px", height: "30px" }} type="text" placeholder="phoneno" name="phoneno" /><br />
-            <br />
+            <br/>
+            <label>Name</label><br/>
+            <input id='box' type="text" placeholder="name" name="name" required /><br/><br/>
+           
+            <label> Email </label><br/>
+            <input id='box' type="email" placeholder="email" name="email" required /><br/><br/>
+           
+            <label>password</label><br/>
+            <input id='box' type="password" name="password" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[a-z Z-A].{8,12})"/><br/><br/>
+            
+            <label>PhoneNo</label><br/>
+            <input id='box' type="number" placeholder="phoneno" name="phoneno" required/><br/>
+            <br/>
 
-            <button type="submit" value="Sign up">Register</button> <button />
-            <br />
+            <input id='Reg' type="submit" value="Register"/> 
+            <br/>
           </form>
         </div>
       </div>

@@ -1,0 +1,59 @@
+body {
+  background-image: url("/Images/ecom1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 70%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 2px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 30%;
+}
+
+button:hover {
+  opacity: 0.2;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container {
+  padding: 16px;
+}
+
+.SignUp {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Modal Content/Box */
+.modal{
+  /* background-image: url("/Images/ecom6.png"); */
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid rgb(188, 166, 40);
+  width: 50%;
+  /* Could be more or less, depending on screen size */
+}
