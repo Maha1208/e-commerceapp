@@ -31,7 +31,7 @@ body{
     }
     
     .topnav{
-    background-color:hsl(199, 39%, 53%);
+    background-color:hsl(213, 22%, 67%);
     border-radius:0px;
     height:30px;
     justify-content:space-around;
@@ -51,12 +51,11 @@ body{
       font-size: 20px;
       padding: 10px;
       text-align:center;
+      
     }
     
     .container:hover .overlay {
       opacity: 1;
     }
 
-    .text{
-      text-decoration: "none"
-    }
+   
