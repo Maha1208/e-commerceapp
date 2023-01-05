@@ -4,7 +4,7 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <link rel='stylesheet' href='css/Home.css'></link>
+                <link rel='stylesheet' href='CSS/Home.css'></link>
 
                 <meta name='viewport' content='width=device-width,initial-scale=1, shrink-to-fit=no' />
 

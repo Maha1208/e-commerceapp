@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { Component, createRef } from 'react'
 
 export default class SignIn extends Component {
+
     constructor(props, id) {
         super(props);
         this.forms = createRef()
@@ -10,7 +11,6 @@ export default class SignIn extends Component {
     }
 
     onformsubmit(event) {
-        const msg = document.getElementById("incorrectcred");
         axios.get("http://localhost:4000/SignUp?email=" + this.forms.email.value + "&password=" + this.forms.password.value)
 
             .then(value => {
@@ -19,8 +19,9 @@ export default class SignIn extends Component {
                     window.history.back()
                 }
                 else {
-                    msg.style.display = "block"
-                }
+                    alert ('Account not exist please enter valid credentials or signUp')
+                      }
+
             })
         event.preventDefault();
     }
@@ -28,20 +29,18 @@ export default class SignIn extends Component {
         return (
             <div>
                 <link rel='stylesheet' href='CSS/Login.css'></link>
-                <form className="modal" ref={ref => this.forms = ref}
-                    onSubmit={this.onformsubmit} onChange={() => { document.getElementById("incorrectcred").style.display = "none" }} >
+                <form className="modal" ref={ref => this.forms = ref} onSubmit={this.onformsubmit} >
+                <h1>Login</h1>
 
                     <div className="container">
-                        <label htmlFor="email"><b>Email</b></label><br />
-                        <input type="text" placeholder="Enter Emailid" name="email" required /><br />
+                        <label htmlFor="email"><b>Email</b></label><br/>
+                        <input type="text" placeholder="Enter Emailid" name="email" required /><br/>
 
-                        <label htmlFor="password"><b>Password</b></label><br />
-                        <input type="password" placeholder="Enter Password" name="password" required /><br />
+                        <label htmlFor="password"><b>Password</b></label><br/>
+                        <input type="password" placeholder="Enter Password" name="password" required /><br/>
 
-                        <button type="submit" >Login</button><br />
-                        <label>
-                            <input type="checkbox" defaultChecked name="remember" value="Remember me" />Remember me
-                        </label>
+                        <button type="submit">Login</button><br/>
+                       
                     </div>
                     <div className="container">
                         <button type="button" className="cancelbtn"><a href="/">Cancel</a></button>

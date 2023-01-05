@@ -1,0 +1,56 @@
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+ 
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px 5px;
+}
+ 
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color:OxfordBlue;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.nav-flex-row li a:hover{
+    background: #c3bbbc;
+}
+ 
+.section-intro {
+    height: 800px;
+    background-image: url("/Images/ecom.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    
+}
+ 
+.section-intro h1 {
+    height: 550px;
+    text-align: center;
+    color: #400080;
+    font-size: 3em;
+    font-weight: 300;
+}
+ 
+
+
+ 
+   
+ 
+   
+
+ 
+
