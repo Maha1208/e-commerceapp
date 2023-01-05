@@ -5,6 +5,7 @@ import SignUp from "./components/SignUp"
 import Category from './components/Category'
 import WomenEthnic from "./components/WomenEthnic"
 import WomenWestern from "./components/WomenWestern"
+import MenWears from "./components/MenWears"
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path="Category" element={<Category/>}/>
         <Route path="WomenEthnic" element={<WomenEthnic/>}/>
         <Route path="WomenWestern" element={<WomenWestern/>}/>
-
+        <Route path="MenWears" element={<MenWears/>}/>
       </Routes>
     </div>
   )

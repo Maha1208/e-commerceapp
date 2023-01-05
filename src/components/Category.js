@@ -23,7 +23,7 @@ const Category = () => {
                         <div className="overlay">Women Western Wears</div></a>
                 </div>
                 <div className="box">
-                    <a style={{ textDecoration: "none" }} href="MensWears">
+                    <a style={{ textDecoration: "none" }} href="MenWears">
                         <img src="/Images/men.jpg" alt="" />
                         <div className="overlay">Men Wears</div></a>
                 </div>
