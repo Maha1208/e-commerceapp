@@ -12,14 +12,13 @@ export default class SignIn extends Component {
 
     onformsubmit(event) {
         axios.get("http://localhost:4000/SignUp?email=" + this.forms.email.value + "&password=" + this.forms.password.value)
-
             .then(value => {
                 if (value.data.length > 0) {
                     sessionStorage.setItem("email", value.data[0].email)
                     window.history.back()
                 }
                 else {
-                    alert ('Account not exist please enter valid credentials or signUp')
+                    alert ('Account not exist please enter valid credentials or SignUp')
                       }
 
             })
@@ -29,7 +28,7 @@ export default class SignIn extends Component {
         return (
             <div>
                 <link rel='stylesheet' href='CSS/Login.css'></link>
-                <form className="modal" ref={ref => this.forms = ref} onSubmit={this.onformsubmit} >
+                <form id='form' ref={ref => this.forms = ref} onSubmit={this.onformsubmit} >
                 <h1>Login</h1>
 
                     <div className="container">
@@ -39,11 +38,11 @@ export default class SignIn extends Component {
                         <label htmlFor="password"><b>Password</b></label><br/>
                         <input type="password" placeholder="Enter Password" name="password" required /><br/>
 
-                        <button type="submit">Login</button><br/>
+                        <button id='button' type="submit">Login</button><br/>
                        
                     </div>
                     <div className="container">
-                        <button type="button" className="cancelbtn"><a href="/">Cancel</a></button>
+                        <button id="cancel" type="button" className="cancelbtn"><a href="/">Cancel</a></button>
                         <span className="SignUp"><a href="SignUp">SignUp</a></span>
                     </div>
                 </form>

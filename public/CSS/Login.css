@@ -1,8 +1,5 @@
 body {
-  background-image: url("/Images/ecom3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: black;
+background-color: rgb(157, 247, 247);
 }
 
 /* Full-width input fields */
@@ -21,19 +18,21 @@ h1{
 }
 
 /* Set a style for all buttons */
-button {
-  background-color: rgb(225, 130, 128);
+#button {
+  background-color: rgb(192, 229, 140);
   color: white;
   padding: 14px 20px;
-  margin: 2px 0;
+  margin: 20px 0;
   border-radius: 10px;
   cursor: pointer;
-  width: 30%;
+  width: 25%;
 }
 
-button:hover {
+#button:hover {
   background: rgb(96, 180, 23);
 }
+
+cancel
 
 .container {
   padding: 16px;
@@ -41,16 +40,16 @@ button:hover {
 
 .SignUp {
   float: right;
-  padding-top: 16px;
+  padding: 1px 10px 3px 10px;
+  background-color: #eecf21;
 }
 
-/* Modal Content/Box */
-.modal{
-  border-radius: 10px;
-  background-color: aqua;
-  margin: 5% auto 15% auto;
-  /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid rgb(138, 29, 221);
-  width: 40%;
-  /* Could be more or less, depending on screen size */
+#form {
+  margin: 150px 0px 0px 500px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/Images/Glass.png");
 }
