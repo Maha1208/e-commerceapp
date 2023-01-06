@@ -19,7 +19,7 @@ h1{
 
 /* Set a style for all buttons */
 #button {
-  background-color: rgb(192, 229, 140);
+  background-color: #9fe73a;
   color: white;
   padding: 14px 20px;
   margin: 20px 0;
@@ -29,19 +29,23 @@ h1{
 }
 
 #button:hover {
-  background: rgb(96, 180, 23);
+  background: rgb(188, 234, 148);
 }
 
-cancel
+#cancel{
+  background-color: red;
+  text-decoration: none;
+}
 
 .container {
   padding: 16px;
 }
 
 .SignUp {
+  text-decoration-color: aliceblue;
   float: right;
   padding: 1px 10px 3px 10px;
-  background-color: #eecf21;
+  background-color: hsl(215, 72%, 48%);
 }
 
 #form {

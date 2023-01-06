@@ -15,17 +15,15 @@ export default class Home extends Component {
                 <nav>
                     <ul className="nav-flex-row">
                         <li className="nav-item">
-                            <a href="#about">About</a>
+                            <a href="SignUp">SignUp</a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="SignIn">Login</a>
                         </li>
                         <li className="nav-item">
                             <a href="Category">Category</a>
                         </li>
-                        <li className="nav-item">
-                            <a href="SignUp">Sign Up</a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="SignIn">SignIn</a>
-                        </li>
+
                         <li className="nav-item">
                             <a href="AdminHome">Admin Home</a>
                         </li>
@@ -34,7 +32,7 @@ export default class Home extends Component {
                 </nav>
                 <section className="section-intro">
                     <header>
-                        <h1 style={{ color: "Purple" }}> Welcome To Online Shopping</h1>
+                        <h1> Welcome To Online Dress Shopping</h1>
                     </header>
                 </section>
             </div>

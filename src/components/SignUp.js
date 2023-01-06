@@ -11,7 +11,7 @@ export default class SignUp extends Component {
   }
   submitdata(event) {
 
-    axios.get("http://localhost:4000/SignUp?email=" + this.forms.email.value +"&phoneno=" + this.forms.phoneno.value)
+    axios.get("http://localhost:4000/SignUp?email=" + this.forms.email.value || "&phoneno=" + this.forms.phoneno.value)
       .then(data => {
         if (data.data.length === 0) {
           axios.post("http://localhost:4000/SignUp", { name: this.forms.name.value, email: this.forms.email.value, password: this.forms.password.value, phoneno: this.forms.phoneno.value, })

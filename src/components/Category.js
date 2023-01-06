@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Category = () => {
+function Category(){
     return (
         <div>
             <link rel='stylesheet' href='CSS/Category.css'></link>
@@ -13,24 +13,22 @@ const Category = () => {
             <div className="container">
                 <div className="box">
                     <a style={{ textDecoration: "none" }} href="WomenEthnic">
-                        <img src="/Images/ethnic.jpg" alt="" />
-
+                        <img src="/Images/ethnic.jpg" alt="ethnic"/>
                         <div className="overlay">WomenEthnic Wears</div></a>
                 </div>
                 <div className="box">
                     <a style={{ textDecoration: "none" }} href="WomenWestern">
-                        <img src="/Images/western.jpeg" alt="" />
+                        <img src="/Images/western.jpeg" alt="western"/>
                         <div className="overlay">Women Western Wears</div></a>
                 </div>
                 <div className="box">
                     <a style={{ textDecoration: "none" }} href="MenWears">
-                        <img src="/Images/men.jpg" alt="" />
+                        <img src="/Images/men.jpg" alt="men"/>
                         <div className="overlay">Men Wears</div></a>
                 </div>
                 <div className="box">
                     <a style={{ textDecoration: "none" }} href="KidsWears">
-                        <img src="/Images/kids.jpg" alt="" />
-
+                        <img src="/Images/kids.jpg" alt="Kids"/>
                         <div className="overlay">Kids Wears</div></a>
 
                 </div>

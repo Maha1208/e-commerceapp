@@ -15,11 +15,11 @@ export default class SignIn extends Component {
             .then(value => {
                 if (value.data.length > 0) {
                     sessionStorage.setItem("email", value.data[0].email)
-                    window.history.back()
+                    // window.history.back()
                 }
                 else {
                     alert ('Account not exist please enter valid credentials or SignUp')
-                      }
+                     }
 
             })
         event.preventDefault();
@@ -32,10 +32,10 @@ export default class SignIn extends Component {
                 <h1>Login</h1>
 
                     <div className="container">
-                        <label htmlFor="email"><b>Email</b></label><br/>
+                        <label><b>Email</b></label><br/>
                         <input type="text" placeholder="Enter Emailid" name="email" required /><br/>
 
-                        <label htmlFor="password"><b>Password</b></label><br/>
+                        <label><b>Password</b></label><br/>
                         <input type="password" placeholder="Enter Password" name="password" required /><br/>
 
                         <button id='button' type="submit">Login</button><br/>
