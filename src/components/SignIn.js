@@ -15,7 +15,7 @@ export default class SignIn extends Component {
             .then(value => {
                 if (value.data.length > 0) {
                     sessionStorage.setItem("email", value.data[0].email)
-                    // window.history.back()
+                    window.history.back()
                 }
                 else {
                     alert ('Account not exist please enter valid credentials or SignUp')

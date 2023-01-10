@@ -7,8 +7,8 @@ export default class SignUp extends Component {
     super(props);
     this.forms = createRef()
     this.submitdata = this.submitdata.bind(this)
-
   }
+  
   submitdata(event) {
 
     axios.get("http://localhost:4000/SignUp?email=" + this.forms.email.value || "&phoneno=" + this.forms.phoneno.value)
@@ -49,7 +49,7 @@ export default class SignUp extends Component {
             <input className='box' type="password"  placeholder="Password" name="password"required pattern="(?=.*\d)(?=.*[a-z])(?=.*[a-z Z-A].{8,12})"/><br/><br/>
             
             <label>PhoneNo</label><br/>
-            <input className='box' type="text" placeholder="phoneno" name="phoneno" required pattern="(?=.\d).{10})"/><br/>
+            <input className='box' type="text" placeholder="phoneno" name="phoneno" required/><br/>
             <br/>
 
             <input id='Reg' type="submit" value="Register"/> 

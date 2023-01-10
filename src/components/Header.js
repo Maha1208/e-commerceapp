@@ -1,0 +1,112 @@
+import React, { useState } from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import Badge from '@mui/material/Badge';
+import Nav from 'react-bootstrap/Nav';
+import Menu from '@mui/material/Menu';
+import NavLink from 'react-bootstrap/esm/NavLink';
+import { Table } from '@mui/material';
+import { useSelector } from 'react-redux'
+
+const Header = () => {
+
+    const getdata = useSelector((state) => state.cartreducer.carts);
+    console.log(getdata);
+
+
+    const [anchorEl, setAnchorEl] = useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+    return (
+        <>
+            <Navbar bg="dark" variant="dark">
+                <Container>
+                    <Navbar.Brand href="/">Home</Navbar.Brand>
+                    <Nav className="me-auto">
+                        <Nav.Link href="SignUp">Register</Nav.Link>
+                        <Nav.Link href="Category">Category</Nav.Link>
+                        <Nav.Link href="/">Add to cart</Nav.Link>
+                    </Nav>
+
+                    <Badge badgeContent={getdata.length} color="primary" //cart icon increment
+                        id="basic-button"
+                        aria-controls={open ? 'basic-menu' : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={open ? 'true' : undefined}
+                        onClick={handleClick}
+                    >
+                        <i class="fa-solid fa-cart-shopping text-light" style={{ fontSize: 30, cursor: "pointer" }} ></i>
+                    </Badge>
+                </Container>
+                <Menu
+                    id="basic-menu"
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    MenuListProps={{
+                        'aria-labelledby': 'basic-button',
+                    }}
+                >
+                    {
+                        getdata.length ?
+                            <div className='saree_details' style={{ width: "24rem", padding: 10 }}>
+                                <Table>
+                                    <thead>
+                                        <tr>
+                                            <th>image</th>
+                                            <th>prname</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {
+                                            getdata.map((e) => {
+                                                return (
+                                                    <>
+                                                        <tr>
+                                                            <td>
+                                                                <NavLink to={`/cart/${e.id}`} onClick={handleClose}>
+                                                                    <img src={e.image} style={{ width: "5rem", height: "5rem" }} alt="" />
+                                                                </NavLink>
+                                                            </td>
+                                                            <td>
+                                                                <p>{e.prname}</p>
+                                                                <p>Price : ₹{e.price}</p>
+                                                                <p>Quantity : {e.qnty}</p>
+                                                                <p style={{ color: "red", fontSize: 20, cursor: "pointer" }}>
+                                                                    <i className='fas fa-trash smalltrash'></i>
+                                                                </p>
+                                                            </td>
+
+                                                            <td className='mt-5' style={{ color: "red", fontSize: 20, cursor: "pointer" }}>
+                                                                <i className='fas fa-trash largetrash'></i>
+                                                            </td>
+                                                        </tr>
+                                                    </>
+                                                )
+                                            })
+                                        }
+                                        <p className='text-center'>Total :₹ 300</p>
+                                    </tbody>
+                                </Table>
+                            </div>:
+                            <div className='card_details d-flex justify-content-center align-items-center' style={{ width: "24rem", padding: 10, position: "relative" }}>
+                                <i className='fas fa-close smallclose'
+                                    onClick={handleClose}
+                                    style={{ position: "absolute", top: 2, right: 20, fontSize: 23, cursor: "pointer" }}></i>
+                                <p style={{ fontSize: 20 }}>Your carts is empty</p>
+                                {/* <img src="./cart.gif" alt="" className='emptycart_img' style={{width:"5rem",padding:10}} /> */}
+                            </div>
+                    }
+
+                </Menu>
+            </Navbar>
+        </>
+    )
+}
+
+export default Header

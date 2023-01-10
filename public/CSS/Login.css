@@ -2,7 +2,6 @@ body {
 background-color: rgb(157, 247, 247);
 }
 
-/* Full-width input fields */
 input[type=text],
 input[type=password] {
   width: 70%;
@@ -17,7 +16,6 @@ h1{
   text-align: center;
 }
 
-/* Set a style for all buttons */
 #button {
   background-color: #9fe73a;
   color: white;
