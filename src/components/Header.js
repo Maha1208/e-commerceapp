@@ -1,17 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback} from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Badge from '@mui/material/Badge';
 import Nav from 'react-bootstrap/Nav';
 import Menu from '@mui/material/Menu';
-import NavLink from 'react-bootstrap/esm/NavLink';
 import { Table } from '@mui/material';
-import { useSelector } from 'react-redux'
+import { useDispatch,useSelector } from 'react-redux';
+import {DLT} from '../redux/actions/action';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 
+    const[price,setPrice]=useState(0);
+
     const getdata = useSelector((state) => state.cartreducer.carts);
-    console.log(getdata);
+    // console.log(getdata);
+
+    const dispatch = useDispatch();
 
 
     const [anchorEl, setAnchorEl] = useState(null);
@@ -22,15 +27,32 @@ const Header = () => {
     const handleClose = () => {
         setAnchorEl(null);
     };
+
+    const dlt=(key) =>{
+        dispatch(DLT(key))
+    }
+
+    const total= useCallback(() => {
+        let price =0;
+        getdata.map((ele,key)=>{               //k->key
+            price = ele.price * ele.qnty + price
+        });
+        setPrice(price);
+    });
+
+    useEffect(()=>{
+        total();
+    },[total])
+
+
     return (
         <>
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="dark" variant="dark" style={{ height: "60px" }}>
                 <Container>
-                    <Navbar.Brand href="/">Home</Navbar.Brand>
+                <NavLink to="/" className="text-decoration-none text-light">Home</NavLink>
                     <Nav className="me-auto">
-                        <Nav.Link href="SignUp">Register</Nav.Link>
-                        <Nav.Link href="Category">Category</Nav.Link>
-                        <Nav.Link href="/">Add to cart</Nav.Link>
+                        <NavLink to="/SignUp" className="text-decoration-none text-light mx-3">Register</NavLink>
+                        {/* <NavLink to="/cart">Add to Cart</NavLink> */}
                     </Nav>
 
                     <Badge badgeContent={getdata.length} color="primary" //cart icon increment
@@ -40,9 +62,12 @@ const Header = () => {
                         aria-expanded={open ? 'true' : undefined}
                         onClick={handleClick}
                     >
-                        <i class="fa-solid fa-cart-shopping text-light" style={{ fontSize: 30, cursor: "pointer" }} ></i>
+                        <i className="fa-solid fa-cart-shopping text-light" style={{ fontSize: 30, cursor: "pointer" }} ></i>
                     </Badge>
                 </Container>
+                
+                
+                
                 <Menu
                     id="basic-menu"
                     anchorEl={anchorEl}
@@ -54,12 +79,12 @@ const Header = () => {
                 >
                     {
                         getdata.length ?
-                            <div className='saree_details' style={{ width: "24rem", padding: 10 }}>
+                            <div className='cart_details' style={{ width: "24rem", padding: 10 }}>
                                 <Table>
                                     <thead>
                                         <tr>
-                                            <th>image</th>
-                                            <th>prname</th>
+                                            <th>ProductImage</th>
+                                            <th>Product Name</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -69,7 +94,7 @@ const Header = () => {
                                                     <>
                                                         <tr>
                                                             <td>
-                                                                <NavLink to={`/cart/${e.id}`} onClick={handleClose}>
+                                                                <NavLink to={`/cart/${e.key}`} onClick={handleClose}>
                                                                     <img src={e.image} style={{ width: "5rem", height: "5rem" }} alt="" />
                                                                 </NavLink>
                                                             </td>
@@ -77,12 +102,12 @@ const Header = () => {
                                                                 <p>{e.prname}</p>
                                                                 <p>Price : ₹{e.price}</p>
                                                                 <p>Quantity : {e.qnty}</p>
-                                                                <p style={{ color: "red", fontSize: 20, cursor: "pointer" }}>
+                                                                <p style={{ color: "red", fontSize: 20, cursor: "pointer" }} onClick={()=>dlt(e.key)}>
                                                                     <i className='fas fa-trash smalltrash'></i>
                                                                 </p>
                                                             </td>
 
-                                                            <td className='mt-5' style={{ color: "red", fontSize: 20, cursor: "pointer" }}>
+                                                            <td className='mt-5' style={{ color: "red", fontSize: 20, cursor: "pointer" }} onClick={()=>dlt(e.key)}>
                                                                 <i className='fas fa-trash largetrash'></i>
                                                             </td>
                                                         </tr>
@@ -90,10 +115,11 @@ const Header = () => {
                                                 )
                                             })
                                         }
-                                        <p className='text-center'>Total :₹ 300</p>
+                                        <p className='text-center'>Total :₹{price}</p>
                                     </tbody>
                                 </Table>
                             </div>:
+                            
                             <div className='card_details d-flex justify-content-center align-items-center' style={{ width: "24rem", padding: 10, position: "relative" }}>
                                 <i className='fas fa-close smallclose'
                                     onClick={handleClose}

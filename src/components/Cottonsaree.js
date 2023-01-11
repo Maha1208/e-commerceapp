@@ -15,23 +15,24 @@ const Cottonsaree = () => {
 
   const dispatch = useDispatch();
 
-  const send= (e) =>{
-    dispatch(ADD(e))
-
+  const send= (e) => {
+    dispatch(ADD(e));
+    // setData(ADD);  // problem remove this line
   }
+
 
   return (
     <>
       <Header />
       <div className='container mt-3'>
-        <h2 className='text-center'>Sarees</h2>
+        <h2 className='text-center'>Sarees Collection</h2>
 
         <div className='row d-flex justify-content-center align-items-center '>
           {
-            data.map((element,id) => {
+            data.map((element,key) => {
               return (
-                <>
-                  <Card style={{ width: '22rem',border:"none" }} className="mx-2 mt-4 card_style">
+                
+                  <Card key={key} style={{ width: '20rem',border:"black" }} className="mx-3 mt-3 card_style">
                     <Card.Img variant="top" src={element.image} style={{height:"16rem"}} className="mt-3" />
                     <Card.Body>
                       <Card.Title>{element.prname}</Card.Title>
@@ -45,7 +46,7 @@ const Cottonsaree = () => {
                       </div>
                     </Card.Body>
                   </Card>
-                </>
+                
               )
 
             })
@@ -53,9 +54,8 @@ const Cottonsaree = () => {
 
         </div>
       </div>
-
     </>
   )
 }
 
-export default Cottonsaree
+export default  Cottonsaree

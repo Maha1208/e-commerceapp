@@ -34,13 +34,6 @@ export default function WomenWestern() {
                         <img src="/Images/Wjean.jpg" alt="Women jeans" />
                         <div className="overlay">Jeans ang Jeggings</div></a>
                 </div>
-
-                <div className="box">
-                        <a style={{ textDecoration: "none" }} href=" ">
-                            <img src="/Images/plazzo.jpg" alt="plazzo" />
-                            <div className="overlay">Plazzo</div></a>
-
-                    </div>
                 </div>
             </div>
     )

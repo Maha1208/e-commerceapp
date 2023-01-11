@@ -6,10 +6,10 @@ export const ADD = (item) =>{
 }
 
 // remove items
-export const DLT = (id) => {
+export const DLT = (key) => {
     return {
         type: "RMV_CART",
-        payload: id
+        payload: key
     }
 }
 

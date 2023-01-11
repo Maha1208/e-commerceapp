@@ -14,12 +14,7 @@ const WomenEthnic = () => {
         <div className="box">
           <a style={{ textDecoration: "none" }} href="Cottonsaree">
             <img src="/Images/cotton.jpeg" alt="women wear" />
-            <div className="overlay">Cotton Sarees</div></a>
-        </div>
-        <div className="box">
-          <a style={{ textDecoration: "none" }} href=" ">
-            <img src="/Images/silk.jpeg" alt="women wear" />
-            <div className="overlay">Silk Sarees</div></a>
+            <div className="overlay">Sarees</div></a>
         </div>
         <div className="box">
           <a style={{ textDecoration: "none" }} href=" ">

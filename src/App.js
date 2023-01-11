@@ -10,25 +10,24 @@ import MenWears from "./components/MenWears"
 import KidsWears from "./components/KidsWears"
 import Cottonsaree from "./components/Cottonsaree"
 import Header from "./components/Header"
-import SareeCardsData from "./components/SareeCardsData"
-import Sareedetails from "./components/Sareedetails"
+// import SareeCardsData from "./components/SareeCardsData"
+import Cartdetails from "./components/Cartdetails"
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={ <Home/> } />
-        <Route path="SignIn" element={ <SignIn/> } />
-        <Route path="SignUp" element={ <SignUp/> } />
-        <Route path="Category" element={<Category/>}/>
-        <Route path="WomenEthnic" element={<WomenEthnic/>}/>
-        <Route path="WomenWestern" element={<WomenWestern/>}/>
-        <Route path="MenWears" element={<MenWears/>}/>
-        <Route path="KidsWears" element={<KidsWears/>}/>
-        <Route path="Cottonsaree" element={<Cottonsaree/>}/>
-        <Route path="/SareeCardsData" element={<SareeCardsData/>}/>
-        <Route path="/cart/:id" element={<Sareedetails/>}/>
-        <Route path="Header" element={<Header/>}/>
+        <Route path="signin" element={ <SignIn/> } />
+        <Route path="signup" element={ <SignUp/> } />
+        <Route path="category" element={<Category/>}/>
+        <Route path="womenethnic" element={<WomenEthnic/>}/>
+        <Route path="womenwestern" element={<WomenWestern/>}/>
+        <Route path="menwears" element={<MenWears/>}/>
+        <Route path="kidswears" element={<KidsWears/>}/>
+        <Route path="cottonsaree" element={<Cottonsaree/>}/>
+        <Route path="/cart/:key" element={<Cartdetails/>}/>
+        <Route path="header" element={<Header/>}/>
       </Routes>
     </div>
   )
