@@ -25,12 +25,6 @@ export default function MenWears() {
 
                 <div className="box">
                     <a style={{ textDecoration: "none" }} href=" ">
-                        <img src="/Images/Mjackets.jpg" alt="Mjackets" />
-                        <div className="overlay">Jackets</div></a>
-                </div>
-
-                <div className="box">
-                    <a style={{ textDecoration: "none" }} href=" ">
                         <img src="/Images/Mjeans.jpg" alt="Mjeans" />
                         <div className="overlay">Jeans</div></a>
                 </div>
