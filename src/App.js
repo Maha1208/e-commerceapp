@@ -13,6 +13,7 @@ import Header from "./components/Header"
 // import SareeCardsData from "./components/SareeCardsData"
 import Cartdetails from "./components/Cartdetails"
 import Lehenga from "./components/Lehenga"
+import Kurtas from "./components/Kurtas"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="kidswears" element={<KidsWears/>}/>
         <Route path="cottonsaree" element={<Cottonsaree/>}/>
         <Route path="lehenga" element={<Lehenga/>}/>
+        <Route path="kurtas" element={<Kurtas/>}/>
         <Route path="/cart/:key" element={<Cartdetails/>}/>
         <Route path="header" element={<Header/>}/>
       </Routes>

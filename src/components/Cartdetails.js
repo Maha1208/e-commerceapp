@@ -51,7 +51,7 @@ const Cartdetails = () => {
 
   return (
     <>
-      <Header/>
+      <Header />
 
       <div className="container mt-2">
         <h2 className='text-center'>Product Details Page
@@ -64,7 +64,7 @@ const Cartdetails = () => {
                 return (
                   <>
                     <div className="items_img">
-                      <img src={ele.image} alt="images"/>
+                      <img src={ele.image} alt="images" />
                     </div>
 
                     <div className="details">

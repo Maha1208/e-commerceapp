@@ -51,7 +51,7 @@ const LehengaCardsData ={
             qnty:0
         },
         {
-            key:"06",
+            key:"6",
             prname:"Baby pink part wear lehenga",
             image:"./Images/Lehenga/babypink.jpg ",
             type:" Baby Pink Lehenga Choli Designs with latest designs",
