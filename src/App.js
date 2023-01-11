@@ -12,6 +12,7 @@ import Cottonsaree from "./components/Cottonsaree"
 import Header from "./components/Header"
 // import SareeCardsData from "./components/SareeCardsData"
 import Cartdetails from "./components/Cartdetails"
+import Lehenga from "./components/Lehenga"
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="menwears" element={<MenWears/>}/>
         <Route path="kidswears" element={<KidsWears/>}/>
         <Route path="cottonsaree" element={<Cottonsaree/>}/>
+        <Route path="lehenga" element={<Lehenga/>}/>
         <Route path="/cart/:key" element={<Cartdetails/>}/>
         <Route path="header" element={<Header/>}/>
       </Routes>

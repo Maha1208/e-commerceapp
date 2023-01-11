@@ -82,7 +82,7 @@ const Cartdetails = () => {
                             </div>
                           </td>
                           <td>
-                            <p><strong>Rating :</strong> <span className='rating' > {ele.rating}★</span></p>
+                            <p><strong>Rating :</strong> <span className='rating'> {ele.rating}★</span></p>
                             <p><strong>Order Review :</strong> <span> {ele.somedata}</span></p>
                             <p><strong>Remove :</strong> <span ><i className='fas fa-trash' onClick={() => dlt(ele.key)} style={{ color: "red", fontSize: 20, cursor: "pointer" }}></i></span></p>
 
