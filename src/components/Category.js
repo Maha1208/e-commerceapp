@@ -1,13 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Header from "./Header";
+import "./style.css";
 
 function Category(){
     return (
         <div>
             <link rel='stylesheet' href='CSS/Category.css'></link>
-            <div className="topnav" >
-                <a style={{ textDecoration: "none" }} className="log" href="/"><b>Home</b></a>
-            </div>
-
+             <Header/>
             <h1>Welcome to Category</h1>
 
             <div className="container">

@@ -1,12 +1,12 @@
 import React from 'react'
+import Header from "./Header";
+import "./style.css";
 
 const WomenEthnic = () => {
   return (
     <div>
       <link rel='stylesheet' href='CSS/WomenEthnic.css'></link>
-      <div className="topnav" >
-        <a style={{ textDecoration: "none" }} className="log" href="/"><b>Home</b></a>
-      </div>
+         <Header/>  
 
       <h1>Welcome to Women Ethic Wears</h1>
 

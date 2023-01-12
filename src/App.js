@@ -10,7 +10,6 @@ import MenWears from "./components/MenWears"
 import KidsWears from "./components/KidsWears"
 import Cottonsaree from "./components/Cottonsaree"
 import Header from "./components/Header"
-// import SareeCardsData from "./components/SareeCardsData"
 import Cartdetails from "./components/Cartdetails"
 import Lehenga from "./components/Lehenga"
 import Kurtas from "./components/Kurtas"
@@ -19,9 +18,10 @@ import Mshirt from "./components/Mshirt"
 import Mtshirt from "./components/Mtshirt"
 import Mjeans from "./components/Mjeans"
 import Mformalpants from "./components/Mformalpants"
-
-
-
+import Girlset from "./components/Girlset"
+import Boyset from "./components/Boyset"
+import Gowns from "./components/Gowns"
+import Nightwear from "./components/Nightwear"
 
 function App() {
   return (
@@ -43,6 +43,10 @@ function App() {
         <Route path="mtshirt" element={<Mtshirt/>}/>
         <Route path="mjeans" element={<Mjeans/>}/>
         <Route path="mformalpants" element={<Mformalpants/>}/>
+        <Route path="girlset" element={<Girlset/>}/>
+        <Route path="boyset" element={<Boyset/>}/>
+        <Route path="gowns" element={<Gowns/>}/>
+        <Route path="nightwear" element={<Nightwear/>}/>
         <Route path="/cart/:key" element={<Cartdetails/>}/>
         <Route path="header" element={<Header/>}/>
       </Routes>
