@@ -34,7 +34,7 @@ const Header = () => {
 
     const total= useCallback(() => {
         let price =0;
-        getdata.map((ele,key)=>{               //k->key
+        getdata.map((ele,key)=>{  
             price = ele.price * ele.qnty + price
         });
         setPrice(price);
@@ -52,7 +52,7 @@ const Header = () => {
                 <NavLink to="/" className="text-decoration-none text-light">Home</NavLink>
                     <Nav className="me-auto">
                         <NavLink to="/SignUp" className="text-decoration-none text-light mx-3">Register</NavLink>
-                        {/* <NavLink to="/cart">Add to Cart</NavLink> */}
+                        <NavLink to="/cart" className="text-decoration-none text-light mx-3">Go To Cart</NavLink>
                     </Nav>
 
                     <Badge badgeContent={getdata.length} color="primary" //cart icon increment
@@ -65,8 +65,6 @@ const Header = () => {
                         <i className="fa-solid fa-cart-shopping text-light" style={{ fontSize: 30, cursor: "pointer" }} ></i>
                     </Badge>
                 </Container>
-                
-                
                 
                 <Menu
                     id="basic-menu"
@@ -125,7 +123,6 @@ const Header = () => {
                                     onClick={handleClose}
                                     style={{ position: "absolute", top: 2, right: 20, fontSize: 23, cursor: "pointer" }}></i>
                                 <p style={{ fontSize: 20 }}>Your carts is empty</p>
-                                {/* <img src="./cart.gif" alt="" className='emptycart_img' style={{width:"5rem",padding:10}} /> */}
                             </div>
                     }
 

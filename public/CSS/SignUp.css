@@ -43,6 +43,15 @@ margin-bottom: 60px;
     background: #9fde69;
 }
 
-.account{
-    text-align: right;
-}
+input:focus { 
+    outline: none !important;
+    border-color: hsl(5, 74%, 55%);
+    box-shadow: 0 0 10px #719ECE;
+ }
+
+ input:valid{ 
+    outline: none !important;
+    border-color: hsl(81, 77%, 47%);
+    box-shadow: 0 0 10px #719ECE;
+    accent-color: gold;
+ }

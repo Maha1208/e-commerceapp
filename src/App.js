@@ -21,6 +21,7 @@ import Mformalpants from "./components/Mformalpants"
 import Girlset from "./components/Girlset"
 import Boyset from "./components/Boyset"
 import Gowns from "./components/Gowns"
+import Goback from "./components/Goback"
 import Nightwear from "./components/Nightwear"
 
 function App() {
@@ -48,7 +49,10 @@ function App() {
         <Route path="gowns" element={<Gowns/>}/>
         <Route path="nightwear" element={<Nightwear/>}/>
         <Route path="/cart/:key" element={<Cartdetails/>}/>
+        <Route path="/cart" element={<Cartdetails/>}/>
+        <Route path="Goback" element={<Goback/>}/>
         <Route path="header" element={<Header/>}/>
+
       </Routes>
     </div>
   )

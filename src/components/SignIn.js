@@ -1,5 +1,9 @@
+// import { positions } from '@mui/system';
 import axios from 'axios';
 import React, { Component, createRef } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Home from './Home';
 
 export default class SignIn extends Component {
 
@@ -14,16 +18,19 @@ export default class SignIn extends Component {
         axios.get("http://localhost:4000/SignUp?email=" + this.forms.email.value + "&password=" + this.forms.password.value)
             .then(value => {
                 if (value.data.length > 0) {
-                    sessionStorage.setItem("email", value.data[0].email)
-                    window.history.back()
+                    sessionStorage.setItem("email", value.data[0].email);
+                    toast.success("Login Successfull!");
+                    // window.history.back()
                 }
                 else {
-                    alert ('Account not exist please enter valid credentials or SignUp')
+                    toast.info('Account not exist please enter valid credentials or SignUp');
                      }
 
             })
         event.preventDefault();
     }
+
+    
     render() {
         return (
             <div>
@@ -38,7 +45,7 @@ export default class SignIn extends Component {
                         <label><b>Password</b></label><br/>
                         <input type="password" placeholder="Enter Password" name="password" required /><br/>
 
-                        <button id='button' type="submit">Login</button><br/>
+                        <button id='button' type="submit" onClick={{Home}}>Login</button><br/>
                        
                     </div>
                     <div className="container">
@@ -46,6 +53,9 @@ export default class SignIn extends Component {
                         <span className="SignUp"><a href="SignUp">SignUp</a></span>
                     </div>
                 </form>
+                <ToastContainer
+                position="top-center"
+                />
             </div>
         )
     }

@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { DLT, ADD, REMOVE } from '../redux/actions/action';
 import Header from './Header';
+import Goback from './Goback'
 
 const Cartdetails = () => {
 
@@ -18,16 +19,7 @@ const Cartdetails = () => {
   const getdata = useSelector((state) => state.cartreducer.carts);
   console.log(getdata);
 
-  const compare = () => {
-    let comparedata = getdata.filter((e) => {
-      return e.key === key
-    });
-    setData(comparedata);
-  }
-
   // add data
-
-
   const send = (e) => {
     // console.log(e);
     dispatch(ADD(e));
@@ -43,6 +35,13 @@ const Cartdetails = () => {
     dispatch(REMOVE(item))
   }
 
+  //Getting page for selected Products
+  const compare = () => {
+    let comparedata = getdata.filter((e) => {
+      return e.key === key
+    });
+    setData(comparedata);
+  }
 
   useEffect(() => {
     compare();
@@ -85,7 +84,6 @@ const Cartdetails = () => {
                             <p><strong>Rating :</strong> <span className='rating'> {ele.rating}★</span></p>
                             <p><strong>Order Review :</strong> <span> {ele.somedata}</span></p>
                             <p><strong>Remove :</strong> <span ><i className='fas fa-trash' onClick={() => dlt(ele.key)} style={{ color: "red", fontSize: 20, cursor: "pointer" }}></i></span></p>
-
                           </td>
                         </tr>
                       </Table>
@@ -96,7 +94,8 @@ const Cartdetails = () => {
             }
           </div>
         </section>
-        <button className='Backbutton'>Go Back</button>
+        <button className='Backbutton' onClick={Goback}>Go Back</button>
+      
       </div>
     </>
   )
