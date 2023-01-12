@@ -12,13 +12,13 @@ export default function MenWears() {
 
             <div className="container">
                 <div className="box">
-                    <a style={{ textDecoration: "none" }} href=" ">
+                    <a style={{ textDecoration: "none" }} href="Mshirt">
                         <img src="/Images/Mshirts.jpg" alt="Mshirts" />
                         <div className="overlay">Shirts</div></a>
                 </div>
 
                 <div className="box">
-                    <a style={{ textDecoration: "none" }} href=" ">
+                    <a style={{ textDecoration: "none" }} href="Mtshirt ">
                         <img src="/Images/Mtshirt.jpg" alt="Men t-shirt" />
                         <div className="overlay">T-shirt</div></a>
                 </div>

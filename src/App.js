@@ -14,6 +14,10 @@ import Header from "./components/Header"
 import Cartdetails from "./components/Cartdetails"
 import Lehenga from "./components/Lehenga"
 import Kurtas from "./components/Kurtas"
+import Plazzo from "./components/Plazzo"
+import Mshirt from "./components/Mshirt"
+import Mtshirt from "./components/Mtshirt"
+
 
 function App() {
   return (
@@ -30,6 +34,9 @@ function App() {
         <Route path="cottonsaree" element={<Cottonsaree/>}/>
         <Route path="lehenga" element={<Lehenga/>}/>
         <Route path="kurtas" element={<Kurtas/>}/>
+        <Route path="plazzo" element={<Plazzo/>}/>
+        <Route path="mshirt" element={<Mshirt/>}/>
+        <Route path="mtshirt" element={<Mtshirt/>}/>
         <Route path="/cart/:key" element={<Cartdetails/>}/>
         <Route path="header" element={<Header/>}/>
       </Routes>

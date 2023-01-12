@@ -2,17 +2,16 @@ import React from 'react';
 import Header from './Header';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-// import SareeCardsData from './SareeCardsData';
-import WomensCardsData from './WomensCardsData';
+import MensCardsData from './MensCardsData';
 import { useState } from 'react'
 import "./style.css";
 import { useDispatch } from 'react-redux';
 import {ADD} from '../redux/actions/action'
 
 
-const Cottonsaree = () => {
+const Kurtas = () => {
 
-  const [data, setData] = useState(WomensCardsData.SareesProductItems);
+  const [data, setData] = useState(MensCardsData.TshirtProductItems);
 
   const dispatch = useDispatch();
 
@@ -26,7 +25,7 @@ const Cottonsaree = () => {
     <>
       <Header />
       <div className='container mt-3'>
-        <h2 className='text-center'>Sarees Collection</h2>
+        <h2 className='text-center'>MensWears Shirt Collections</h2>
 
         <div className='row d-flex justify-content-center align-items-center '>
           {
@@ -60,4 +59,4 @@ const Cottonsaree = () => {
   )
 }
 
-export default  Cottonsaree
+export default Kurtas
