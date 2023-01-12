@@ -17,6 +17,10 @@ import Kurtas from "./components/Kurtas"
 import Plazzo from "./components/Plazzo"
 import Mshirt from "./components/Mshirt"
 import Mtshirt from "./components/Mtshirt"
+import Mjeans from "./components/Mjeans"
+import Mformalpants from "./components/Mformalpants"
+
+
 
 
 function App() {
@@ -37,6 +41,8 @@ function App() {
         <Route path="plazzo" element={<Plazzo/>}/>
         <Route path="mshirt" element={<Mshirt/>}/>
         <Route path="mtshirt" element={<Mtshirt/>}/>
+        <Route path="mjeans" element={<Mjeans/>}/>
+        <Route path="mformalpants" element={<Mformalpants/>}/>
         <Route path="/cart/:key" element={<Cartdetails/>}/>
         <Route path="header" element={<Header/>}/>
       </Routes>

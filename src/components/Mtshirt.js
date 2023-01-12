@@ -9,7 +9,7 @@ import { useDispatch } from 'react-redux';
 import {ADD} from '../redux/actions/action'
 
 
-const Kurtas = () => {
+const Mtshirt = () => {
 
   const [data, setData] = useState(MensCardsData.TshirtProductItems);
 
@@ -58,5 +58,4 @@ const Kurtas = () => {
     </>
   )
 }
-
-export default Kurtas
+export default Mtshirt

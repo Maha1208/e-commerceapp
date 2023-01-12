@@ -9,9 +9,9 @@ import { useDispatch } from 'react-redux';
 import {ADD} from '../redux/actions/action'
 
 
-const Mshirt = () => {
+const Mformalpants = () => {
 
-  const [data, setData] = useState(MensCardsData.ShirtProductItems);
+  const [data, setData] = useState(MensCardsData.MenFormalPantProductItems);
 
   const dispatch = useDispatch();
 
@@ -25,7 +25,7 @@ const Mshirt = () => {
     <>
       <Header />
       <div className='container mt-3'>
-        <h2 className='text-center'>MensWears Shirt Collections</h2>
+        <h2 className='text-center'>MensWears Formal Pants Collections</h2>
 
         <div className='row d-flex justify-content-center align-items-center '>
           {
@@ -59,4 +59,4 @@ const Mshirt = () => {
   )
 }
 
-export default Mshirt
+export default Mformalpants
