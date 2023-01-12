@@ -1,5 +1,6 @@
 body {
-background-color: rgb(157, 247, 247);
+background-image:url("/Images/bg/bg2.jpg");
+background-size: cover;
 }
 
 input[type=text],
@@ -31,6 +32,7 @@ h1{
 }
 
 #cancel{
+  text-Decoration: None;
   background-color: red;
   text-decoration: none;
 }
@@ -43,7 +45,7 @@ h1{
   text-decoration-color: aliceblue;
   float: right;
   padding: 1px 10px 3px 10px;
-  background-color: hsl(215, 72%, 48%);
+  /* background-color: hsl(215, 72%, 48%); */
 }
 
 #form {
@@ -53,5 +55,5 @@ h1{
   width: 400px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/Images/Glass.png");
+  background-image: url("/Images/bg/pink.jpg");
 }
