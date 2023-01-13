@@ -2,6 +2,8 @@ import React, { Component, createRef } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Header from './Header';
+
 
 export default class SignUp extends Component {
 
@@ -36,6 +38,7 @@ export default class SignUp extends Component {
   render() {
     return (
       <div>
+        <Header/>
         <link rel='stylesheet' href='CSS/SignUp.css'></link>
         <div className="container">
           <form id='form' onSubmit={this.submitdata} ref={ref => this.forms = ref} >

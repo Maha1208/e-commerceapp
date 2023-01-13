@@ -4,6 +4,8 @@ import React, { Component, createRef } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Home from './Home';
+import Header from './Header';
+
 
 export default class SignIn extends Component {
 
@@ -20,7 +22,7 @@ export default class SignIn extends Component {
                 if (value.data.length > 0) {
                     sessionStorage.setItem("email", value.data[0].email);
                     toast.success("Login Successfull!");
-                    // window.history.back()
+                    window.history.back()
                 }
                 else {
                     toast.info('Account not exist please enter valid credentials or SignUp');
@@ -34,6 +36,7 @@ export default class SignIn extends Component {
     render() {
         return (
             <div>
+                <Header/>
                 <link rel='stylesheet' href='CSS/Login.css'></link>
                 <form id='form' ref={ref => this.forms = ref} onSubmit={this.onformsubmit} >
                 <h1>Login</h1>
@@ -50,7 +53,7 @@ export default class SignIn extends Component {
                     </div>
                     <div className="container">
                         <button id="cancel" type="button" className="cancelbtn"><a href="/">Cancel</a></button>
-                        <span className="SignUp"><a href="SignUp">SignUp</a></span>
+                        {/* <span className="SignUp"><a href="SignUp">SignUp</a></span> */}
                     </div>
                 </form>
                 <ToastContainer
