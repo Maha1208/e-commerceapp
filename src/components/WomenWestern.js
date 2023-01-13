@@ -24,13 +24,13 @@ export default function WomenWestern() {
                 </div>
 
                 <div className="box">
-                    <a style={{ textDecoration: "none" }} href=" ">
+                    <a style={{ textDecoration: "none" }} href="Wjumpsuits ">
                         <img src="/Images/Wjumpsuits.jpg" alt="Women jumpsuits" />
                         <div className="overlay">Jumpsuits</div></a>
                 </div>
 
                 <div className="box">
-                    <a style={{ textDecoration: "none" }} href=" ">
+                    <a style={{ textDecoration: "none" }} href="Wjeans ">
                         <img src="/Images/Wjean.jpg" alt="Women jeans" />
                         <div className="overlay">Jeans ang Jeggings</div></a>
                 </div>

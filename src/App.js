@@ -24,6 +24,9 @@ import Gowns from "./components/Gowns"
 import Nightwear from "./components/Nightwear"
 import Wtops from "./components/Wtops"
 import Wtshirt from "./components/Wtshirt"
+import Wjeans from "./components/Wjeans"
+import Wjumpsuits from "./components/Wjumpsuits"
+
 
 function App() {
   return (
@@ -51,6 +54,9 @@ function App() {
         <Route path="nightwear" element={<Nightwear/>}/>
         <Route path="wtops" element={<Wtops/>}/>
         <Route path="wtshirt" element={<Wtshirt/>}/>
+        <Route path="wjumpsuits" element={<Wjumpsuits/>}/>
+        <Route path="wjeans" element={<Wjeans/>}/>
+
 
         <Route path="/cart/:key" element={<Cartdetails/>}/>
         <Route path="/cart" element={<Cartdetails/>}/>
