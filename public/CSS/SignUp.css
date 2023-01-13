@@ -17,6 +17,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("/Images/bg/bg2.jpg");
+    text-decoration: none;
+
 }
 
 .box{
@@ -49,7 +51,7 @@ input:focus {
     box-shadow: 0 0 10px #719ECE;
  }
 
- input:valid{ 
+ input:required:focus:valid{ 
     outline: none !important;
     border-color: hsl(81, 77%, 47%);
     box-shadow: 0 0 10px #719ECE;

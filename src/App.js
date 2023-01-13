@@ -21,8 +21,9 @@ import Mformalpants from "./components/Mformalpants"
 import Girlset from "./components/Girlset"
 import Boyset from "./components/Boyset"
 import Gowns from "./components/Gowns"
-import Goback from "./components/Goback"
 import Nightwear from "./components/Nightwear"
+import Wtops from "./components/Wtops"
+import Wtshirt from "./components/Wtshirt"
 
 function App() {
   return (
@@ -46,13 +47,14 @@ function App() {
         <Route path="mformalpants" element={<Mformalpants/>}/>
         <Route path="girlset" element={<Girlset/>}/>
         <Route path="boyset" element={<Boyset/>}/>
-        <Route path="gowns" element={<Gowns/>}/>
+        <Route path="gowns" element={<Gowns/>}/>Wtshirt
         <Route path="nightwear" element={<Nightwear/>}/>
+        <Route path="wtops" element={<Wtops/>}/>
+        <Route path="wtshirt" element={<Wtshirt/>}/>
+
         <Route path="/cart/:key" element={<Cartdetails/>}/>
         <Route path="/cart" element={<Cartdetails/>}/>
-        <Route path="Goback" element={<Goback/>}/>
         <Route path="header" element={<Header/>}/>
-
       </Routes>
     </div>
   )

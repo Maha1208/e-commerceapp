@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { DLT, ADD, REMOVE } from '../redux/actions/action';
 import Header from './Header';
-import Goback from './Goback'
 
 const Cartdetails = () => {
 
@@ -93,9 +92,7 @@ const Cartdetails = () => {
               })
             }
           </div>
-        </section>
-        <button className='Backbutton' onClick={Goback}>Go Back</button>
-      
+        </section>      
       </div>
     </>
   )

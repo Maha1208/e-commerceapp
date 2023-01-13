@@ -12,13 +12,13 @@ export default function WomenWestern() {
 
             <div className="container">
                 <div className="box">
-                    <a style={{ textDecoration: "none" }} href=" ">
+                    <a style={{ textDecoration: "none" }} href="Wtops">
                         <img src="/Images/Wtops.jpg" alt="Women tops" />
                         <div className="overlay">Western Tops & Tunics</div></a>
                 </div>
 
                 <div className="box">
-                    <a style={{ textDecoration: "none" }} href=" ">
+                    <a style={{ textDecoration: "none" }} href="Wtshirt">
                         <img src="/Images/Wtshirt.png" alt="Women t-shirt" />
                         <div className="overlay">T-shirt</div></a>
                 </div>

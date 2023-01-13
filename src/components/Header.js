@@ -8,8 +8,12 @@ import { Table } from '@mui/material';
 import { useDispatch,useSelector } from 'react-redux';
 import {DLT} from '../redux/actions/action';
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 const Header = () => {
+    const history=useNavigate();
+
 
     const[price,setPrice]=useState(0);
 
@@ -52,7 +56,7 @@ const Header = () => {
                 <NavLink to="/" className="text-decoration-none text-light">Home</NavLink>
                     <Nav className="me-auto">
                         <NavLink to="/SignUp" className="text-decoration-none text-light mx-3">Register</NavLink>
-                        <NavLink to="/cart" className="text-decoration-none text-light mx-3">Go To Cart</NavLink>
+                        <NavLink onClick={() => (history(-1))} className="text-decoration-none text-light mx-3">Go Back</NavLink>
                     </Nav>
 
                     <Badge badgeContent={getdata.length} color="primary" //cart icon increment

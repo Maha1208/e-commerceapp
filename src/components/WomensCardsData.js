@@ -252,6 +252,130 @@ const WomensCardsData ={
             rating:"4.0",
             qnty:0
         }
+    ],
+    TopsProductItems:[
+        {
+            key:"1",
+            prname:"Western Top and Tunics",
+            image:"/Images/western/ts1.jpg ",
+            type:"Comprised of a premium, cotton blend and comfort.",
+            somedata:"300+ orders",
+            price:700,
+            rating:"4.5",
+            qnty:0
+        },
+        {
+            key:"2",
+            prname:"Western Top and Tunics",
+            image:"/Images/western/ts2.jpg ",
+            type:"Comprised of a premium, cotton blend and comfort.",
+            somedata:"500+ orders",
+            price:300,
+            rating:"4.7",
+            qnty:0
+        },
+        {
+            key:"3",
+            prname:"Western Top and Tunics",
+            image:"/Images/western/ts3.jpg ",
+            type:"Comprised of a premium, cotton blend and comfort.",
+            somedata:"100+ orders",
+            price:500,
+            rating:"4.6",
+            qnty:0
+        },
+        {
+            key:"4",
+            prname:"Western Top and Tunics",
+            image:"/Images/western/ts4.jpg ",
+            type:"Comprised of a premium, cotton blend and comfort.",
+            somedata:"450+ orders",
+            price:590,
+            rating:"4.8",
+            qnty:0
+        },
+        {
+            key:"5",
+            prname:"Western Top and Tunics",
+            image:"/Images/western/ts5.jpg ",
+            type:"Comprised of a premium, cotton blend and comfort.",
+            somedata:"450+ orders",
+            price:600,
+            rating:"4.0",
+            qnty:0
+        },
+        {
+            key:"6",
+            prname:"Western Top and Tunics",
+            image:"/Images/western/ts6.jpg ",
+            type:"Comprised of a premium, cotton blend and comfort.",
+            somedata:"200+ orders",
+            price:460,
+            rating:"4.5",
+            qnty:0
+        }
+    ],
+    WTshirtProductItems: [
+        {
+            key: "1",
+            prname: "Black cotton regular fit mens-Tshirt",
+            image: "/Images/western/wt1.jpg",
+            type: "Soft & Stretchable fabric material",
+            somedata: "100+ orders",
+            price: 499,
+            rating: "4.5",
+            qnty: 0
+        },
+        {
+            key: "2",
+            prname: "ColorBlack Half Sleeve T-shirt",
+            image: "/Images/western/wt2.jpg ",
+            type: "Soft & Stretchable fabric material",
+            somedata: "300+ orders",
+            price: 460,
+            rating: "4.1",
+            qnty: 0
+        },
+        {
+            key: "3",
+            prname: "Half Sleeve Round Neck Casual T-shirt",
+            image: "/Images/western/wt3.jpeg",
+            type: "Soft & Stretchable fabric material",
+            somedata: "250+ orders",
+            price: 740,
+            rating: "3.7",
+            qnty: 0
+        },
+        {
+            key: "4",
+            prname: "V-neck Full Sleeve T-shirt",
+            image: "/Images/western/wt4.jpg",
+            type: "polyester material",
+            somedata: "100+ orders",
+            price: 860,
+            rating: "3.9",
+            qnty: 0
+        },
+        {
+            key: "5",
+            prname: "Plain Blue color T-shirt",
+            image: "/Images/western/wt5.jpg",
+            type: "polyester material ",
+            somedata: "700+ orders",
+            price: 900,
+            rating: "4.9",
+            qnty: 0
+        },
+        {
+            key: "6",
+            prname: "Red Color T-shirt",
+            image: "/Images/western/wt6.jpeg",
+            type: "polyester material.",
+            somedata: "600+ orders",
+            price: 790,
+            rating: "4.5",
+            qnty: 0
+        }
     ]
 };
  export default WomensCardsData;
