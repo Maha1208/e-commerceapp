@@ -7,7 +7,7 @@ export default function MenWears() {
         <div>
             <link rel='stylesheet' href='CSS/MenWears.css'></link>
                 <Header/>            
-            <h1>Welcome to MenWears Shopping</h1>
+            <h1><b>Welcome to MenWears Shopping</b></h1>
 
             <div className="container">
                 <div className="box">

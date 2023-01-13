@@ -1,3 +1,7 @@
+body{
+    background-image:url("/public/Images/bg/bbb.jpg");
+    background-size: cover;
+    }
 .card_style{
     cursor: pointer;
     transition: .3s;
@@ -31,6 +35,10 @@
   
   .details{
       flex: .5;
+      font-size: 20px;
+      color: white;
+
+      
   };
   
   @media (max-width:772px){

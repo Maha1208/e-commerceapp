@@ -1,6 +1,12 @@
 body{
-    background-color: aqua;
-    }
+  background-image:url("/Images/bg/bgg1.jpg");
+  background-size: cover; 
+   }
+
+   h1{
+    text-align: center;
+    color:rgb(15, 6, 15)
+  }
     
     .container{
     width:100%;
@@ -45,10 +51,10 @@ body{
       border-radius:10px;
       position:static;
       bottom: 0;
-      background: rgba(29, 182, 162, 0.5); /* Black see-through */
-      width: 90%;
-      color: rgb(4, 4, 4);
-      font-size: 20px;
+      background: rgba(52, 129, 230, 0.5); /* Black see-through */
+      width: 98%;
+      color: rgb(242, 234, 234);
+      font-size: 25px;
       padding: 10px;
       text-align:center;
       

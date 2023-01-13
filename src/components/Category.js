@@ -7,7 +7,7 @@ function Category(){
         <div>
             <link rel='stylesheet' href='CSS/Category.css'></link>
              <Header/>
-            <h1>Welcome to Category</h1>
+            <h1><b>Welcome to Category</b></h1>
 
             <div className="container">
                 <div className="box">

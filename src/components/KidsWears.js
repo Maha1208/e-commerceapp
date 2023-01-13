@@ -8,8 +8,7 @@ export default function kidsWears() {
             <link rel='stylesheet' href='CSS/KidsWears.css'></link>
             <Header/>  
             
-
-            <h1>Welcome to Kids Wear Shopping</h1>
+            <h1><b>Welcome to Kids Wear Shopping</b></h1>
 
             <div className="container">
                 <div className="box">

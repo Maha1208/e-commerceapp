@@ -1,14 +1,12 @@
 import React from "react";
-
+import Header from './Header'
 export default function WomenWestern() {
     return (
         <div>
             <link rel='stylesheet' href='CSS/WomenWestern.css'></link>
-            <div className="topnav" >
-                <a style={{ textDecoration: "none" }} className="log" href="/"><b>Home</b></a>
-            </div>
+            <Header/> 
 
-            <h1>Welcome to Western Wears</h1>
+            <h1><b>Welcome to Women Western Wears</b></h1>
 
             <div className="container">
                 <div className="box">

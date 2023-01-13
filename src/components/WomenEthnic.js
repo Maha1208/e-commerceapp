@@ -8,7 +8,7 @@ const WomenEthnic = () => {
       <link rel='stylesheet' href='CSS/WomenEthnic.css'></link>
          <Header/>  
 
-      <h1>Welcome to Women Ethic Wears</h1>
+      <h1><b>Welcome to Women Ethic Wears Shopping</b></h1>
 
       <div className="container">
         <div className="box">

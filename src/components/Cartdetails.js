@@ -69,10 +69,10 @@ const Cartdetails = () => {
                       <Table>
                         <tr>
                           <td>
-                            <p> <strong>Product</strong>  :{ele.prname} </p>
-                            <p> <strong>Price</strong>  : ₹{ele.price}</p>
-                            <p> <strong>Type</strong>  :{ele.type}</p>
-                            <p> <strong>Total</strong>  :₹{ele.price * ele.qnty}</p>
+                            <p> <strong>Product</strong>  :<b>{ele.prname}</b> </p>
+                            <p> <strong>Price</strong>  : <b>₹{ele.price}</b></p>
+                            <p> <strong>Type</strong>  :<b>{ele.type}</b></p>
+                            <p> <strong>Total</strong>  :<b>₹{ele.price * ele.qnty}</b></p>
                             <div className='mt-5 d-flex justify-content-between align-items-center' style={{ width: 100, cursor: "pointer", background: "#ddd", color: "#111" }}>
                               <span style={{ fontSize: 24 }} onClick={ele.qnty <= 1 ? () => dlt(ele.key) : () => remove(ele)}>-</span>
                               <span style={{ fontSize: 22 }}>{ele.qnty}</span>
