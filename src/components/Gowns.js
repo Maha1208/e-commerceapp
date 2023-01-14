@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import KidsCardsData from './KidsCardsData';
+import CardsData from './CardsData';
 import { useState } from 'react'
 import "./style.css";
 import { useDispatch } from 'react-redux';
@@ -11,7 +11,7 @@ import {ADD} from '../redux/actions/action'
 
 const Girlset = () => {
 
-  const [data, setData] = useState(KidsCardsData.GownsProductItems);
+  const [data, setData] = useState(CardsData.GownsProductItems);
 
   const dispatch = useDispatch();
 

@@ -3,7 +3,7 @@ import Header from './Header';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 // import SareeCardsData from './SareeCardsData';
-import WomensCardsData from './WomensCardsData';
+import CardsData from './CardsData';
 import { useState } from 'react'
 import "./style.css";
 import { useDispatch } from 'react-redux';
@@ -12,13 +12,12 @@ import {ADD} from '../redux/actions/action'
 
 const Cottonsaree = () => {
 
-  const [data, setData] = useState(WomensCardsData.SareesProductItems);
+  const [data, setData] = useState(CardsData.SareesProductItems);
 
   const dispatch = useDispatch();
 
   const send= (e) => {
-    dispatch(ADD(e));
-    // setData(ADD);  // problem remove this line
+    dispatch(ADD(e));  
   }
 
 

@@ -3,7 +3,7 @@ import Header from './Header'
 export default function WomenWestern() {
     return (
         <div>
-            <link rel='stylesheet' href='CSS/WomenWestern.css'></link>
+            <link rel='stylesheet' href='CSS/Category.css'></link>
             <Header/> 
 
             <h1><b>Welcome to Women Western Wears</b></h1>

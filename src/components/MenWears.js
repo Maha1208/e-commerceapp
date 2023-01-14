@@ -5,7 +5,7 @@ import "./style.css";
 export default function MenWears() {
     return (
         <div>
-            <link rel='stylesheet' href='CSS/MenWears.css'></link>
+            <link rel='stylesheet' href='CSS/Category.css'></link>
                 <Header/>            
             <h1><b>Welcome to MenWears Shopping</b></h1>
 

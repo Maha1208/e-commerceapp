@@ -5,7 +5,7 @@ import "./style.css";
 export default function kidsWears() {
     return (
         <div>
-            <link rel='stylesheet' href='CSS/KidsWears.css'></link>
+            <link rel='stylesheet' href='CSS/Category.css'></link>
             <Header/>  
             
             <h1><b>Welcome to Kids Wear Shopping</b></h1>

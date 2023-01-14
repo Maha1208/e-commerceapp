@@ -5,7 +5,7 @@ import "./style.css";
 const WomenEthnic = () => {
   return (
     <div>
-      <link rel='stylesheet' href='CSS/WomenEthnic.css'></link>
+      <link rel='stylesheet' href='CSS/Category.css'></link>
          <Header/>  
 
       <h1><b>Welcome to Women Ethic Wears Shopping</b></h1>

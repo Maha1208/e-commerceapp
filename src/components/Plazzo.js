@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import WomensCardsData from './WomensCardsData';
+import CardsData from './CardsData';
 import { useState } from 'react'
 import "./style.css";
 import { useDispatch } from 'react-redux';
@@ -11,7 +11,7 @@ import {ADD} from '../redux/actions/action'
 
 const Cottonsaree = () => {
 
-  const [data, setData] = useState(WomensCardsData.PlazooProductItems);
+  const [data, setData] = useState(CardsData.PlazooProductItems);
 
   const dispatch = useDispatch();
 
@@ -31,7 +31,6 @@ const Cottonsaree = () => {
           {
             data.map((element,key) => {
               return (
-                
                   <Card key={key} style={{ width: '20rem',border:"black" }} className="mx-3 mt-3 card_style">
                     <Card.Img variant="top" src={element.image} style={{height:"16rem"}} className="mt-3" />
                     <Card.Body>
