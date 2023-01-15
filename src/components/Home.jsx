@@ -1,41 +1,67 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Footer from './Footer'
+import Header from './Header'
 
-export default class Home extends Component {
-    render() {
-        return (
-            <div>
-                <link rel='stylesheet' href='CSS/Home.css'></link>
-
-                <meta name='viewport' content='width=device-width,initial-scale=1, shrink-to-fit=no' />
-
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-                    integrity="anonymous"
-                    crossOrigin="anonymous" />
-
-                <nav>
-                    <ul className="nav-flex-row">
-                        <li className="nav-item">
-                            <a href="SignUp">SignUp</a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="SignIn">Login</a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="Category">Category</a>
-                        </li>
-
-                        <li className="nav-item">
-                            <a href="AdminHome">Admin Home</a>
-                        </li>
-
-                    </ul>
-                </nav>
-                <section className="section-intro">
-                    <header>
-                        <h1> Welcome To Online Dress Shopping</h1>
-                    </header>
-                </section>
+export default function Home() {
+    return (
+        <>
+            <Header />
+            <link rel='stylesheet' href='CSS/Home.css'></link>
+            {/* <!-- main background image --> */}
+            <div class="main-background">
+                <a href="/Kurtas" class="shopnow-btn">Shop now</a>
             </div>
-        )
-    }
+
+            {/*products display */}
+            <div class="products-type">
+                <h1><b>Product Types</b></h1>
+                <div class="main-product">
+                    <div class="inner-product">
+                        <img src="Images/sarees/purple.jpeg" alt="Saree" />
+                        <a href="/Cottonsaree" id="shop-now">shop now</a>
+                    </div>
+
+                    <div class="inner-product">
+                        <img src="Images/KidsWear/g3.jpg" alt=" " />
+                        <a href="Girlset" id="shop-now">shop now</a>
+                    </div>
+
+                    <div class="inner-product">
+                        <img src="Images/MensWears/S6.jpg" alt=" " />
+                        <a href="Mtshirt" id="shop-now">shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            {/* <!-- 2nd banner start --> */}
+            <div class="inner-banner">
+                <a href="/Gowns" id="shope-now">shop now</a>
+                <img src="Images/Banner/banner6.jpg" alt=" " />
+
+            </div>
+            {/* <!-- 2nd banner start ended --> */}
+
+            <div class="products-type">
+                <h1><b>New Arrivals</b></h1>
+                <div class="main-product">
+                    <div class="inner-product">
+                        <img src="Images/Lehenga/babypink.jpg" alt="Lehenga" />
+                        <a href="/Lehenga" id="shop-now">shop now</a>
+                    </div>
+
+                    <div class="inner-product">
+                        <img src="Images/western/wj1.jpg" alt=" " />
+                        <a href="/Wjumpsuits" id="shop-now">shop now</a>
+                    </div>
+
+                    <div class="inner-product">
+                        <img src="Images/KidsWear/b1.jpg" alt=" " />
+                        <a href="Mtshirt" id="shop-now">shop now</a>
+                    </div>
+                </div>
+            </div>
+            <Footer />
+        </>
+    )
 }
+

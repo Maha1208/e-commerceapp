@@ -26,6 +26,7 @@ import Wtops from "./components/Wtops"
 import Wtshirt from "./components/Wtshirt"
 import Wjeans from "./components/Wjeans"
 import Wjumpsuits from "./components/Wjumpsuits"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -61,6 +62,8 @@ function App() {
         <Route path="/cart/:key" element={<Cartdetails/>}/>
         <Route path="/cart" element={<Cartdetails/>}/>
         <Route path="header" element={<Header/>}/>
+        <Route path="footer" element={<Footer/>}/>
+
       </Routes>
     </div>
   )
