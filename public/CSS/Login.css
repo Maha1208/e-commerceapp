@@ -57,7 +57,7 @@ h1{
   background-size: cover;
   background-image: url("/Images/bg/pink.jpg");
 }
-input:focus { 
+input:required:focus:invalid { 
   outline: none !important;
   border-color: hsl(5, 74%, 55%);
   box-shadow: 0 0 10px #719ECE;

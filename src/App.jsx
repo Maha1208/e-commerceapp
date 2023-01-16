@@ -57,8 +57,6 @@ function App() {
         <Route path="wtshirt" element={<Wtshirt/>}/>
         <Route path="wjumpsuits" element={<Wjumpsuits/>}/>
         <Route path="wjeans" element={<Wjeans/>}/>
-
-
         <Route path="/cart/:key" element={<Cartdetails/>}/>
         <Route path="/cart" element={<Cartdetails/>}/>
         <Route path="header" element={<Header/>}/>

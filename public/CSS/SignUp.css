@@ -40,20 +40,32 @@ margin-left: 120px;
 margin-bottom: 60px;
 }
 
-#Reg:hover
+#Reg:hover:enabled
 {
     background: #9fde69;
 }
 
-input:focus { 
+
+input:focus:invalid { 
     outline: none !important;
     border-color: hsl(5, 74%, 55%);
     box-shadow: 0 0 10px #719ECE;
- }
-
- input:required:focus:valid{ 
+  }
+  
+  input:focus:valid{ 
     outline: none !important;
     border-color: hsl(81, 77%, 47%);
     box-shadow: 0 0 10px #719ECE;
     accent-color: gold;
+  }
+
+ span{
+    font-size: 12px;
+    padding: 2px;
+    color:rgb(26, 45, 170);
+    display: none;
+ }
+
+ input:invalid ~ span{
+    display:block;
  }
