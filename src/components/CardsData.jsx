@@ -2,6 +2,8 @@ const CardsData = {
     SareesProductItems: [
         {
             key: "1",
+            category: "womenswear",
+            subcategory:"sarees",
             prname: "Chiffon pink and flower printed saree ",
             image: "/Images/sarees/chiffonsaree.jpg ",
             type: "material(chiffon)",
@@ -12,6 +14,8 @@ const CardsData = {
         },
         {
             key: "2",
+            category: "womenswear",
+            subcategory:"sarees",
             prname: "Purple Saree with new Designs",
             image: "/Images/sarees/purple.jpeg ",
             type: "stunning and new Designs for bright Look",
@@ -23,6 +27,8 @@ const CardsData = {
         {
             key: "3",
             prname: "Cotton sarees",
+            category: "womenswear",
+            subcategory:"sarees",
             image: "/Images/sarees/orange.jpeg",
             type: "Orange color saree for every occasions",
             somedata: "250+ orders",
@@ -32,44 +38,46 @@ const CardsData = {
         },
         {
             key: "4",
+            category: "womenswear",
+            subcategory:"sarees",
             prname: "Embroidery Design Cotton saree",
             image: "./Images/sarees/cottonsaree.jpg",
             type: "Poly cotton printed",
-            delimg: "./Images/sarees/cottonsaree.jpg",
             somedata: "100+ orders",
             price: 860,
             rating: "3.9",
-            arrimg: "./Images/sarees/cottonsaree.jpg",
             qnty: 0
         },
         {
             key: "5",
+            category: "womenswear",
+            subcategory:"sarees",
             prname: "Green color silk saree",
             image: "./Images/sarees/green.jpg",
             type: "momGreen color silk saree with blouse ",
-            delimg: "./Images/sarees/green.jpg",
             somedata: "700+ orders",
             price: 2500,
             rating: "4.9",
-            arrimg: "./Images/sarees/green.jpg",
             qnty: 0
         },
         {
             key: "06",
+            category: "womenswear",
+            subcategory:"sarees",
             prname: "Red color Bridal Saree",
             image: "./Images/sarees/red.jpeg ",
             type: "Stunning red saree with bright look",
-            delimg: "./Images/sarees/red.jpeg",
             somedata: "600+ orders",
             price: 2090,
             rating: "4.5",
-            arrimg: "./Images/sarees/red.jpeg",
             qnty: 0
         }
     ],
     PlazooProductItems: [
         {
             key: "1",
+            category: "womenswear",
+            subcategory:"plazoo",
             prname: "Women Western Ruffle plazzo",
             image: "/Images/plazzo/wrplazzo.jpg ",
             type: "Soft & Stretchable fabric material",
@@ -80,6 +88,8 @@ const CardsData = {
         },
         {
             key: "2",
+            category: "womenswear",
+            subcategory:"plazoo",
             prname: "Soft & Stretchable Plazzo Pants(pack of 3)",
             image: "/Images/plazzo/3plazzo.jpg ",
             type: "Soft & Stretchable fabric material",
@@ -90,6 +100,8 @@ const CardsData = {
         },
         {
             key: "3",
+            category: "womenswear",
+            subcategory:"plazoo",
             prname: "Soft & Stretchable Black Plazzo ",
             image: "/Images/plazzo/bplazzo.jpg",
             type: "Soft & Stretchable fabric material",
@@ -100,6 +112,8 @@ const CardsData = {
         },
         {
             key: "4",
+            category: "womenswear",
+            subcategory:"plazoo",
             prname: "Transparent Black color Jeans",
             image: "/Images/plazzo/bjean.jpeg",
             type: "cotton fibres using a twill weave.",
@@ -110,6 +124,8 @@ const CardsData = {
         },
         {
             key: "5",
+            category: "womenswear",
+            subcategory:"plazoo",
             prname: "Transparent ripped Jean",
             image: "/Images/plazzo/tjeans.png",
             type: "cotton fibres using a twill weave. ",
@@ -120,6 +136,8 @@ const CardsData = {
         },
         {
             key: "6",
+            category: "womenswear",
+            subcategory:"plazoo",
             prname: "Ripped blue color Jeans",
             image: "/Images/plazzo/rjeans.jpg ",
             type: "cotton fibres using a twill weave.",
@@ -132,6 +150,8 @@ const CardsData = {
     LehengaProductItems: [
         {
             key: "1",
+            category: "womenswear",
+            subcategory:"lehenga",
             prname: "Red Bridal Lehenga with handmade embroid",
             image: "/Images/Lehenga/redlehenga.png ",
             type: "georgette fabric material",
@@ -142,6 +162,8 @@ const CardsData = {
         },
         {
             key: "2",
+            category: "womenswear",
+            subcategory:"lehenga",
             prname: "Purple Color Lehenga with Golden border",
             image: "/Images/Lehenga/purplelehenga.png ",
             type: "stunning and new Designs for bridal lehenga",
@@ -152,6 +174,8 @@ const CardsData = {
         },
         {
             key: "3",
+            category: "womenswear",
+            subcategory:"lehenga",
             prname: "Pink Lehenga Choli Designs",
             image: "/Images/Lehenga/pinkLehenga.jpeg",
             type: "Pink Lehenga Choli Designs with latest designs",
@@ -162,6 +186,8 @@ const CardsData = {
         },
         {
             key: "4",
+            category: "womenswear",
+            subcategory:"lehenga",
             prname: "Blue Lehenga With Orange Border",
             image: "./Images/Lehenga/bluelehenga.png",
             type: "Blue Lehenga Choli Designs with orange border designs",
@@ -172,6 +198,8 @@ const CardsData = {
         },
         {
             key: "5",
+            category: "womenswear",
+            subcategory:"lehenga",
             prname: "Semi-Stitched Chiffon Fish Cut Lehenga Choli",
             image: "./Images/Lehenga/fishcut.jpg",
             type: "Fish cut Lehenga Choli Designs with latest designs ",
@@ -182,6 +210,8 @@ const CardsData = {
         },
         {
             key: "6",
+            category: "womenswear",
+            subcategory:"lehenga",
             prname: "Baby pink part wear lehenga",
             image: "./Images/Lehenga/babypink.jpg ",
             type: " Baby Pink Lehenga Choli Designs with latest designs",
@@ -194,6 +224,8 @@ const CardsData = {
     KurtasProductItems: [
         {
             key: "1",
+            category: "womenswear",
+            subcategory:"kurtas",
             prname: "Red Color Kurta",
             image: "/Images/kurtas/kurtas1.jpg ",
             type: "georgette fabric material",
@@ -204,6 +236,8 @@ const CardsData = {
         },
         {
             key: "2",
+            category: "womenswear",
+            subcategory:"kurtas",
             prname: "Blue color casual kurtas",
             image: "/Images/kurtas/kurtas2.jpg ",
             type: "cotton fabric material",
@@ -214,6 +248,8 @@ const CardsData = {
         },
         {
             key: "3",
+            category: "womenswear",
+            subcategory:"kurtas",
             prname: "Straight kurtas with pants",
             image: "/Images/kurtas/kurtas3.jpg",
             type: "cotton fabric material",
@@ -224,6 +260,8 @@ const CardsData = {
         },
         {
             key: "4",
+            category: "womenswear",
+            subcategory:"kurtas",
             prname: "Yellow Color Kurta with plain look",
             image: "/Images/kurtas/kurtas4.jpg",
             type: "georgette fabric material",
@@ -234,6 +272,8 @@ const CardsData = {
         },
         {
             key: "5",
+            category: "womenswear",
+            subcategory:"kurtas",
             prname: "Pear-White Kurta",
             image: "/Images/kurtas/kurtas5.jpg",
             type: "cotton fabric material ",
@@ -244,6 +284,8 @@ const CardsData = {
         },
         {
             key: "6",
+            category: "womenswear",
+            subcategory:"kurtas",
             prname: "Black color Kurta",
             image: "/Images/kurtas/kurtas6.jpg ",
             type: "georgette fabric material",
@@ -256,6 +298,8 @@ const CardsData = {
     TopsProductItems: [
         {
             key: "1",
+            subcategory:"tops",
+            category: "womensethnic",
             prname: "Western Top and Tunics",
             image: "/Images/western/ts1.jpg ",
             type: "Comprised of a premium, cotton blend and comfort.",
@@ -266,6 +310,8 @@ const CardsData = {
         },
         {
             key: "2",
+            category: "womensethnic",
+            subcategory:"tops",
             prname: "Western Top and Tunics",
             image: "/Images/western/ts2.jpg ",
             type: "Comprised of a premium, cotton blend and comfort.",
@@ -276,6 +322,8 @@ const CardsData = {
         },
         {
             key: "3",
+            category: "womensethnic",
+            subcategory:"tops",
             prname: "Western Top and Tunics",
             image: "/Images/western/ts3.jpg ",
             type: "Comprised of a premium, cotton blend and comfort.",
@@ -286,6 +334,8 @@ const CardsData = {
         },
         {
             key: "4",
+            category: "womensethnic",
+            subcategory:"tops",
             prname: "Western Top and Tunics",
             image: "/Images/western/ts4.jpg ",
             type: "Comprised of a premium, cotton blend and comfort.",
@@ -296,6 +346,8 @@ const CardsData = {
         },
         {
             key: "5",
+            category: "womensethnic",
+            subcategory:"tops",
             prname: "Western Top and Tunics",
             image: "/Images/western/ts5.jpg ",
             type: "Comprised of a premium, cotton blend and comfort.",
@@ -306,6 +358,8 @@ const CardsData = {
         },
         {
             key: "6",
+            category: "womensethnic",
+            subcategory:"tops",
             prname: "Western Top and Tunics",
             image: "/Images/western/ts6.jpg ",
             type: "Comprised of a premium, cotton blend and comfort.",
@@ -318,6 +372,8 @@ const CardsData = {
     WTshirtProductItems: [
         {
             key: "1",
+            category: "womensethnic",
+            subcategory:"wtshirt",
             prname: "Black cotton regular fit mens-Tshirt",
             image: "/Images/western/wt1.jpg",
             type: "Soft & Stretchable fabric material",
@@ -328,6 +384,8 @@ const CardsData = {
         },
         {
             key: "2",
+            category: "womensethnic",
+            subcategory:"wtshirt",
             prname: "ColorBlack Half Sleeve T-shirt",
             image: "/Images/western/wt2.jpg ",
             type: "Soft & Stretchable fabric material",
@@ -338,6 +396,8 @@ const CardsData = {
         },
         {
             key: "3",
+            category: "womensethnic",
+            subcategory:"wtshirt",
             prname: "Half Sleeve Round Neck Casual T-shirt",
             image: "/Images/western/wt3.jpg",
             type: "Soft & Stretchable fabric material",
@@ -348,6 +408,8 @@ const CardsData = {
         },
         {
             key: "4",
+            category: "womensethnic",
+            subcategory:"wtshirt",
             prname: "V-neck Full Sleeve T-shirt",
             image: "/Images/western/wt4.jpg",
             type: "polyester material",
@@ -358,6 +420,8 @@ const CardsData = {
         },
         {
             key: "5",
+            category: "womensethnic",
+            subcategory:"wtshirt",
             prname: "Plain Blue color T-shirt",
             image: "/Images/western/wt5.jpg",
             type: "polyester material ",
@@ -368,6 +432,8 @@ const CardsData = {
         },
         {
             key: "6",
+            category: "womensethnic",
+            subcategory:"wtshirt",
             prname: "Red Color T-shirt",
             image: "/Images/western/wt6.jpg",
             type: "polyester material.",
@@ -380,6 +446,8 @@ const CardsData = {
     WomenJeansProductItems: [
         {
             key: "1",
+            category: "womensethnic",
+            subcategory:"wjeans",
             prname: "Ripped Jean blue color",
             image: "/Images/western/j1.jpg ",
             type: "Jeans Material: Denim, Cotton, Polyester",
@@ -390,6 +458,8 @@ const CardsData = {
         },
         {
             key: "2",
+            category: "womensethnic",
+            subcategory:"wjeans",
             prname: "Light blue Jean",
             image: "/Images/western/j2.jpg ",
             type: "Jeans Material: Denim, Cotton, Polyester",
@@ -400,6 +470,8 @@ const CardsData = {
         },
         {
             key: "3",
+            category: "womensethnic",
+            subcategory:"wjeans",
             prname: "Dark blue with white strip Jean",
             image: "/Images/western/j3.jpg",
             type: "Jeans Material: Denim, Cotton, Polyester",
@@ -410,6 +482,8 @@ const CardsData = {
         },
         {
             key: "4",
+            category: "womensethnic",
+            subcategory:"wjeans",
             prname: "Black color plain Jean",
             image: "/Images/western/j4.jpg",
             type: "Jeans Material: Denim, Cotton, Polyester",
@@ -420,6 +494,8 @@ const CardsData = {
         },
         {
             key: "5",
+            category: "womensethnic",
+            subcategory:"wjeans",
             prname: "Slim Fit Men's High Quality White Jeans",
             image: "/Images/western/j5.jpg",
             type: "Jeans Material: Denim, Cotton, Polyester",
@@ -430,6 +506,8 @@ const CardsData = {
         },
         {
             key: "6",
+            category: "womensethnic",
+            subcategory:"wjeans",
             prname: "Best Men's Jeans Blue color",
             image: "/Images/western/j6.jpg",
             type: "Jeans Material: Denim, Cotton, Polyester",
@@ -443,6 +521,8 @@ const CardsData = {
     WjumpsuitsProductItems: [
         {
             key: "1",
+            category: "womensethnic",
+            subcategory:"jumpsuits",
             prname: "Formal White Pant",
             image: "/Images/western/wj1.jpg ",
             type: "Comprised of a premium, cotton blend, and engineered for durability and comfort.",
@@ -453,6 +533,8 @@ const CardsData = {
         },
         {
             key: "2",
+            category: "womensethnic",
+            subcategory:"jumpsuits",
             prname: "Formal Black Color plain Pant",
             image: "/Images/western/wj2.jpg ",
             type: "Comprised of a premium, cotton blend, and engineered for durability and comfort.",
@@ -463,6 +545,8 @@ const CardsData = {
         },
         {
             key: "3",
+            category: "womensethnic",
+            subcategory:"jumpsuits",
             prname: "The Frederic Plaid Slim Fit Suit Pants",
             image: "/Images/western/wj5.jpg",
             type: "Comprised of a premium, cotton blend, and engineered for durability and comfort.",
@@ -473,6 +557,8 @@ const CardsData = {
         },
         {
             key: "4",
+            category: "womensethnic",
+            subcategory:"jumpsuits",
             prname: "Santorelli Luxury Flat Front",
             image: "/Images/western/wj6.jpg",
             type: "Comprised of a premium, cotton blend, and engineered for durability and comfort.",
@@ -483,6 +569,8 @@ const CardsData = {
         },
         {
             key: "5",
+            category: "womensethnic",
+            subcategory:"jumpsuits",
             prname: "Formal Pink Color Pant",
             image: "/Images/western/wj3.jpg",
             type: "Comprised of a premium, cotton blend, and engineered for durability and comfort.",
@@ -493,6 +581,8 @@ const CardsData = {
         },
         {
             key: "6",
+            category: "womensethnic",
+            subcategory:"jumpsuits",
             prname: "Formal Slim Fit Linen Pant",
             image: "/Images/western/wj4.jpg",
             type: "Comprised of a premium, cotton blend, and engineered for durability and comfort.",
@@ -505,6 +595,8 @@ const CardsData = {
     GirlProductItems:[
         {
             key:"1",
+            category: "kidswear",
+            subcategory:"girl",
             prname:"Kids Ethnic Wear ",
             image:"/Images/KidsWear/g1.jpg ",
             type:"Lycra with solid pattern and spread color",
@@ -515,6 +607,8 @@ const CardsData = {
         },
         {
             key:"2",
+            category: "kidswear",
+            subcategory:"girl",
             prname:"baby girl designed Kurta",
             image:"/Images/KidsWear/g2.jpg ",
             type:"Lycra with solid pattern and spread color",
@@ -525,6 +619,8 @@ const CardsData = {
         },
         {
             key:"3",
+            category: "kidswear",
+            subcategory:"girl",
             prname:"Toqruoise Green and Pumpkin Orange Hand-embroidered dress",
             image:"/Images/KidsWear/g3.jpg ",
             type:"Orange color saree for every occasions",
@@ -535,6 +631,8 @@ const CardsData = {
         },
         {
             key:"4",
+            category: "kidswear",
+            subcategory:"girl",
             prname:"Dark Red Formal shirt plain",
             image:"/Images/KidsWear/g4.jpg ",
             type:"Lycra with solid pattern and spread color",
@@ -545,6 +643,8 @@ const CardsData = {
         },
         {
             key:"5",
+            category: "kidswear",
+            subcategory:"girl",
             prname:"Children Floral Tops Overalls Suit Clothes Sets ",
             image:"/Images/KidsWear/g5.jpg ",
             type:"Lycra with solid pattern and spread color ",
@@ -555,6 +655,8 @@ const CardsData = {
         },
         {
             key:"06",
+            category: "kidswear",
+            subcategory:"girl",
             prname:"Torani Green Velvet Embroidered Kurta And Pant",
             image:"/Images/KidsWear/g6.jpg ",
             type:"Lycra with solid pattern and spread color",
@@ -567,6 +669,8 @@ const CardsData = {
     BoyProductItems: [
         {
             key: "1",
+            category: "kidswear",
+            subcategory:"boy",
             prname: "Stylish Navy Blue Coat with Waist Coat and Pant Set",
             image:"/Images/KidsWear/b1.jpg ",
             type: "This designer set can also be worn without coat for a classy look.",
@@ -577,6 +681,8 @@ const CardsData = {
         },
         {
             key: "2",
+            category: "kidswear",
+            subcategory:"boy",
             prname: "Teeny Tiny Traditions Colorful festive kurtas lehenga",
             image:"/Images/KidsWear/b1.jpg ",
             type: "This designer set can also be worn without coat for a  look",
@@ -587,6 +693,8 @@ const CardsData = {
         },
         {
             key: "3",
+            category: "kidswear",
+            subcategory:"boy",
             prname: "Boys Denim Clothes Set",
             image:"/Images/KidsWear/b3.jpg ",
             type: "Soft & Stretchable fabric material",
@@ -597,6 +705,8 @@ const CardsData = {
         },
         {
             key: "4",
+            category: "kidswear",
+            subcategory:"boy",
             prname: "white shirt with ripped jeans kids set",
             image:"/Images/KidsWear/b4.jpg ",
             type: " Soft & Stretchable fabric material",
@@ -607,6 +717,8 @@ const CardsData = {
         },
         {
             key: "5",
+            category: "kidswear",
+            subcategory:"boy",
             prname: "Wedding Tuxedo Formal Check Romper One Piece Outfit Suit",
             image:"/Images/KidsWear/b5.jpg ",
             type: "polyester material ",
@@ -617,6 +729,8 @@ const CardsData = {
         },
         {
             key: "6",
+            category: "kidswear",
+            subcategory:"boy",
             prname: "Kalki Boys White Dhoti Set With Angrakha Kurta",
             image:"/Images/KidsWear/b6.jpg ",
             type: "Cotton material.",
@@ -629,6 +743,8 @@ const CardsData = {
     GownsProductItems:[
         {
             key:"1",
+            category: "kidswear",
+            subcategory:"gowns",
             prname:"Girls Gowns Latest Gowns",
             image:"/Images/KidsWear/G1.jpg ",
             type: "polyester material ",
@@ -639,6 +755,8 @@ const CardsData = {
         },
         {
             key:"2",
+            category: "kidswear",
+            subcategory:"gowns",
             prname:"red kid party dress",
             image:"/Images/KidsWear/G2.jpg ",
             type: "polyester material ",
@@ -649,6 +767,8 @@ const CardsData = {
         },
         {
             key:"3",
+            category: "kidswear",
+            subcategory:"gowns",
             prname:"Party wear designer dress for girls kids",
             image:"/Images/KidsWear/G3.jpg ",
             type: "polyester material ",
@@ -659,6 +779,8 @@ const CardsData = {
         },
         {
             key:"4",
+            category: "kidswear",
+            subcategory:"gowns",
             prname:"Straps Flowers Bowknot Girls Party Dress",
             image:"/Images/KidsWear/G4.jpg ",
             type: "polyester material ",
@@ -669,6 +791,8 @@ const CardsData = {
         },
         {
             key:"5",
+            category: "kidswear",
+            subcategory:"gowns",
             prname:"Girls Pink Dress",
             image:"/Images/KidsWear/G5.jpg ",
             type: "polyester material ",
@@ -679,6 +803,8 @@ const CardsData = {
         },
         {
             key:"6",
+            category: "kidswear",
+            subcategory:"gowns",
             prname:"Yellow and light green lehenga set",
             image:"/Images/KidsWear/G6.jpg ",
             type: "polyester material ",
@@ -691,6 +817,8 @@ const CardsData = {
     NightwearProductItems:[
         {
             key:"1",
+            category: "kidswear",
+            subcategory:"nightwear",
             prname:"Girls Night Dress",
             image:"/Images/KidsWear/n1.jpg ",
             type:"Comprised of a premium, cotton blend and comfort.",
@@ -701,6 +829,8 @@ const CardsData = {
         },
         {
             key:"2",
+            category: "kidswear",
+            subcategory:"nightwear",
             prname:"Girls Night Dress",
             image:"/Images/KidsWear/n2.jpg ",
             type:"Comprised of a premium, cotton blend and comfort.",
@@ -711,6 +841,8 @@ const CardsData = {
         },
         {
             key:"3",
+            category: "kidswear",
+            subcategory:"nightwear",
             prname:"Girls Night Dress",
             image:"/Images/KidsWear/n3.jpg ",
             type:"Comprised of a premium, cotton blend and comfort.",
@@ -721,6 +853,8 @@ const CardsData = {
         },
         {
             key:"4",
+            category: "kidswear",
+            subcategory:"nightwear",
             prname:"Girls Night Dress",
             image:"/Images/KidsWear/n4.jpg ",
             type:"Comprised of a premium, cotton blend and comfort.",
@@ -731,6 +865,8 @@ const CardsData = {
         },
         {
             key:"5",
+            category: "kidswear",
+            subcategory:"nightwear",
             prname:"Boys Night Dress",
             image:"/Images/KidsWear/n5.jpg ",
             type:"Comprised of a premium, cotton blend and comfort.",
@@ -741,6 +877,8 @@ const CardsData = {
         },
         {
             key:"6",
+            category: "kidswear",
+            subcategory:"nightwear",
             prname:"Boys Night Dress",
             image:"/Images/KidsWear/n6.jpg ",
             type:"Comprised of a premium, cotton blend and comfort.",
@@ -754,6 +892,8 @@ const CardsData = {
     MenFormalPantProductItems:[
         {
             key:"1",
+            category: "menswear",
+            subcategory:"formal",
             prname:"Formal White Pant",
             image:"/Images/MensWears/F1.jpg ",
             type:"Comprised of a premium, cotton blend, and engineered for durability and comfort.",
@@ -764,6 +904,8 @@ const CardsData = {
         },
         {
             key:"2",
+            category: "menswear",
+            subcategory:"formal",
             prname:"Formal Black Color plain Pant",
             image:"/Images/MensWears/F2.jpg ",
             type:"Comprised of a premium, cotton blend, and engineered for durability and comfort.",
@@ -774,6 +916,8 @@ const CardsData = {
         },
         {
             key:"3",
+            category: "menswear",
+            subcategory:"formal",
             prname:"The Frederic Plaid Slim Fit Suit Pants",
             image:"/Images/MensWears/F5.jpg",
             type:"Comprised of a premium, cotton blend, and engineered for durability and comfort.",
@@ -784,6 +928,8 @@ const CardsData = {
         },
         {
             key:"4",
+            category: "menswear",
+            subcategory:"formal",
             prname:"Santorelli Luxury Flat Front",
             image:"/Images/MensWears/F6.jpg",
             type:"Comprised of a premium, cotton blend, and engineered for durability and comfort.",
@@ -794,6 +940,8 @@ const CardsData = {
         },
         {
             key:"5",
+            category: "menswear",
+            subcategory:"formal",
             prname:"Formal Pink Color Pant",
             image:"/Images/MensWears/F3.jpg",
             type:"Comprised of a premium, cotton blend, and engineered for durability and comfort.",
@@ -804,6 +952,8 @@ const CardsData = {
         },
         {
             key:"6",
+            category: "menswear",
+            subcategory:"formal",
             prname:"Formal Slim Fit Linen Pant",
             image:"/Images/MensWears/F4.jpg",
             type:"Comprised of a premium, cotton blend, and engineered for durability and comfort.",
@@ -817,6 +967,8 @@ const CardsData = {
     ShirtProductItems:[
         {
             key:"1",
+            category: "menswear",
+            subcategory:"mshirt",
             prname:"Formal shirt plain ",
             image:"/Images/MensWears/S1.png ",
             type:"Lycra with solid pattern and spread color",
@@ -827,6 +979,8 @@ const CardsData = {
         },
         {
             key:"2",
+            category: "menswear",
+            subcategory:"mshirt",
             prname:"Mint Green color Formal shirt plain ",
             image:"/Images/MensWears/S2.png ",
             type:"Lycra with solid pattern and spread color",
@@ -837,6 +991,8 @@ const CardsData = {
         },
         {
             key:"3",
+            category: "menswear",
+            subcategory:"mshirt",
             prname:"Formal shirt plain",
             image:"/Images/MensWears/S3.jpg",
             type:"Orange color saree for every occasions",
@@ -847,6 +1003,8 @@ const CardsData = {
         },
         {
             key:"4",
+            category: "menswear",
+            subcategory:"mshirt",
             prname:"Dark Red Formal shirt plain",
             image:"/Images/MensWears/S4.jpg",
             type:"Lycra with solid pattern and spread color",
@@ -857,6 +1015,8 @@ const CardsData = {
         },
         {
             key:"5",
+            category: "menswear",
+            subcategory:"mshirt",
             prname:"MultiColor Formal shirt plain",
             image:"/Images/MensWears/S5.png",
             type:"Lycra with solid pattern and spread color ",
@@ -867,6 +1027,8 @@ const CardsData = {
         },
         {
             key:"06",
+            category: "menswear",
+            subcategory:"mshirt",
             prname:"Louis Slim Fit Striped Formal Shirt",
             image:"/Images/MensWears/S6.jpg ",
             type:"Lycra with solid pattern and spread color",
@@ -879,6 +1041,8 @@ const CardsData = {
     TshirtProductItems: [
         {
             key: "1",
+            category: "menswear",
+            subcategory:"mtshirt",
             prname: "Black cotton regular fit mens-Tshirt",
             image: "/Images/MensWears/T1.jpg",
             type: "Soft & Stretchable fabric material",
@@ -889,6 +1053,8 @@ const CardsData = {
         },
         {
             key: "2",
+            category: "menswear",
+            subcategory:"mtshirt",
             prname: "ColorBlack Half Sleeve T-shirt",
             image: "/Images/MensWears/T2.jpg ",
             type: "Soft & Stretchable fabric material",
@@ -899,6 +1065,8 @@ const CardsData = {
         },
         {
             key: "3",
+            category: "menswear",
+            subcategory:"mtshirt",
             prname: "Half Sleeve Round Neck Casual T-shirt",
             image: "/Images/MensWears/T3.jpeg",
             type: "Soft & Stretchable fabric material",
@@ -909,6 +1077,8 @@ const CardsData = {
         },
         {
             key: "4",
+            category: "menswear",
+            subcategory:"mtshirt",
             prname: "V-neck Full Sleeve T-shirt",
             image: "/Images/MensWears/T4.jpg",
             type: "polyester material",
@@ -919,6 +1089,8 @@ const CardsData = {
         },
         {
             key: "5",
+            category: "menswear",
+            subcategory:"mtshirt",
             prname: "Plain Blue color T-shirt",
             image: "/Images/MensWears/T5.jpg",
             type: "polyester material ",
@@ -929,6 +1101,8 @@ const CardsData = {
         },
         {
             key: "6",
+            category: "menswear",
+            subcategory:"mtshirt",
             prname: "Red Color T-shirt",
             image: "/Images/MensWears/T6.jpeg",
             type: "polyester material.",
@@ -941,6 +1115,8 @@ const CardsData = {
     MenJeansProductItems:[
         {
             key:"1",
+            category: "menswear",
+            subcategory:"mjeans",
             prname:"Ripped Jean blue color",
             image:"/Images/MensWears/J1.jpg ",
             type:"Jeans Material: Denim, Cotton, Polyester",
@@ -951,6 +1127,8 @@ const CardsData = {
         },
         {
             key:"2",
+            category: "menswear",
+            subcategory:"mjeans",
             prname:"Light blue Jean",
             image:"/Images/MensWears/J2.jpg ",
             type:"Jeans Material: Denim, Cotton, Polyester",
@@ -961,6 +1139,8 @@ const CardsData = {
         },
         {
             key:"3",
+            category: "menswear",
+            subcategory:"mjeans",
             prname:"Dark blue with white strip Jean",
             image:"/Images/MensWears/J3.jpg",
             type:"Jeans Material: Denim, Cotton, Polyester",
@@ -971,6 +1151,8 @@ const CardsData = {
         },
         {
             key:"4",
+            category: "menswear",
+            subcategory:"mjeans",
             prname:"Black color plain Jean",
             image:"/Images/MensWears/J4.jpg",
             type:"Jeans Material: Denim, Cotton, Polyester",
@@ -981,6 +1163,8 @@ const CardsData = {
         },
         {
             key:"5",
+            category: "menswear",
+            subcategory:"mjeans",
             prname:"Slim Fit Men's High Quality White Jeans",
             image:"/Images/MensWears/J5.jpg",
             type:"Jeans Material: Denim, Cotton, Polyester",
@@ -991,6 +1175,8 @@ const CardsData = {
         },
         {
             key:"6",
+            category: "menswear",
+            subcategory:"mjeans",
             prname:"Best Men's Jeans Blue color",
             image:"/Images/MensWears/J6.jpg",
             type:"Jeans Material: Denim, Cotton, Polyester",

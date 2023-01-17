@@ -44,7 +44,7 @@ const Cartdetails = () => {
 
   useEffect(() => {
     compare();
-  }, [key])
+  }) //,[key]
 
 
   return (

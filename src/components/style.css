@@ -93,3 +93,25 @@ body{
     padding: 10;
     position: "relative"
 } */
+
+.checkout{
+    padding: 10px;
+    background-color: #48c5c3;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+    margin-left: 80%;
+    width: 80%;
+    
+}
+.checkout:hover{
+    background-color: rgb(44, 235, 66);
+}
+
+.navbar{
+    height: 70px;
+    display:flex; 
+    justify-content:center;
+    text-transform:capitalize;
+}

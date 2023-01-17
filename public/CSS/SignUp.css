@@ -69,3 +69,5 @@ input:focus:invalid {
  input:invalid ~ span{
     display:block;
  }
+
+ 

@@ -12,6 +12,9 @@ import {ADD} from '../redux/actions/action'
 const Girlset = () => {
 
   const [data, setData] = useState(CardsData.BoyProductItems);
+  // const [data, setData] = useState(CardsData.GirlProductItems);
+  // const [data, setData] = useState(CardsData.GownsProductItems);
+  // const [data, setData] = useState(CardsData.NightwearProductItems);
 
   const dispatch = useDispatch();
 

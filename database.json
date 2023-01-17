@@ -3,16 +3,22 @@
     {
       "name": "Maha",
       "email": "emahe1208@gmail.com",
-      "password": "Maha1208!",
+      "password": "Maha1208",
       "phoneno": "9176310412",
       "id": 1
     },
     {
-      "name": "mahalakshmi",
-      "email": "raja@gmail.com",
-      "password": "Maha1208",
-      "phoneno": "9876543211",
+      "name": "MAHA",
+      "email": "rajamahalakshmi786@gmail.com",
+      "password": "mAHA1208",
+      "phone": "9876545677",
       "id": 2
+    }
+  ],
+  
+  "Payment":[
+    {
+      
     }
   ]
 }

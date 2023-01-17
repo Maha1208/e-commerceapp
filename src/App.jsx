@@ -1,3 +1,4 @@
+import React from "react"
 import { Routes, Route } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from "./components/Home"
@@ -26,43 +27,47 @@ import Wtops from "./components/Wtops"
 import Wtshirt from "./components/Wtshirt"
 import Wjeans from "./components/Wjeans"
 import Wjumpsuits from "./components/Wjumpsuits"
-import Footer from "./components/Footer"
+import Footer from "./components/Footer" 
+import Payment from "./components/Payment"
+import Logout from "./components/Logout"
 
 
 function App() {
-  return (
-    <div className="App">
+  return ( 
+    <div>
       <Routes>
-        <Route path="/" element={ <Home/> } />
-        <Route path="signin" element={ <SignIn/> } />
-        <Route path="signup" element={ <SignUp/> } />
-        <Route path="category" element={<Category/>}/>
-        <Route path="womenethnic" element={<WomenEthnic/>}/>
-        <Route path="womenwestern" element={<WomenWestern/>}/>
-        <Route path="menwears" element={<MenWears/>}/>
-        <Route path="kidswears" element={<KidsWears/>}/>
-        <Route path="cottonsaree" element={<Cottonsaree/>}/>
-        <Route path="lehenga" element={<Lehenga/>}/>
-        <Route path="kurtas" element={<Kurtas/>}/>
-        <Route path="plazzo" element={<Plazzo/>}/>
-        <Route path="mshirt" element={<Mshirt/>}/>
-        <Route path="mtshirt" element={<Mtshirt/>}/>
-        <Route path="mjeans" element={<Mjeans/>}/>
-        <Route path="mformalpants" element={<Mformalpants/>}/>
-        <Route path="girlset" element={<Girlset/>}/>
-        <Route path="boyset" element={<Boyset/>}/>
-        <Route path="gowns" element={<Gowns/>}/>Wtshirt
-        <Route path="nightwear" element={<Nightwear/>}/>
-        <Route path="wtops" element={<Wtops/>}/>
-        <Route path="wtshirt" element={<Wtshirt/>}/>
-        <Route path="wjumpsuits" element={<Wjumpsuits/>}/>
-        <Route path="wjeans" element={<Wjeans/>}/>
-        <Route path="/cart/:key" element={<Cartdetails/>}/>
-        <Route path="/cart" element={<Cartdetails/>}/>
-        <Route path="header" element={<Header/>}/>
-        <Route path="footer" element={<Footer/>}/>
+      <Route path="/" element={ <Home/> } />
+      <Route path="/signin" element={ <SignIn/> } />
+      <Route path="/signup" element={ <SignUp/> } />
+      <Route path="/category" element={<Category/>}/>
+      <Route path="/womenethnic" element={<WomenEthnic/>}/>
+      <Route path="/womenwestern" element={<WomenWestern/>}/>
+      <Route path="/menwears" element={<MenWears/>}/>
+      <Route path="/kidswears" element={<KidsWears/>}/>
+      <Route path="/cottonsaree" element={<Cottonsaree/>}/>
+      <Route path="/lehenga" element={<Lehenga/>}/>
+      <Route path="/kurtas" element={<Kurtas/>}/>
+      <Route path="/plazzo" element={<Plazzo/>}/>
+      <Route path="/mshirt" element={<Mshirt/>}/>
+      <Route path="/mtshirt" element={<Mtshirt/>}/>
+      <Route path="/mjeans" element={<Mjeans/>}/>
+      <Route path="/mformalpants" element={<Mformalpants/>}/>
+      <Route path="/girlset" element={<Girlset/>}/>
+      <Route path="/boyset" element={<Boyset/>}/>
+      <Route path="/gowns" element={<Gowns/>}/>Wtshirt
+      <Route path="/nightwear" element={<Nightwear/>}/>
+      <Route path="/wtops" element={<Wtops/>}/>
+      <Route path="/wtshirt" element={<Wtshirt/>}/>
+      <Route path="/wjumpsuits" element={<Wjumpsuits/>}/>
+      <Route path="/wjeans" element={<Wjeans/>}/>
+      <Route path="/cart/:key" element={<Cartdetails/>}/>
+      <Route path="/cart" element={<Cartdetails/>}/>
+      <Route path="/payment" element={<Payment/>}/>
+      <Route path="/footer" element={<Footer/>}/>
+      <Route path="/header" element={<Header/>}/>
+      <Route path="/logout" element={<Logout/>}/>
 
-      </Routes>
+    </Routes>
     </div>
   )
 }
