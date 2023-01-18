@@ -1,0 +1,19 @@
+body{
+    background-image:url("/Images/bg/bgg1.jpg");
+    background-size: cover;   
+ }
+.nav1{
+    margin-left:5%;    
+}
+
+.overlay {
+    border-radius:10px;
+    background: rgba(52, 129, 230, 0.5); /* Black see-through */
+    width: 98%;
+    color: rgb(9, 9, 9);
+    font-size: 20px;
+    padding: 1px;
+    height: fit-content;
+    text-align:center;
+}
+

@@ -1,5 +1,5 @@
-const CardsData = {
-    SareesProductItems: [
+const CardsData = 
+    [
         {
             key: "1",
             category: "womenswear",
@@ -61,7 +61,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "06",
+            key: "6",
             category: "womenswear",
             subcategory:"sarees",
             prname: "Red color Bridal Saree",
@@ -71,11 +71,9 @@ const CardsData = {
             price: 2090,
             rating: "4.5",
             qnty: 0
-        }
-    ],
-    PlazooProductItems: [
+        },
         {
-            key: "1",
+            key: "7",
             category: "womenswear",
             subcategory:"plazoo",
             prname: "Women Western Ruffle plazzo",
@@ -87,7 +85,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "2",
+            key: "8",
             category: "womenswear",
             subcategory:"plazoo",
             prname: "Soft & Stretchable Plazzo Pants(pack of 3)",
@@ -99,7 +97,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "3",
+            key: "9",
             category: "womenswear",
             subcategory:"plazoo",
             prname: "Soft & Stretchable Black Plazzo ",
@@ -111,7 +109,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "4",
+            key: "10",
             category: "womenswear",
             subcategory:"plazoo",
             prname: "Transparent Black color Jeans",
@@ -123,7 +121,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "5",
+            key: "11",
             category: "womenswear",
             subcategory:"plazoo",
             prname: "Transparent ripped Jean",
@@ -135,7 +133,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "6",
+            key: "12",
             category: "womenswear",
             subcategory:"plazoo",
             prname: "Ripped blue color Jeans",
@@ -145,11 +143,9 @@ const CardsData = {
             price: 2090,
             rating: "4.5",
             qnty: 0
-        }
-    ],
-    LehengaProductItems: [
+        },
         {
-            key: "1",
+            key: "13",
             category: "womenswear",
             subcategory:"lehenga",
             prname: "Red Bridal Lehenga with handmade embroid",
@@ -161,7 +157,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "2",
+            key: "14",
             category: "womenswear",
             subcategory:"lehenga",
             prname: "Purple Color Lehenga with Golden border",
@@ -173,7 +169,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "3",
+            key: "15",
             category: "womenswear",
             subcategory:"lehenga",
             prname: "Pink Lehenga Choli Designs",
@@ -185,7 +181,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "4",
+            key: "16",
             category: "womenswear",
             subcategory:"lehenga",
             prname: "Blue Lehenga With Orange Border",
@@ -197,7 +193,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "5",
+            key: "17",
             category: "womenswear",
             subcategory:"lehenga",
             prname: "Semi-Stitched Chiffon Fish Cut Lehenga Choli",
@@ -209,7 +205,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "6",
+            key: "18",
             category: "womenswear",
             subcategory:"lehenga",
             prname: "Baby pink part wear lehenga",
@@ -219,11 +215,9 @@ const CardsData = {
             price: 2890,
             rating: "4.8",
             qnty: 0
-        }
-    ],
-    KurtasProductItems: [
+        },
         {
-            key: "1",
+            key: "19",
             category: "womenswear",
             subcategory:"kurtas",
             prname: "Red Color Kurta",
@@ -235,7 +229,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "2",
+            key: "20",
             category: "womenswear",
             subcategory:"kurtas",
             prname: "Blue color casual kurtas",
@@ -247,7 +241,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "3",
+            key: "21",
             category: "womenswear",
             subcategory:"kurtas",
             prname: "Straight kurtas with pants",
@@ -259,7 +253,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "4",
+            key: "22",
             category: "womenswear",
             subcategory:"kurtas",
             prname: "Yellow Color Kurta with plain look",
@@ -271,7 +265,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "5",
+            key: "23",
             category: "womenswear",
             subcategory:"kurtas",
             prname: "Pear-White Kurta",
@@ -283,7 +277,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "6",
+            key: "24",
             category: "womenswear",
             subcategory:"kurtas",
             prname: "Black color Kurta",
@@ -293,11 +287,10 @@ const CardsData = {
             price: 280,
             rating: "4.0",
             qnty: 0
-        }
-    ],
-    TopsProductItems: [
+        },
+
         {
-            key: "1",
+            key: "25",
             subcategory:"tops",
             category: "womensethnic",
             prname: "Western Top and Tunics",
@@ -309,7 +302,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "2",
+            key: "26",
             category: "womensethnic",
             subcategory:"tops",
             prname: "Western Top and Tunics",
@@ -321,7 +314,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "3",
+            key: "27",
             category: "womensethnic",
             subcategory:"tops",
             prname: "Western Top and Tunics",
@@ -333,7 +326,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "4",
+            key: "28",
             category: "womensethnic",
             subcategory:"tops",
             prname: "Western Top and Tunics",
@@ -345,7 +338,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "5",
+            key: "29",
             category: "womensethnic",
             subcategory:"tops",
             prname: "Western Top and Tunics",
@@ -357,7 +350,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "6",
+            key: "30",
             category: "womensethnic",
             subcategory:"tops",
             prname: "Western Top and Tunics",
@@ -367,11 +360,10 @@ const CardsData = {
             price: 460,
             rating: "4.5",
             qnty: 0
-        }
-    ],
-    WTshirtProductItems: [
+        },
+
         {
-            key: "1",
+            key: "31",
             category: "womensethnic",
             subcategory:"wtshirt",
             prname: "Black cotton regular fit mens-Tshirt",
@@ -383,7 +375,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "2",
+            key: "32",
             category: "womensethnic",
             subcategory:"wtshirt",
             prname: "ColorBlack Half Sleeve T-shirt",
@@ -395,7 +387,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "3",
+            key: "33",
             category: "womensethnic",
             subcategory:"wtshirt",
             prname: "Half Sleeve Round Neck Casual T-shirt",
@@ -407,7 +399,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "4",
+            key: "34",
             category: "womensethnic",
             subcategory:"wtshirt",
             prname: "V-neck Full Sleeve T-shirt",
@@ -419,7 +411,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "5",
+            key: "35",
             category: "womensethnic",
             subcategory:"wtshirt",
             prname: "Plain Blue color T-shirt",
@@ -431,7 +423,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "6",
+            key: "36",
             category: "womensethnic",
             subcategory:"wtshirt",
             prname: "Red Color T-shirt",
@@ -441,11 +433,9 @@ const CardsData = {
             price: 790,
             rating: "4.5",
             qnty: 0
-        }
-    ],
-    WomenJeansProductItems: [
+        },
         {
-            key: "1",
+            key: "37",
             category: "womensethnic",
             subcategory:"wjeans",
             prname: "Ripped Jean blue color",
@@ -457,7 +447,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "2",
+            key: "38",
             category: "womensethnic",
             subcategory:"wjeans",
             prname: "Light blue Jean",
@@ -469,7 +459,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "3",
+            key: "39",
             category: "womensethnic",
             subcategory:"wjeans",
             prname: "Dark blue with white strip Jean",
@@ -481,7 +471,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "4",
+            key: "40",
             category: "womensethnic",
             subcategory:"wjeans",
             prname: "Black color plain Jean",
@@ -493,7 +483,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "5",
+            key: "41",
             category: "womensethnic",
             subcategory:"wjeans",
             prname: "Slim Fit Men's High Quality White Jeans",
@@ -505,7 +495,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "6",
+            key: "42",
             category: "womensethnic",
             subcategory:"wjeans",
             prname: "Best Men's Jeans Blue color",
@@ -515,12 +505,9 @@ const CardsData = {
             price: 890,
             rating: "4.8",
             qnty: 0
-        }
-
-    ],
-    WjumpsuitsProductItems: [
+        },
         {
-            key: "1",
+            key: "43",
             category: "womensethnic",
             subcategory:"jumpsuits",
             prname: "Formal White Pant",
@@ -532,7 +519,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "2",
+            key: "44",
             category: "womensethnic",
             subcategory:"jumpsuits",
             prname: "Formal Black Color plain Pant",
@@ -544,7 +531,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "3",
+            key: "45",
             category: "womensethnic",
             subcategory:"jumpsuits",
             prname: "The Frederic Plaid Slim Fit Suit Pants",
@@ -556,7 +543,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "4",
+            key: "46",
             category: "womensethnic",
             subcategory:"jumpsuits",
             prname: "Santorelli Luxury Flat Front",
@@ -568,7 +555,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "5",
+            key: "47",
             category: "womensethnic",
             subcategory:"jumpsuits",
             prname: "Formal Pink Color Pant",
@@ -580,7 +567,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "6",
+            key: "48",
             category: "womensethnic",
             subcategory:"jumpsuits",
             prname: "Formal Slim Fit Linen Pant",
@@ -590,11 +577,9 @@ const CardsData = {
             price: 960,
             rating: "4.5",
             qnty: 0
-        }
-    ],
-    GirlProductItems:[
+        },
         {
-            key:"1",
+            key:"49",
             category: "kidswear",
             subcategory:"girl",
             prname:"Kids Ethnic Wear ",
@@ -606,7 +591,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"2",
+            key:"50",
             category: "kidswear",
             subcategory:"girl",
             prname:"baby girl designed Kurta",
@@ -618,7 +603,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"3",
+            key:"51",
             category: "kidswear",
             subcategory:"girl",
             prname:"Toqruoise Green and Pumpkin Orange Hand-embroidered dress",
@@ -630,7 +615,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"4",
+            key:"52",
             category: "kidswear",
             subcategory:"girl",
             prname:"Dark Red Formal shirt plain",
@@ -642,7 +627,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"5",
+            key:"53",
             category: "kidswear",
             subcategory:"girl",
             prname:"Children Floral Tops Overalls Suit Clothes Sets ",
@@ -654,7 +639,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"06",
+            key:"54",
             category: "kidswear",
             subcategory:"girl",
             prname:"Torani Green Velvet Embroidered Kurta And Pant",
@@ -664,11 +649,9 @@ const CardsData = {
             price:490,
             rating:"4.5",
             qnty:0
-        }
-    ],
-    BoyProductItems: [
+        },
         {
-            key: "1",
+            key: "55",
             category: "kidswear",
             subcategory:"boy",
             prname: "Stylish Navy Blue Coat with Waist Coat and Pant Set",
@@ -680,7 +663,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "2",
+            key: "56",
             category: "kidswear",
             subcategory:"boy",
             prname: "Teeny Tiny Traditions Colorful festive kurtas lehenga",
@@ -692,7 +675,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "3",
+            key: "57",
             category: "kidswear",
             subcategory:"boy",
             prname: "Boys Denim Clothes Set",
@@ -704,7 +687,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "4",
+            key: "58",
             category: "kidswear",
             subcategory:"boy",
             prname: "white shirt with ripped jeans kids set",
@@ -716,7 +699,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "5",
+            key: "59",
             category: "kidswear",
             subcategory:"boy",
             prname: "Wedding Tuxedo Formal Check Romper One Piece Outfit Suit",
@@ -728,7 +711,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "6",
+            key: "60",
             category: "kidswear",
             subcategory:"boy",
             prname: "Kalki Boys White Dhoti Set With Angrakha Kurta",
@@ -738,11 +721,9 @@ const CardsData = {
             price: 790,
             rating: "4.5",
             qnty: 0
-        }
-    ],
-    GownsProductItems:[
+        },
         {
-            key:"1",
+            key:"61",
             category: "kidswear",
             subcategory:"gowns",
             prname:"Girls Gowns Latest Gowns",
@@ -754,7 +735,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"2",
+            key:"62",
             category: "kidswear",
             subcategory:"gowns",
             prname:"red kid party dress",
@@ -766,7 +747,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"3",
+            key:"63",
             category: "kidswear",
             subcategory:"gowns",
             prname:"Party wear designer dress for girls kids",
@@ -778,7 +759,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"4",
+            key:"64",
             category: "kidswear",
             subcategory:"gowns",
             prname:"Straps Flowers Bowknot Girls Party Dress",
@@ -790,7 +771,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"5",
+            key:"65",
             category: "kidswear",
             subcategory:"gowns",
             prname:"Girls Pink Dress",
@@ -802,7 +783,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"6",
+            key:"66",
             category: "kidswear",
             subcategory:"gowns",
             prname:"Yellow and light green lehenga set",
@@ -812,11 +793,9 @@ const CardsData = {
             price:890,
             rating:"4.8",
             qnty:0
-        }
-    ],
-    NightwearProductItems:[
+        },
         {
-            key:"1",
+            key:"67",
             category: "kidswear",
             subcategory:"nightwear",
             prname:"Girls Night Dress",
@@ -828,7 +807,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"2",
+            key:"68",
             category: "kidswear",
             subcategory:"nightwear",
             prname:"Girls Night Dress",
@@ -840,7 +819,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"3",
+            key:"69",
             category: "kidswear",
             subcategory:"nightwear",
             prname:"Girls Night Dress",
@@ -852,7 +831,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"4",
+            key:"70",
             category: "kidswear",
             subcategory:"nightwear",
             prname:"Girls Night Dress",
@@ -864,7 +843,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"5",
+            key:"71",
             category: "kidswear",
             subcategory:"nightwear",
             prname:"Boys Night Dress",
@@ -876,7 +855,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"6",
+            key:"72",
             category: "kidswear",
             subcategory:"nightwear",
             prname:"Boys Night Dress",
@@ -886,12 +865,9 @@ const CardsData = {
             price:960,
             rating:"4.5",
             qnty:0
-        }
-        
-    ],
-    MenFormalPantProductItems:[
+        },
         {
-            key:"1",
+            key:"73",
             category: "menswear",
             subcategory:"formal",
             prname:"Formal White Pant",
@@ -903,7 +879,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"2",
+            key:"74",
             category: "menswear",
             subcategory:"formal",
             prname:"Formal Black Color plain Pant",
@@ -915,7 +891,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"3",
+            key:"75",
             category: "menswear",
             subcategory:"formal",
             prname:"The Frederic Plaid Slim Fit Suit Pants",
@@ -927,7 +903,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"4",
+            key:"76",
             category: "menswear",
             subcategory:"formal",
             prname:"Santorelli Luxury Flat Front",
@@ -939,7 +915,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"5",
+            key:"77",
             category: "menswear",
             subcategory:"formal",
             prname:"Formal Pink Color Pant",
@@ -951,7 +927,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"6",
+            key:"78",
             category: "menswear",
             subcategory:"formal",
             prname:"Formal Slim Fit Linen Pant",
@@ -961,12 +937,9 @@ const CardsData = {
             price:960,
             rating:"4.5",
             qnty:0
-        }
-        
-    ],
-    ShirtProductItems:[
+        },
         {
-            key:"1",
+            key:"79",
             category: "menswear",
             subcategory:"mshirt",
             prname:"Formal shirt plain ",
@@ -978,7 +951,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"2",
+            key:"80",
             category: "menswear",
             subcategory:"mshirt",
             prname:"Mint Green color Formal shirt plain ",
@@ -990,7 +963,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"3",
+            key:"81",
             category: "menswear",
             subcategory:"mshirt",
             prname:"Formal shirt plain",
@@ -1002,7 +975,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"4",
+            key:"82",
             category: "menswear",
             subcategory:"mshirt",
             prname:"Dark Red Formal shirt plain",
@@ -1014,7 +987,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"5",
+            key:"83",
             category: "menswear",
             subcategory:"mshirt",
             prname:"MultiColor Formal shirt plain",
@@ -1026,7 +999,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"06",
+            key:"84",
             category: "menswear",
             subcategory:"mshirt",
             prname:"Louis Slim Fit Striped Formal Shirt",
@@ -1036,11 +1009,9 @@ const CardsData = {
             price:490,
             rating:"4.5",
             qnty:0
-        }
-    ],
-    TshirtProductItems: [
+        },
         {
-            key: "1",
+            key: "85",
             category: "menswear",
             subcategory:"mtshirt",
             prname: "Black cotton regular fit mens-Tshirt",
@@ -1052,7 +1023,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "2",
+            key: "86",
             category: "menswear",
             subcategory:"mtshirt",
             prname: "ColorBlack Half Sleeve T-shirt",
@@ -1064,7 +1035,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "3",
+            key: "87",
             category: "menswear",
             subcategory:"mtshirt",
             prname: "Half Sleeve Round Neck Casual T-shirt",
@@ -1076,7 +1047,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "4",
+            key: "88",
             category: "menswear",
             subcategory:"mtshirt",
             prname: "V-neck Full Sleeve T-shirt",
@@ -1088,7 +1059,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "5",
+            key: "89",
             category: "menswear",
             subcategory:"mtshirt",
             prname: "Plain Blue color T-shirt",
@@ -1100,7 +1071,7 @@ const CardsData = {
             qnty: 0
         },
         {
-            key: "6",
+            key: "90",
             category: "menswear",
             subcategory:"mtshirt",
             prname: "Red Color T-shirt",
@@ -1110,11 +1081,9 @@ const CardsData = {
             price: 790,
             rating: "4.5",
             qnty: 0
-        }
-    ],
-    MenJeansProductItems:[
+        },
         {
-            key:"1",
+            key:"91",
             category: "menswear",
             subcategory:"mjeans",
             prname:"Ripped Jean blue color",
@@ -1126,7 +1095,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"2",
+            key:"92",
             category: "menswear",
             subcategory:"mjeans",
             prname:"Light blue Jean",
@@ -1138,7 +1107,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"3",
+            key:"93",
             category: "menswear",
             subcategory:"mjeans",
             prname:"Dark blue with white strip Jean",
@@ -1150,7 +1119,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"4",
+            key:"94",
             category: "menswear",
             subcategory:"mjeans",
             prname:"Black color plain Jean",
@@ -1162,7 +1131,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"5",
+            key:"95",
             category: "menswear",
             subcategory:"mjeans",
             prname:"Slim Fit Men's High Quality White Jeans",
@@ -1174,7 +1143,7 @@ const CardsData = {
             qnty:0
         },
         {
-            key:"6",
+            key:"96",
             category: "menswear",
             subcategory:"mjeans",
             prname:"Best Men's Jeans Blue color",
@@ -1186,6 +1155,4 @@ const CardsData = {
             qnty:0
         }
     ]
-
-};
 export default CardsData;

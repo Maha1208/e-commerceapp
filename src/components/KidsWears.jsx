@@ -1,43 +1,72 @@
-import React from "react";
-import Header from "./Header";
+import React from 'react'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import CardsData from './CardsData';
+import { useState } from "react";
+import { useDispatch } from 'react-redux';
+import { ADD } from '../redux/actions/action';
+import Header from './Header';
 import "./style.css";
 
-export default function kidsWears() {
-    return (
-        <div>
-            <link rel='stylesheet' href='CSS/Category.css'></link>
-            <Header/>  
-            
-            <h1><b>Welcome to Kids Wear Shopping</b></h1>
+const WomenWestern = () => {
 
-            <div className="container">
-                <div className="box">
-                    <a style={{ textDecoration: "none" }} href="Girlset ">
-                        <img src="/Images/gset.jpg" alt="girl sets" />
-                        <div className="overlay">Girl sets</div></a>
-                </div>
+  const [data, setData] = useState([]);
 
-                <div className="box">
-                    <a style={{ textDecoration: "none" }} href="Boyset ">
-                        <img src="/Images/bset.jpg" alt="boy sets" />
-                        <div className="overlay">Boy sets</div></a>
-                </div>
+  const filterResult = (items) => {
+    const result = CardsData.filter((curData) => {
+      return curData.subcategory === items && curData;
+    });
+    setData(result)
 
-                <div className="box">
-                    <a style={{ textDecoration: "none" }} href="Gowns">
-                        <img src="/Images/gowns.png" alt="gowns" />
-                        <div className="overlay">Gowns</div></a>
-                </div>
+  }
+  const dispatch = useDispatch();
 
-                <div className="box">
-                    <a style={{ textDecoration: "none" }} href="Nightwear">
-                        <img src="/Images/nightwear.jpeg" alt="nightwear" />
-                        <div className="overlay">Night Wears</div></a>
-                </div>
-            </div>
+  const send = (e) => {
+    dispatch(ADD(e));
+  }
+
+
+  return (
+    <>
+      <link rel='stylesheet' href='CSS/product.css'></link>
+      <Header />
+      <h1 className="text-center text-black bg-info">Kids Wear Categories</h1>
+      <div className='d-flex nav1'>
+        <button className="btn  mb-2 mx-5 overlay" onClick={() => filterResult("girl")}><b>Girl set</b></button><br />
+        <button className="btn  mb-2 mx-5 overlay" onClick={() => filterResult("boy")}><b>Boy set</b></button><br />
+        <button className="btn  mb-2 mx-5 overlay" onClick={() => filterResult("gowns")}><b>Gowns</b></button><br />
+        <button className="btn  mb-2 mx-5 overlay" onClick={() => filterResult("nightwear")}><b>NightWear</b></button><br />
+      </div>
+      <div className='container-fluid mx-5 mt-4'>
+        <div className="row mt-5 mx-5">
+          {
+            data.map((values) => {
+              const { key, image, rating, prname, price } = values;
+              return (
+                <Card key={key} style={{ width: '23rem', border: 'black' }} className="mx-4 mt-3 card_style">
+                  <Card.Img variant="top" src={image} style={{ height: "15rem" }} className="mt-3" />
+                  <Card.Body>
+                    <Card.Title>{prname}</Card.Title>
+                    <Card.Text>
+                      price:₹ {price}
+                      <Card.Title className='rating mt-3' style={{ width: '3rem', height: '1.5rem', border: "black", fontSize: '15px' }}>{rating}★</Card.Title>
+                    </Card.Text>
+                    <div className='button_div d-flex justify-content-center'>
+                      <Button variant="info"
+                        onClick={() => send(values)}
+                        className='col-lg-12'>Add to Cart</Button>
+                    </div>
+                  </Card.Body>
+                </Card>
+              )
+
+            })
+          }
+
         </div>
-    )
-
-
+      </div>
+    </>
+  )
 }
 
+export default WomenWestern
