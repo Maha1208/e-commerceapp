@@ -31,7 +31,7 @@ export default function SignIn() {
                         sessionStorage.setItem('email', email);
                         usenavigate('/')
                     } else {
-                        toast.error('Please Enter valid credentials');
+                        toast.error('Please Enter valid password');
                     }
                 }
             }).catch((err) => {
@@ -67,7 +67,7 @@ export default function SignIn() {
                     <label><b>Password</b></label><br />
                     <input type="password" value={password} onChange={e => passwordupdate(e.target.value)} placeholder="Enter Password" name="password" required/><br />
 
-                    <button id='button' type="submit">Login</button><br />
+                    <button id='button' type="submit" disabled="true">Login</button><br />
 
                 </div>
             </form>

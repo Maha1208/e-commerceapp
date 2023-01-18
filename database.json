@@ -22,7 +22,24 @@
       "id": 3
     }
   ],
-  "Payment": [
-    {}
+  "AddressPayment": [
+    {
+      "fullname": "maha",
+      "email": "maha@gmail.com",
+      "address": "karpaga",
+      "city": "chennai",
+      "state": "Tamilnadu",
+      "zipcode": "600119",
+      "id": 1
+    },
+    {
+      "fullname": "ff",
+      "email": "maha@gmail.com",
+      "address": "karpaga",
+      "city": "hjklkjhbnl",
+      "state": "kjhvbnmklkn",
+      "zipcode": "600119",
+      "id": 2
+    }
   ]
 }
