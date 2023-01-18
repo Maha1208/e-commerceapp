@@ -13,12 +13,16 @@
       "password": "mAHA1208",
       "phone": "9876545677",
       "id": 2
+    },
+    {
+      "name": "MAHA",
+      "email": "email@gmail.com",
+      "password": "Maha1208",
+      "phone": "9876543211",
+      "id": 3
     }
   ],
-  
-  "Payment":[
-    {
-      
-    }
+  "Payment": [
+    {}
   ]
 }
