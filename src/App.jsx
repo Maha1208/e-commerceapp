@@ -11,7 +11,7 @@ import MenWears from "./components/Category/MenWears"
 import KidsWears from "./components/Category/KidsWears"
 import Cartdetails from "./components/Cartdetails"
 import Footer from "./components/Layouts/Footer" 
-import AddressPayment from "./components/AddressPayment"
+import AddressPayment from "./components/checkout/AddressPayment"
 import Logout from "./components/Logout"
 import Header from './components/Layouts/Header'
 

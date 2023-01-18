@@ -1,50 +1,45 @@
-*{
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-transform: capitalize;
-  }
-  
-  .container{
-    display: flex;
-    margin-bottom: 20%;
-    justify-content: center;
-    align-items: center;
-    padding:25px;
-    min-height: 100vh;
-    
-   }
+.container{
+  margin-top: 5%;
+  margin-left: 25%;
+  text-transform: capitalize;
+}
 
-  
-  .container form{
-    padding:20px;
-    text-align: left;
-    width:500px;
-    background-image:url("/Images/bg/pink.jpg");
-    box-shadow: 0 5px 10px rgba(0,0,0,.1);
-    background-size: cover; 
-    background-repeat: no-repeat;
-  }
-  
-  .submit-btn{
-    width: 50%;
-    padding:12px;
-    font-size: 17px;
-    background: blue;
-    color:white;
-    margin-top: 5px;
-    cursor: pointer;
-  }
-  
-   .submit-btn:hover{
-    background:rgb(133, 200, 66);
-  }
+.container form{
+  border-radius: 20px;
+  width: 40%;
+  height: 70vh;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 10%;
+  padding: 5px;
+  background-image: url("/Images/bg/pink.jpg");
 
-  .container input{
-    width: 50%;
-    padding: 6px;
-    margin-top: 10px;
-    text-align: center;
-    display: flex;
-    margin-left: 10%;
-  }
+}
+
+.container label{
+  margin-top: 5%;
+  /* margin-left: 10%; */
+  font-size: large;
+  font-weight: 600;
+
+}
+.container input{
+  margin-top: 5%;
+  margin-left: 2%;
+
+}
+
+.submit-btn{
+margin-top: 40px;
+width: 150px;
+height: 6vh;
+font-weight: 500;
+border-radius: 10px;
+color:green;
+background-color: greenyellow;
+}
+
+.submit-btn:hover{
+  background-color: blue;
+
+}
