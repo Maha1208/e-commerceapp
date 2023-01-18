@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from "./Header";
-import "./style.css";
+import Header from "../Layouts/Header";
+import "../style.css";
 
 function Category(){
     return (

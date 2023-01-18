@@ -1,19 +1,19 @@
 import React from "react"
 import { Routes, Route } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Home from "./components/Home"
+import Home from "./components/Layouts/Home"
 import SignIn from "./components/SignIn"
 import SignUp from "./components/SignUp"
-import Category from './components/Category'
-import WomenEthnic from "./components/WomenEthnic"
-import WomenWestern from "./components/WomenWestern"
-import MenWears from "./components/MenWears"
-import KidsWears from "./components/KidsWears"
+import Category from './components/Category/Category'
+import WomenEthnic from "./components/Category/WomenEthnic"
+import WomenWestern from "./components/Category/WomenWestern"
+import MenWears from "./components/Category/MenWears"
+import KidsWears from "./components/Category/KidsWears"
 import Cartdetails from "./components/Cartdetails"
-import Footer from "./components/Footer" 
-import Payment from "./components/Payment"
+import Footer from "./components/Layouts/Footer" 
+import AddressPayment from "./components/AddressPayment"
 import Logout from "./components/Logout"
-import Header from './components/Header'
+import Header from './components/Layouts/Header'
 
 function App() {
   return ( 
@@ -29,7 +29,7 @@ function App() {
       <Route path="/kidswears" element={<KidsWears/>}/>
       <Route path="/cart/:key" element={<Cartdetails/>}/>
       <Route path="/cart" element={<Cartdetails/>}/>
-      <Route path="/payment" element={<Payment/>}/>
+      <Route path="/checkout" element={<AddressPayment/>}/>
       <Route path="/footer" element={<Footer/>}/>
       <Route path="/header" element={<Header/>}/>
       <Route path="/logout" element={<Logout/>}/>

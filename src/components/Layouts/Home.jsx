@@ -15,9 +15,9 @@ export default function Home() {
     //     },[]);
         
     return (
-        <>
-            <Header />
+        <div>
             <link rel='stylesheet' href='CSS/Home.css'></link>
+            <Header/>
             {/* <!-- main background image --> */}
             <div className="main-background">
                 <a href="/Kurtas" className="shopnow-btn">Shop now</a>
@@ -72,7 +72,7 @@ export default function Home() {
                 </div>
             </div>
             <Footer />
-        </>
+        </div>
     )
 }
 

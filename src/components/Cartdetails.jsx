@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table'
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { DLT, ADD, REMOVE } from '../redux/actions/action';
-import Header from './Header';
+import Header from './Layouts/Header';
 
 const Cartdetails = () => {
 
@@ -12,7 +12,6 @@ const Cartdetails = () => {
   const { key } = useParams();
 
   // const history = useNavigate();
-
   const dispatch = useDispatch();
 
   const getdata = useSelector((state) => state.cartreducer.carts);

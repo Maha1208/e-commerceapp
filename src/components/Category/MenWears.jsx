@@ -1,12 +1,12 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import CardsData from './CardsData';
+import CardsData from '../CardsData';
 import { useState } from "react";
 import { useDispatch } from 'react-redux';
-import {ADD} from '../redux/actions/action';
-import Header from './Header';
-import "./style.css";
+import {ADD} from '../../redux/actions/action';
+import Header from '../Layouts/Header';
+import "../style.css";
 
 const Mens = () => {
 
@@ -43,8 +43,8 @@ const Mens = () => {
                                         data.map((values) => {
                                             const{key,image,rating,prname,price}=values;
                                             return (
-                                                <Card key={key} style={{ width: '23rem', border: 'black'}} className="mx-4 mt-3 card_style">
-                                                    <Card.Img variant="top" src={image} style={{ height: "15rem" }} className="mt-3" />
+                                                <Card key={key} style={{ width: '23rem', border: 'black' }} className="mx-4 mt-4 card_style">
+                                                <Card.Img variant="top" src={image} style={{ height: "15rem" }} className="mt-3" />
                                                     <Card.Body>
                                                         <Card.Title>{prname}</Card.Title>
                                                         <Card.Text>

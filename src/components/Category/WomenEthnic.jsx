@@ -1,12 +1,12 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import CardsData from './CardsData';
+import CardsData from '../CardsData';
 import { useState } from "react";
 import { useDispatch } from 'react-redux';
-import { ADD } from '../redux/actions/action';
-import Header from './Header';
-import "./style.css";
+import { ADD } from '../../redux/actions/action';
+import Header from '../Layouts/Header';
+import "../style.css";
 
 const WomenEthnic = () => {
 
@@ -30,7 +30,7 @@ const WomenEthnic = () => {
     <>
       <link rel='stylesheet' href='CSS/product.css'></link>
       <Header />
-      <h1 className="text-center text-black bg-info">Women Ethnic Wear Categories</h1>
+      <h2 className="text-center text-black bg-info">Women Ethnic Wear Categories</h2>
       <div className='d-flex nav1'>
         <button className="btn  mb-2 mx-5 overlay" onClick={() => filterResult("sarees")}><b>Sarees</b></button><br />
         <button className="btn  mb-2 mx-5 overlay" onClick={() => filterResult("plazoo")}><b>Plazoo</b></button><br />
@@ -43,7 +43,7 @@ const WomenEthnic = () => {
             data.map((values) => {
               const { key, image, rating, prname, price } = values;
               return (
-                <Card key={key} style={{ width: '23rem', border: 'black' }} className="mx-4 mt-3 card_style">
+                <Card key={key} style={{ width: '23rem', border: 'black' }} className="mx-4 mt-4 card_style">
                   <Card.Img variant="top" src={image} style={{ height: "15rem" }} className="mt-3" />
                   <Card.Body>
                     <Card.Title>{prname}</Card.Title>

@@ -6,15 +6,15 @@ import Nav from 'react-bootstrap/Nav';
 import Menu from '@mui/material/Menu';
 import { Table } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
-import { DLT } from '../redux/actions/action';
+import { DLT } from '../../redux/actions/action';
 import { NavLink, Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import "./style.css";
+import "../style.css";
 
 const Header = () => {
     //navbar update
     const auth = sessionStorage.getItem('email');
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
 
     const history = useNavigate();
@@ -55,7 +55,7 @@ const Header = () => {
 
 
     return (
-        <div>
+        <>
             {
                 auth ?
                     <Navbar bg="dark" variant="light" className='navbar'>
@@ -123,7 +123,7 @@ const Header = () => {
                                                     })
                                                 }
                                                 <p className='text-center'>Total :₹{price}</p>
-                                                <NavLink to={`/payment`} onClick={handleClose} style={{ textDecoration: "none" }}>
+                                                <NavLink to={`/checkout`} onClick={handleClose} style={{ textDecoration: "none" }}>
                                                     <button className="checkout" type="button"><b>₹{price}<br />Checkout</b></button>
                                                 </NavLink>
                                             </tbody>
@@ -149,20 +149,11 @@ const Header = () => {
                                 <NavLink to="/" className="text-decoration-none text-light mx-3" ><b>Home</b></NavLink>
                                 <NavLink to="/SignUp" className="text-decoration-none text-light mx-3" ><b>Register</b></NavLink>
                                 <NavLink to="/SignIn" className="text-decoration-none text-light "><b>Login</b></NavLink>
-
                             </Nav>
-                            <Badge badgeContent={getdata.length} color="primary" //cart icon increment
-                                id="basic-button"
-                                aria-controls={open ? 'basic-menu' : undefined}
-                                aria-haspopup="true"
-                                aria-expanded={open ? 'true' : undefined}
-                                onClick={handleClick}>
-                                <i className="fa-solid fa-cart-shopping text-light" style={{ fontSize: 30, cursor: "pointer" }} ></i>
-                            </Badge>
                         </Container>
                     </Navbar>
             }
-        </div>
+        </>
     )
 }
 

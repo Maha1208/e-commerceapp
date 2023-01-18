@@ -6,7 +6,6 @@ import Link from 'react'
 const Logout = () => {
 
   const navigate = useNavigate();
-
     sessionStorage.clear();
         navigate('/SignIn');
 
