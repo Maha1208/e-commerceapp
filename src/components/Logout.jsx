@@ -1,6 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import Link from 'react'
+import { Navigate, useNavigate } from 'react-router-dom';
 
 
 const Logout = () => {
@@ -11,7 +10,7 @@ const Logout = () => {
 
   return (
     <div>
-     <Link to="/SignIn"><b>SignIn</b></Link>  
+     <Navigate to="/SignIn"></Navigate>  
     </div>
   )
 }

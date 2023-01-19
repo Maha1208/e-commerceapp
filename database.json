@@ -1,25 +1,18 @@
 {
   "SignUp": [
     {
-      "name": "Maha",
+      "name": "MAHA",
       "email": "emahe1208@gmail.com",
       "password": "Maha1208",
-      "phoneno": "9176310412",
+      "phone": "9876543212",
       "id": 1
     },
     {
-      "name": "MAHA",
-      "email": "rajamahalakshmi786@gmail.com",
+      "name": "LAKSH",
+      "email": "emahe12@gmail.com",
       "password": "mAHA1208",
-      "phone": "9876545677",
+      "phone": "9876543873",
       "id": 2
-    },
-    {
-      "name": "MAHA",
-      "email": "email@gmail.com",
-      "password": "Maha1208",
-      "phone": "9876543211",
-      "id": 3
     }
   ],
   "AddressPayment": [

@@ -114,7 +114,8 @@ body{
     display:flex; 
     justify-content:center;
     text-transform:capitalize;
-    /* position: fixed;
+    position: fixed;
     width:100%;
-    z-index:3; */
+    z-index:3;
+    top: 0%;
 }

@@ -44,10 +44,10 @@ const Header = () => {
     const total = useCallback(() => {
         let price = 0;
         getdata.map((ele, key) => {
-            price = ele.price * ele.qnty + price
+           return price = ele.price * ele.qnty + price
         });
         setPrice(price);
-    });
+    },[getdata]);
 
     useEffect(() => {
         total();
@@ -64,7 +64,7 @@ const Header = () => {
                             <Nav className="me-auto">
                                 <NavLink to="/" className="text-decoration-none text-light mx-4" ><b>Home</b></NavLink>
                                 <NavLink to="/Category" className="text-decoration-none text-light"><b>Category</b></NavLink>
-                                <Link to="/SignIn" className="text-decoration-none text-light mx-4"><b>Logout</b></Link>
+                                <Link to="/logout" className="text-decoration-none text-light mx-4"><b>Logout</b></Link>
                             </Nav>
                             <Badge badgeContent={getdata.length} color="primary" //cart icon increment
                                 id="basic-button"

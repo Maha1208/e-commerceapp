@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: rgb(249, 240, 240);
 }
 .main-background{
     background-image:url("/Images/Banner/banner1.jpg");
@@ -18,10 +18,13 @@ body{
 
 .shopnow-btn{
     padding: 11px;
+    text-decoration: none;
     margin-right: 45%;
     display: flexbox;
     text-align: center;
-    background-color: rgb(200, 120, 120);
+    font-weight: 300;
+    background-image: linear-gradient(to right, rgb(0, 255, 98) , rgb(0, 213, 255));
+    /* background-color: rgb(200, 120, 120); */
     width: 23%;
     border-radius: 15px;
     color: rgb(251, 248, 248);
@@ -56,11 +59,14 @@ body{
 }
 .inner-product a{
     position: absolute;
+    text-decoration: none;
     left: 0;
     top: 80%;
     padding: 1rem 3rem;
-    background-color: rgb(200, 120, 120);
+    background-image: linear-gradient(to right, rgb(0, 255, 98) , rgb(0, 213, 255));
+    /* background-color: rgb(215, 20, 20); */
     color: #eceff1;
+    font-weight: 300;
     font-size: 1rem;
     border-radius: 10px;
     z-index: 1000000;
@@ -74,8 +80,10 @@ body{
 
 .inner-banner a{
     padding: 1rem 3rem;
-    background-color: rgb(200, 120, 120);
-    color:hsl(0, 18%, 93%);
+    text-decoration: none;
+    background-image: linear-gradient(to right, rgb(0, 255, 98) , rgb(0, 213, 255));
+    color:white;
+    font-weight: 300;
     font-size: 1.7rem;
     text-align: center;
     position: absolute;

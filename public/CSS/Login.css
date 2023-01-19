@@ -1,7 +1,9 @@
 body {
-background-image:url("/Images/bg/bg2.jpg");
-background-size: cover;
-}
+  background-image:url("/Images/Banner/b4.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height:60vh ; */
+  }
 
 input[type=text],
 input[type=password] {
@@ -22,16 +24,9 @@ h1{
   background: rgb(188, 234, 148);
 } */
 
-#cancel{
-  text-Decoration: None;
-  background-color: red;
-  width: 16px;
-  height: 1px;
-  padding: 25px;
-}
-
 .container {
-  padding: 16px;
+  padding: 15px;
+  margin-left: 3rem;
 }
 
 .SignUp {
@@ -42,18 +37,20 @@ h1{
 }
 
 #form {
-  margin: 150px 0px 0px 500px;
+  margin: 220px 0px 0px 148px;
   border-radius: 30px;
-  padding: 10px 20px;
-  width: 400px;
+  padding: 10px 2px;
+  width: 430px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/Images/bg/pink.jpg");
+  background-image: url("/Images/Banner/c1.webp");
+  /* background-image: url("/Images/bg/pink.jpg"); */
 }
 input:focus:invalid { 
   outline: none !important;
   border-color: hsl(5, 74%, 55%);
   box-shadow: 0 0 10px #719ECE;
+  margin-left: 20px;
 }
 
 input:focus:valid{ 
@@ -69,8 +66,9 @@ button:enabled{
   padding: 14px 20px;
   margin: 20px 0;
   border-radius: 10px;
+  margin-left: 50px;
   cursor: pointer;
-  width: 25%; 
+  width: 45%; 
 }
 
 button:disabled{
@@ -78,8 +76,9 @@ button:disabled{
   color: white;
   padding: 14px 20px;
   margin: 20px 0;
+  margin-left: 50px;
   border-radius: 10px;
-  width: 25%;
+  width: 45%;
 
 }
 
