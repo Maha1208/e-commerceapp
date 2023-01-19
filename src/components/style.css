@@ -41,7 +41,7 @@ body{
       
   };
   
-  @media (max-width:772px){
+  @media screen and (max-width:772px){
       .itemsdetails{
           flex-direction: column;
           align-items: center;
@@ -49,9 +49,9 @@ body{
       }
   }
   
-  @media (max-width:450px){
+  @media screen and (max-width:450px){
       .smalltrash{
-          display: block;
+          display: none;
       }
       .largetrash{
           display:none;
@@ -59,6 +59,11 @@ body{
       .smallclose{
           display: none;
       }
+      .itemsdetails{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
   
       /* individual items details */
      

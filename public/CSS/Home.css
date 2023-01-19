@@ -1,8 +1,10 @@
-body{
+body {
     background-color: rgb(249, 240, 240);
+    overflow-x: hidden;
 }
-.main-background{
-    background-image:url("/Images/Banner/banner1.jpg");
+
+.main-background {
+    background-image: url("/Images/Banner/banner1.jpg");
     background-size: cover;
     background-position: center;
     margin-top: 6%;
@@ -13,17 +15,17 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* gap: 15px; */
+    
 }
 
-.shopnow-btn{
+.shopnow-btn {
     padding: 11px;
     text-decoration: none;
     margin-right: 45%;
     display: flexbox;
     text-align: center;
     font-weight: 300;
-    background-image: linear-gradient(to right, rgb(0, 255, 98) , rgb(0, 213, 255));
+    background-image: linear-gradient(to right, rgb(0, 255, 98), rgb(0, 213, 255));
     /* background-color: rgb(200, 120, 120); */
     width: 23%;
     border-radius: 15px;
@@ -31,17 +33,18 @@ body{
     font-size: 2.5rem;
     margin-top: 12%;
 }
-.products-type{
+
+.products-type {
     padding: 3rem 7%;
 }
 
-.products-type h1{
+.products-type h1 {
     font-size: 40px;
     text-align: center;
     padding: 1rem 0;
 }
 
-.main-product{
+.main-product {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,21 +52,24 @@ body{
     flex-wrap: wrap;
     padding: 2rem 0;
 }
-.inner-product{
+
+.inner-product {
     flex: 1 1 300px;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.inner-product img{
+
+.inner-product img {
     width: 100%;
 }
-.inner-product a{
+
+.inner-product a {
     position: absolute;
     text-decoration: none;
     left: 0;
     top: 80%;
     padding: 1rem 3rem;
-    background-image: linear-gradient(to right, rgb(0, 255, 98) , rgb(0, 213, 255));
+    background-image: linear-gradient(to right, rgb(0, 255, 98), rgb(0, 213, 255));
     /* background-color: rgb(215, 20, 20); */
     color: #eceff1;
     font-weight: 300;
@@ -71,18 +77,20 @@ body{
     border-radius: 10px;
     z-index: 1000000;
 }
-.inner-banner{
+
+.inner-banner {
     flex: 1 1 45rem;
 }
-.inner-banner img{
+
+.inner-banner img {
     width: 110%;
 }
 
-.inner-banner a{
+.inner-banner a {
     padding: 1rem 3rem;
     text-decoration: none;
-    background-image: linear-gradient(to right, rgb(0, 255, 98) , rgb(0, 213, 255));
-    color:white;
+    background-image: linear-gradient(to right, rgb(0, 255, 98), rgb(0, 213, 255));
+    color: white;
     font-weight: 300;
     font-size: 1.7rem;
     text-align: center;
@@ -92,7 +100,34 @@ body{
     border-radius: 15px;
 }
 
-   
+@media screen and (max-width:772px) {
+    .inner-product img {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
- 
+    .main-background img {
+        width: 16rem;
+    }
+}
 
+@media screen and (max-width:450px) {
+
+    .inner-product img {
+        display: none;
+    }
+
+    .main-background img {
+        display: none;
+    }
+
+    .inner-banner img {
+        display: none;
+    }
+
+    .shopnow-btn {
+        display: none;
+    }
+
+}
