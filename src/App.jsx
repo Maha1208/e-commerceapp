@@ -2,8 +2,8 @@ import React from "react"
 import { Routes, Route } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from "./components/Layouts/Home"
-import SignIn from "./components/SignIn"
-import SignUp from "./components/SignUp"
+import SignIn from "./components/User/SignIn"
+import SignUp from "./components/User/SignUp"
 import Category from './components/Category/Category'
 import WomenEthnic from "./components/Category/WomenEthnic"
 import WomenWestern from "./components/Category/WomenWestern"
@@ -12,7 +12,7 @@ import KidsWears from "./components/Category/KidsWears"
 import Cartdetails from "./components/Cartdetails"
 import Footer from "./components/Layouts/Footer" 
 import AddressPayment from "./components/checkout/AddressPayment"
-import Logout from "./components/Logout"
+import Logout from "./components/User/Logout"
 import Header from './components/Layouts/Header'
 
 function App() {

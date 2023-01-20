@@ -146,9 +146,9 @@ const Header = () => {
                     <Navbar bg="dark" variant="light" className='navbar'>
                         <Container>
                             <Nav className="me-auto">
-                                <NavLink to="/" className="text-decoration-none text-light mx-3" ><b>Home</b></NavLink>
-                                <NavLink to="/SignUp" className="text-decoration-none text-light mx-3" ><b>Register</b></NavLink>
-                                <NavLink to="/SignIn" className="text-decoration-none text-light "><b>Login</b></NavLink>
+                                <NavLink to="/" className="text-decoration-none text-light" ><b>Home</b></NavLink>
+                                <NavLink to="/SignUp" className="text-decoration-none text-light mx-5" ><b>Register</b></NavLink>
+                                <NavLink to="/SignIn" className="text-decoration-none text-light mx-2 "><b>Login</b></NavLink>
                             </Nav>
                         </Container>
                     </Navbar>

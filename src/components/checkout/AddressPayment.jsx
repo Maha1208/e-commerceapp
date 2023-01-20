@@ -61,7 +61,7 @@ const Payment = () => {
       }).then((response)=>{
         toast.success("Ordered placed Successfully.")
         // navigate('/');
-      }).then((error)=>{
+      }).catch((error)=>{
         toast.error("Order declined")
       })
       }
