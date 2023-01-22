@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { DLT, ADD, REMOVE } from '../redux/actions/action';
 import Header from './Layouts/Header';
+import { useCallback } from 'react';
 
 const Cartdetails = () => {
 
@@ -27,34 +28,35 @@ const Cartdetails = () => {
     dispatch(DLT(key));
     window.history.back();
   }
-
+  
   // remove one
   const remove = (item) => {
     dispatch(REMOVE(item))
   }
 
   //Getting page for selected Products
-  const compare = () => {
+  const compare = useCallback(() => {
     let comparedata = getdata.filter((e) => {
       return e.key === key
     });
     setData(comparedata);
-  }
+  
+  },[getdata,key]);
 
   useEffect(() => {
     compare();
-  }) //,[key]
+  },[compare]) 
 
 
   return (
     <>
       <Header />
 
-      <div className="container mt-2">
-        <h2 className='text-center'>Product Details Page
+      <div className="container mt-5">
+        <h2 className='text-center mb-5'>Product Details Page
         </h2>
 
-        <section className='container mt-3'>
+        <section className='container mt-5'>
           <div className="itemsdetails">
             {
               data.map((ele) => {
@@ -72,7 +74,7 @@ const Cartdetails = () => {
                             <p> <strong>Price</strong>  : <b>₹{ele.price}</b></p>
                             <p> <strong>Type</strong>  :<b>{ele.type}</b></p>
                             <p> <strong>Total</strong>  :<b>₹{ele.price * ele.qnty}</b></p>
-                            <div className='mt-5 d-flex justify-content-between align-items-center' style={{ width: 100, cursor: "pointer", background: "#ddd", color: "#111" }}>
+                            <div className='mt-5 mx-5 d-flex justify-content-between align-items-center' style={{ width: 100, cursor: "pointer", background: "#ddd", color: "#111" }}>
                               <span style={{ fontSize: 24 }} onClick={ele.qnty <= 1 ? () => dlt(ele.key) : () => remove(ele)}>-</span>
                               <span style={{ fontSize: 22 }}>{ele.qnty}</span>
                               <span style={{ fontSize: 24 }} onClick={() => send(ele)}>+</span>

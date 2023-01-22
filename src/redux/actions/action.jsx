@@ -8,7 +8,7 @@ export const ADD = (item) =>{
 // remove items
 export const DLT = (key) => {
     return {
-        type: "RMV_CART",
+        type: "REMOVE_CART",
         payload: key
     }
 }
@@ -17,7 +17,7 @@ export const DLT = (key) => {
 
 export const REMOVE = (item) => {
     return {
-        type: "RMV_ONE",
+        type: "REMOVE_ONE",
         payload: item
     }
 }

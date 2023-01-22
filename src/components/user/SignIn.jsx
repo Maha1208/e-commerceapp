@@ -2,7 +2,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Header from '../Layouts/Header';
+import Header from '../layouts/Header';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 

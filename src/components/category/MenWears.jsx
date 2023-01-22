@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import {ADD} from '../../redux/actions/action';
 import Header from '../Layouts/Header';
 import "../style.css";
+import { Link } from 'react-router-dom';
 
 const Mens = () => {
 
@@ -24,6 +25,7 @@ const Mens = () => {
   const send= (e) => {
     dispatch(ADD(e));
   }
+  
 
 
     return (
@@ -44,7 +46,9 @@ const Mens = () => {
                                             const{key,image,rating,prname,price}=values;
                                             return (
                                                 <Card key={key} style={{ width: '23rem', border: 'black' }} className="mx-4 mt-4 card_style">
+                                                <Link to={`/cart/${key}`}>
                                                 <Card.Img variant="top" src={image} style={{ height: "15rem" }} className="mt-3" />
+                                                </Link>
                                                     <Card.Body>
                                                         <Card.Title>{prname}</Card.Title>
                                                         <Card.Text>

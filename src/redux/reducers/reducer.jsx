@@ -21,7 +21,7 @@ export const cartreducer = (state=INIT_STATE,action) => {
             }
         }
 
-        case "RMV_CART":
+        case "REMOVE_CART":
             const data = state.carts.filter((el)=>el.key !== action.payload); 
             // console.log(data);
 
@@ -30,7 +30,7 @@ export const cartreducer = (state=INIT_STATE,action) => {
                 carts:data
             }
 
-        case "RMV_ONE":
+        case "REMOVE_ONE":
             const ItemIndex_dec = state.carts.findIndex((item)=> item.key === action.payload.key);
    
             if(state.carts[ItemIndex_dec].qnty >= 1){

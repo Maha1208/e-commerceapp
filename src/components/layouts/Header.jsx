@@ -86,11 +86,11 @@ const Header = () => {
                         >
                             {
                                 getdata.length ?
-                                    <div className='cart_details' style={{ width: "45rem", padding: 20 }}>
+                                    <div className='cart_details' style={{ width: "55rem", padding: 20 }}>
                                         <Table>
                                             <thead>
                                                 <tr>
-                                                    <th>ProductImage</th>
+                                                    <th>Product Image</th>
                                                     <th>Product Name</th>
                                                 </tr>
                                             </thead>
@@ -101,28 +101,29 @@ const Header = () => {
                                                             <>
                                                                 <tr>
                                                                     <td>
-                                                                        <NavLink to={`/cart/${e.key}`} onClick={handleClose}>
-                                                                            <img src={e.image} style={{ width: "5rem", height: "5rem" }} alt="" />
-                                                                        </NavLink>
+                                                                        <Link to={`/cart/${e.key}`} onClick={handleClose}>
+                                                                            <img src={e.image} style={{ width: "10rem", height: "10rem" }} alt="" />
+                                                                        </Link>
                                                                     </td>
                                                                     <td>
-                                                                        <p>{e.prname}</p>
-                                                                        <p>Price : ₹{e.price}</p>
-                                                                        <p>Quantity : {e.qnty}</p>
-                                                                        <p style={{ color: "red", fontSize: 20, cursor: "pointer" }} onClick={() => dlt(e.key)}>
+                                                                        <th>{e.prname}</th><br/>
+                                                                        <th>Price : ₹{e.price}</th><br/>
+                                                                        <th>Quantity : {e.qnty}</th><br/>
+                                                                        <th style={{ color: "red", fontSize: 20, cursor: "pointer" }} onClick={() => dlt(e.key)}>
                                                                             <i className='fas fa-trash smalltrash'></i>
-                                                                        </p>
+                                                                        </th>
                                                                     </td>
 
                                                                     <td className='mt-5' style={{ color: "red", fontSize: 20, cursor: "pointer" }} onClick={() => dlt(e.key)}>
                                                                         <i className='fas fa-trash largetrash'></i>
                                                                     </td>
                                                                 </tr>
+                                                                
+
                                                             </>
                                                         )
                                                     })
                                                 }
-                                                <p className='text-center'>Total :₹{price}</p>
                                                 <NavLink to={`/checkout`} onClick={handleClose} style={{ textDecoration: "none" }}>
                                                     <button className="checkout" type="button"><b>₹{price}<br />Checkout</b></button>
                                                 </NavLink>

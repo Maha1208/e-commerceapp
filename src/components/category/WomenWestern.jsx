@@ -5,7 +5,7 @@ import CardsData from '../CardsData';
 import { useState } from "react";
 import { useDispatch } from 'react-redux';
 import { ADD } from '../../redux/actions/action';
-import Header from '../Layouts/Header';
+import Header from '../layouts/Header';
 import "../style.css";
 
 const WomenWestern = () => {
