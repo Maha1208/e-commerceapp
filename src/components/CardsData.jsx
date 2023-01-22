@@ -667,7 +667,7 @@ const CardsData =
             category: "kidswear",
             subcategory:"boy",
             prname: "Teeny Tiny Traditions Colorful festive kurtas lehenga",
-            image:"/Images/KidsWear/b1.jpg ",
+            image:"/Images/KidsWear/b2.jpg ",
             type: "This designer set can also be worn without coat for a  look",
             somedata: "300+ orders",
             price: 460,

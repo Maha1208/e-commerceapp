@@ -1,19 +1,19 @@
 import React from "react"
 import { Routes, Route } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Home from "./components/Layouts/Home"
-import SignIn from "./components/User/SignIn"
-import SignUp from "./components/User/SignUp"
-import Category from './components/Category/Category'
-import WomenEthnic from "./components/Category/WomenEthnic"
-import WomenWestern from "./components/Category/WomenWestern"
-import MenWears from "./components/Category/MenWears"
-import KidsWears from "./components/Category/KidsWears"
+import Home from "./components/layouts/Home"
+import SignIn from "./components/user/SignIn"
+import SignUp from "./components/user/SignUp"
+import Category from './components/category/Category'
+import WomenEthnic from "./components/category/WomenEthnic"
+import WomenWestern from "./components/category/WomenWestern"
+import MenWears from "./components/category/MenWears"
+import KidsWears from "./components/category/KidsWears"
 import Cartdetails from "./components/Cartdetails"
-import Footer from "./components/Layouts/Footer" 
+import Footer from "./components/layouts/Footer" 
 import AddressPayment from "./components/checkout/AddressPayment"
-import Logout from "./components/User/Logout"
-import Header from './components/Layouts/Header'
+import Logout from "./components/user/Logout"
+import Header from './components/layouts/Header'
 
 function App() {
   return ( 

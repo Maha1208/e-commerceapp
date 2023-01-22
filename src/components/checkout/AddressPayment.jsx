@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import Header from '../Layouts/Header'
+import Header from '../layouts/Header'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // import { useNavigate } from 'react-router-dom';
@@ -72,7 +72,7 @@ const Payment = () => {
   return (
     <div>
       <Header/>
-      <link rel='stylesheet' href='CSS/Payment.css'></link>
+      <link rel='stylesheet' href='css/Payment.css'></link>
       <div className="container">
         <form className='form' onSubmit={orderPlace}>
 

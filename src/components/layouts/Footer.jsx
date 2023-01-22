@@ -4,7 +4,7 @@ const Footer = () => {
 
     return (
         <div>
-            <link rel='stylesheet' href='CSS/Footer.css'></link>
+            <link rel='stylesheet' href='css/Footer.css'></link>
 
             <footer class="footer">
                 <div class="container">

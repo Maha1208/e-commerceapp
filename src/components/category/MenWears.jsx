@@ -5,7 +5,7 @@ import CardsData from '../CardsData';
 import { useState } from "react";
 import { useDispatch } from 'react-redux';
 import {ADD} from '../../redux/actions/action';
-import Header from '../Layouts/Header';
+import Header from '../layouts/Header';
 import "../style.css";
 import { Link } from 'react-router-dom';
 
@@ -30,7 +30,7 @@ const Mens = () => {
 
     return (
         <>
-            <link rel='stylesheet' href='CSS/product.css'></link>
+            <link rel='stylesheet' href='css/product.css'></link>
             <Header/>
             <h1 className="text-center text-black bg-info">Mens Wear Categories</h1>
             <div className='d-flex nav1'>

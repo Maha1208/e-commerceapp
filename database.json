@@ -13,6 +13,13 @@
       "password": "mAHA1208",
       "phone": "9876543873",
       "id": 2
+    },
+    {
+      "name": "MAHA",
+      "email": "maha@gmail.com",
+      "password": "Maha1208",
+      "phone": "9176310412",
+      "id": 3
     }
   ],
   "AddressPayment": [
@@ -69,6 +76,24 @@
       "state": "m,fghj",
       "zipcode": "876543",
       "id": 6
+    },
+    {
+      "fullname": "fghjkl",
+      "email": "fghjkl@gmail.com",
+      "address": "ghjkl",
+      "city": "ghjkl;",
+      "state": "fghjkl",
+      "zipcode": "634567",
+      "id": 7
+    },
+    {
+      "fullname": "fghjkl",
+      "email": "fghjkl@gmail.com",
+      "address": "ghjkl",
+      "city": "ghjkl;",
+      "state": "fghjkl",
+      "zipcode": "634567",
+      "id": 8
     }
   ]
 }

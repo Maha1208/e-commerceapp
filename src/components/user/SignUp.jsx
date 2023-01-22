@@ -41,7 +41,7 @@ export default function SignUp() {
   return (
           <div>
             <Header/>
-            <link rel='stylesheet' href='CSS/SignUp.css'></link>
+            <link rel='stylesheet' href='css/SignUp.css'></link>
             <div className="container">
               <form id='form' onSubmit={submitData}>
                 <h1>Register</h1>

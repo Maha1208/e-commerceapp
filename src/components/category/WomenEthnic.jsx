@@ -5,7 +5,7 @@ import CardsData from '../CardsData';
 import { useState } from "react";
 import { useDispatch } from 'react-redux';
 import { ADD } from '../../redux/actions/action';
-import Header from '../Layouts/Header';
+import Header from '../layouts/Header';
 import "../style.css";
 
 const WomenEthnic = () => {
@@ -28,7 +28,7 @@ const WomenEthnic = () => {
 
   return (
     <>
-      <link rel='stylesheet' href='CSS/product.css'></link>
+      <link rel='stylesheet' href='css/product.css'></link>
       <Header />
       <h2 className="text-center text-black bg-info">Women Ethnic Wear Categories</h2>
       <div className='d-flex nav1'>

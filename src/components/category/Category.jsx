@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from "../Layouts/Header";
+import Header from "../layouts/Header";
 import "../style.css";
 
 function Category(){
     return (
         <div>
-            <link rel='stylesheet' href='CSS/Category.css'></link>
+            <link rel='stylesheet' href='css/Category.css'></link>
              <Header/>
             <h1><b>Welcome to Category</b></h1>
 

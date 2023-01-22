@@ -5,7 +5,7 @@ import Header from './Header'
 export default function Home() {     
     return (
         <div>
-            <link rel='stylesheet' href='CSS/Home.css'></link>
+            <link rel='stylesheet' href='css/Home.css'></link>
             <Header/>
             {/* <!-- main background image --> */}
             <div className="main-background">
