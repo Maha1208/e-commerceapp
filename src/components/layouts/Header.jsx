@@ -13,7 +13,7 @@ import "../style.css";
 
 const Header = () => {
     //navbar update
-    const auth = sessionStorage.getItem('email');
+    const user = sessionStorage.getItem('email');
     // const navigate = useNavigate();
 
 
@@ -57,7 +57,7 @@ const Header = () => {
     return (
         <>
             {
-                auth ?
+                user ?
                     <Navbar bg="dark" variant="light" className='navbar'>
                         <Container>
                             <NavLink onClick={() => (history(-1))} className="text-decoration-none text-light"><b>Back</b></NavLink>

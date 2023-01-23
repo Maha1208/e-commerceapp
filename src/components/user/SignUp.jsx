@@ -18,7 +18,7 @@ export default function SignUp() {
 
   const submitData=(event)=>{
    
-    axios.get("http://localhost:4000/SignUp?email=" +email + "&password=" +password)
+    axios.get("http://localhost:4000/SignUp?email=" +email)
       .then (data=>{
         if(data.data.length === 0){
           axios.post("http://localhost:4000/SignUp",{name:`${name}`,email:`${email}`,password:`${password}`,phone:`${phone}`})
@@ -32,12 +32,14 @@ export default function SignUp() {
             })
         }
         else{
-          alert("Account already exist")
+          toast.error("Account already exist please Login or use different email id to register")
         }
       })
       event.preventDefault();    
   }
+  
   const isEnabled = email.length > 0 && password.length > 0 && name.length > 0 && phone.length > 0;
+  
   return (
           <div>
             <Header/>

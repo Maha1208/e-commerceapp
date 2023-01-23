@@ -1,35 +1,35 @@
 import React from 'react';
 import Header from "../layouts/Header";
 import "../style.css";
+import {Link} from 'react-router-dom';
 
 function Category(){
     return (
         <div>
             <link rel='stylesheet' href='css/Category.css'></link>
              <Header/>
-            <h1><b>Welcome to Category</b></h1>
+            <h1><b>Welcome To Category Of Dresses </b></h1>
 
             <div className="container">
                 <div className="box">
-                    <a style={{ textDecoration: "none" }} href="WomenEthnic">
+                    <Link to="/womenethnic" style={{ textDecoration: "none" }}>
                         <img src="/Images/ethnic.jpg" alt="ethnic"/>
-                        <div className="overlay">WomenEthnic Wears</div></a>
+                        <div className="overlay">WomenEthnic Wears</div></Link>
                 </div>
                 <div className="box">
-                    <a style={{ textDecoration: "none" }} href="WomenWestern">
+                    <Link to="/womenwestern"  style={{ textDecoration: "none" }}>
                         <img src="/Images/western.jpeg" alt="western"/>
-                        <div className="overlay">Women Western Wears</div></a>
+                        <div className="overlay">Women Western Wears</div></Link>
                 </div>
                 <div className="box">
-                    <a style={{ textDecoration: "none" }} href="MenWears">
+                    <Link to="/menwears" style={{ textDecoration: "none" }}>
                         <img src="/Images/men.jpg" alt="men"/>
-                        <div className="overlay">Men Wears</div></a>
+                        <div className="overlay">Men Wears</div></Link>
                 </div>
                 <div className="box">
-                    <a style={{ textDecoration: "none" }} href="KidsWears">
+                    <Link to="/kidswears" style={{ textDecoration: "none" }}>
                         <img src="/Images/kids.jpg" alt="Kids"/>
-                        <div className="overlay">Kids Wears</div></a>
-
+                        <div className="overlay">Kids Wears</div></Link>
                 </div>
             </div>
         </div>

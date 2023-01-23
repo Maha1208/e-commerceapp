@@ -8,7 +8,7 @@ import { ADD } from '../../redux/actions/action';
 import Header from '../layouts/Header';
 import "../style.css";
 
-const WomenWestern = () => {
+const KidsWears = () => {
 
   const [data, setData] = useState([]);
 
@@ -69,4 +69,4 @@ const WomenWestern = () => {
   )
 }
 
-export default WomenWestern
+export default KidsWears

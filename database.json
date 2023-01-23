@@ -6,20 +6,6 @@
       "password": "Maha1208",
       "phone": "9876543212",
       "id": 1
-    },
-    {
-      "name": "LAKSH",
-      "email": "emahe12@gmail.com",
-      "password": "mAHA1208",
-      "phone": "9876543873",
-      "id": 2
-    },
-    {
-      "name": "MAHA",
-      "email": "maha@gmail.com",
-      "password": "Maha1208",
-      "phone": "9176310412",
-      "id": 3
     }
   ],
   "AddressPayment": [
@@ -31,69 +17,6 @@
       "state": "Tamilnadu",
       "zipcode": "600119",
       "id": 1
-    },
-    {
-      "fullname": "ff",
-      "email": "maha@gmail.com",
-      "address": "karpaga",
-      "city": "hjklkjhbnl",
-      "state": "kjhvbnmklkn",
-      "zipcode": "600119",
-      "id": 2
-    },
-    {
-      "fullname": "Maha12",
-      "email": "emahe1208@gmail.com",
-      "address": "bnm",
-      "city": "bnm,",
-      "state": "vhjkl",
-      "zipcode": "87654321",
-      "id": 3
-    },
-    {
-      "fullname": "maha",
-      "email": "maha@gmail.com",
-      "address": "karpaga",
-      "city": "chennai",
-      "state": "Tamilnadu",
-      "zipcode": "600119",
-      "id": 4
-    },
-    {
-      "fullname": "fhgdhtdtdg",
-      "email": "maha@gmail.com",
-      "address": "karpaga",
-      "city": "chennai",
-      "state": "Tamilnadu",
-      "zipcode": "600119",
-      "id": 5
-    },
-    {
-      "fullname": "maha",
-      "email": "cvbnm@gmail.com",
-      "address": "cvbnm",
-      "city": "vbnm,",
-      "state": "m,fghj",
-      "zipcode": "876543",
-      "id": 6
-    },
-    {
-      "fullname": "fghjkl",
-      "email": "fghjkl@gmail.com",
-      "address": "ghjkl",
-      "city": "ghjkl;",
-      "state": "fghjkl",
-      "zipcode": "634567",
-      "id": 7
-    },
-    {
-      "fullname": "fghjkl",
-      "email": "fghjkl@gmail.com",
-      "address": "ghjkl",
-      "city": "ghjkl;",
-      "state": "fghjkl",
-      "zipcode": "634567",
-      "id": 8
     }
   ]
 }

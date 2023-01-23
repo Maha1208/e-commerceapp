@@ -15,19 +15,16 @@ export default function SignIn() {
 
 const onformsubmit=(event) =>{
     axios.get("http://localhost:4000/SignUp?email=" +email + "&password=" +password)
-
     .then(value=>{
-        if(value.data.length>0){
             sessionStorage.setItem("email",value.data[0].email);
             toast.success('Login successful');
             usenavigate('/')
-        }
-        else{
-            toast.error("Invalid email or password")
-        }
     })
-    event.preventDefault();
+    .catch(
+          toast.error('Invalid email or password'));
+      event.preventDefault(); 
 }
+
 const isEnabled = email.length > 0 && password.length >0;
 
 return (

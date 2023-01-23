@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
 
@@ -12,9 +13,9 @@ const Footer = () => {
                         <div class="footer-col">
                             <h4>Shop</h4>
                             <ul>
-                                <li><a href="#About">about us</a></li>
-                                <li><a href="/SignUp">Register</a></li>
-                                <li><a href=" ">Address</a></li>
+                                <li><Link to="">about us</Link></li>
+                                <li><Link to="/SignUp">Register</Link></li>
+                                <li><Link to=" ">Address</Link></li>
 
                             </ul>
                         </div>
@@ -22,19 +23,19 @@ const Footer = () => {
                         <div class="footer-col">
                             <h4>Dress Kart online shop</h4>
                             <ul>
-                                <li><a href="/WomenWestern">Western Dresses</a></li>
-                                <li><a href="/MensWears">Mens Wears</a></li>
-                                <li><a href="/KidsWears">Kids Wears</a></li>
-                                <li><a href="/WomensWears">Womens Wears </a></li>
+                                <li><Link to='/womenwestern'>Western Dresses</Link></li>
+                                <li><Link to="/menswears">Mens Wears</Link></li>
+                                <li><Link to="/kidswears">Kids Wears</Link></li>
+                                <li><Link to="/womenswears">Womens Wears </Link></li>
                             </ul>
                         </div>
                         <div class="footer-col">
                             <h4>follow us</h4>
                             <div class="social-links">
-                                <a href=" "><i class="fab fa-facebook-f"></i></a>
-                                <a href=" "><i class="fab fa-twitter"></i></a>
-                                <a href=" "><i class="fab fa-instagram"></i></a>
-                                <a href=" "><i class="fab fa-linkedin-in"></i></a>
+                                <Link to=" "><i class="fab fa-facebook-f"></i></Link>
+                                <Link to=" "><i class="fab fa-twitter"></i></Link>
+                                <Link to=" "><i class="fab fa-instagram"></i></Link>
+                                <Link to=" "><i class="fab fa-linkedin-in"></i></Link>
                             </div>
                         </div>
                     </div>

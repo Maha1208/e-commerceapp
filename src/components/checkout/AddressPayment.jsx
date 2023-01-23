@@ -1,9 +1,9 @@
-import React from 'react'
-import { useState } from 'react';
-import Header from '../layouts/Header'
-import { ToastContainer, toast } from 'react-toastify';
+import axios from 'axios';
+import { toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import { useNavigate } from 'react-router-dom';
+import Header from '../layouts/Header';
+import { useState } from 'react';
 
 const Payment = () => {
   const [fullname, namechange] = useState("");
@@ -14,70 +14,28 @@ const Payment = () => {
   const [zipcode, zipcodechange] = useState("");
 
 
-  // const navigate=useNavigate();
-
-  const IsValidate = () => {
-    let isproceed = true;
-        let errormessage = 'Please enter the value in ';
-        if (fullname === null || fullname === '') {
-            isproceed = false;
-            errormessage += ' provide full name';
+  const orderPlace=(event)=>{
+           axios.post("http://localhost:4000/AddressPayment",{name:`${fullname}`,email:`${email}`,address:`${address}`,city:`${city}`,state:`${state}`,zipcode:`${zipcode}`})
+            .then(()=>{
+               toast.success("Address updated successfully")
+            })
+            .catch(error=>
+              {
+                toast.error(error)
+            })
+            event.preventDefault(); 
         }
-        if (email === null || email === '') {
-            isproceed = false;
-            errormessage += ' Invalid email';
-        }
-        if (address === null || address === '') {
-            isproceed = false;
-            errormessage += 'address is mandatory';
-        }
-        if (city === null || city === '') {
-            isproceed = false;
-            errormessage += 'enter city';
-        }
-        if (state === null || state === '') {
-          isproceed = false;
-          errormessage += 'enter state';
-      }
-      if (zipcode === null || zipcode === '') {
-        isproceed = false;
-        errormessage += 'enter zipcode';
-    }
-        if(!isproceed){
-          toast.warning(errormessage)
-        }
-        return isproceed;
-      }
-      const orderPlace =(e) =>{
-        e.preventDefault();
-        let obj1={fullname,email,address,city,state,zipcode};
-    
-        if(IsValidate()){
-    
-        fetch("http://localhost:4000/AddressPayment",{
-          method:"post",
-          headers:{'content-type':'application/json'},
-          body:JSON.stringify(obj1)
-      }).then((response)=>{
-        toast.success("Ordered placed Successfully.")
-        // navigate('/');
-      }).catch((error)=>{
-        toast.error("Order declined")
-      })
-      }
-    }
-
+   
+  const isEnabled = email.length > 0 && fullname.length > 0 && address.length > 0 && city.length > 0 && state.length && zipcode.length;
   
-
   return (
     <div>
       <Header/>
       <link rel='stylesheet' href='css/Payment.css'></link>
       <div className="container">
+      <h3 className="title"> Address for the Delivery</h3>
+
         <form className='form' onSubmit={orderPlace}>
-
-          <h3 className="title">billing address</h3>
-
           <label>Full name :</label>
           <input type="text" placeholder="Full name" name="fullname" onChange={e => namechange(e.target.value)}/><br/>
 
@@ -95,7 +53,7 @@ const Payment = () => {
           <label>zip code :</label>
           <input type="text" placeholder="123 456" name="zipcode" onChange={e => zipcodechange(e.target.value)}/><br/>
 
-          <button type="submit" value="Place Order" className="submit-btn">Place Order</button>
+          <button type="submit" value="Place Order" className="submit-btn" disabled={!isEnabled}>Place Order</button>
 
         </form>
         <ToastContainer
