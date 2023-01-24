@@ -7,6 +7,8 @@ import { useDispatch } from 'react-redux';
 import { ADD } from '../../redux/actions/action';
 import Header from '../layouts/Header';
 import "../style.css";
+import { toast, ToastContainer } from 'react-toastify';
+
 
 const MenWears = () => {
 
@@ -23,6 +25,8 @@ const MenWears = () => {
 
     const send = (e) => {
         dispatch(ADD(e));
+        toast.success("Product added in the cart");
+
     }
 
 
@@ -66,6 +70,7 @@ const MenWears = () => {
 
                 </div>
             </div>
+            <ToastContainer/>
         </>
     )
 }

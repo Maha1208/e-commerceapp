@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import { ADD } from '../../redux/actions/action';
 import Header from '../layouts/Header';
 import "../style.css";
+import { toast, ToastContainer } from 'react-toastify';
 
 const KidsWears = () => {
 
@@ -17,15 +18,14 @@ const KidsWears = () => {
       return curData.subcategory === items && curData;
     });
     setData(result)
-
   }
+  
   const dispatch = useDispatch();
 
   const send = (e) => {
     dispatch(ADD(e));
+    toast.success("Product added in the cart");
   }
-
-
   return (
     <>
       <link rel='stylesheet' href='css/product.css'></link>
@@ -65,6 +65,7 @@ const KidsWears = () => {
 
         </div>
       </div>
+      <ToastContainer />
     </>
   )
 }

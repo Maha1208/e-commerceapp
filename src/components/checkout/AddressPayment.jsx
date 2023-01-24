@@ -33,9 +33,11 @@ const Payment = () => {
       <Header/>
       <link rel='stylesheet' href='css/Payment.css'></link>
       <div className="container">
-      <h3 className="title"> Address for the Delivery</h3>
 
         <form className='form' onSubmit={orderPlace}>
+
+        <h3 className="title"> Address for the Delivery</h3>
+
           <label>Full name :</label>
           <input type="text" placeholder="Full name" name="fullname" onChange={e => namechange(e.target.value)}/><br/>
 
@@ -45,7 +47,7 @@ const Payment = () => {
           <label>address :</label>
           <input type="text" placeholder="Door No - street - locality" name="address" onChange={e => addresschange(e.target.value)}/><br/>
           <label>city :</label>
-          <input type="text" placeholder="city" name="city" onChange={e => citychange(e.target.value)}/><br/>
+          <input type="text" placeholder="city" name="city" onChange={e => citychange(e.target.value)} required/><br/>
 
           <label>state :</label>
           <input type="text" placeholder="state" name="state" onChange={e => statechange(e.target.value)}/><br/>

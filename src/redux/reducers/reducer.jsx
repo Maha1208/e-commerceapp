@@ -23,8 +23,6 @@ export const cartreducer = (state=INIT_STATE,action) => {
 
         case "REMOVE_CART":
             const data = state.carts.filter((el)=>el.key !== action.payload); 
-            // console.log(data);
-
             return {
                 ...state,
                 carts:data
@@ -35,14 +33,13 @@ export const cartreducer = (state=INIT_STATE,action) => {
    
             if(state.carts[ItemIndex_dec].qnty >= 1){
                 const dltitems = state.carts[ItemIndex_dec].qnty -= 1
-                console.log([...state.carts,dltitems]);
-
+                // console.log([...state.carts,dltitems]);
                 return {
                     ...state,
-                    carts:[...state.carts]
+                    carts:[...state.carts,dltitems]
                 }
             }else if(state.carts[ItemIndex_dec].qnty === 1 ){
-                const data = state.carts.filter((el)=>el.key !== action.payload);
+                const data = state.carts.filter((el)=>el.key === action.payload); //!==
 
                 return {
                     ...state,

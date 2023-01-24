@@ -2,7 +2,7 @@ body {
   background-image:url("/Images/Banner/b4.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  /* height:60vh ; */
+  height:60vh ;
   }
 
 input[type=text],
@@ -53,12 +53,12 @@ input:focus:invalid {
   margin-left: 20px;
 }
 
-input:focus:valid{ 
+/* input:focus:valid{ 
   outline: none !important;
   border-color: hsl(81, 77%, 47%);
   box-shadow: 0 0 10px #719ECE;
   accent-color: gold;
-}
+} */
 
 button:enabled{
   background-color: #9fe73a;
@@ -96,7 +96,7 @@ span{
   display: none;
 }
 
-input:invalid:disabled{
+/* input:invalid:disabled{
   display:block;
   
-}
+} */

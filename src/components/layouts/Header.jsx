@@ -22,13 +22,12 @@ const Header = () => {
 
     const [price, setPrice] = useState(0);
 
-    const getdata = useSelector((state) => state.cartreducer.carts);
-    // console.log(getdata);
+    const getdata = useSelector((state) => state.cartreducer.carts); //products from the cartreducer
 
     const dispatch = useDispatch();
 
 
-    const [anchorEl, setAnchorEl] = useState(null);
+    const [anchorEl, setAnchorEl] = useState(null); //menu open
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -51,14 +50,14 @@ const Header = () => {
 
     useEffect(() => {
         total();
-    }, [total])
+    }, [total]) //grant total
 
 
     return (
         <>
             {
                 user ?
-                    <Navbar bg="dark" variant="light" className='navbar'>
+                    <Navbar bg="dark" className='navbar'>
                         <Container>
                             <NavLink onClick={() => (history(-1))} className="text-decoration-none text-light"><b>Back</b></NavLink>
                             <Nav className="me-auto">
@@ -90,8 +89,9 @@ const Header = () => {
                                         <Table>
                                             <thead>
                                                 <tr>
-                                                    <th>Product Image</th>
-                                                    <th>Product Name</th>
+                                                    <th><b>Product Image</b></th>
+                                                    <th><b>Product Name</b></th>
+                                                    
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -109,10 +109,10 @@ const Header = () => {
                                                                         <th>{e.prname}</th><br/>
                                                                         <th>Price : ₹{e.price}</th><br/>
                                                                         <th>Quantity : {e.qnty}</th><br/>
-                                                                        <th style={{ color: "red", fontSize: 20, cursor: "pointer" }} onClick={() => dlt(e.key)}>
+                                                                        {/* <th style={{ color: "red", fontSize: 20, cursor: "pointer" }} onClick={() => dlt(e.key)}>
                                                                             <i className='fas fa-trash smalltrash'></i>
-                                                                        </th>
-                                                                    </td>
+                                                                        </th> */}
+                                                                    </td>-
 
                                                                     <td className='mt-5' style={{ color: "red", fontSize: 20, cursor: "pointer" }} onClick={() => dlt(e.key)}>
                                                                         <i className='fas fa-trash largetrash'></i>

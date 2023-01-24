@@ -8,6 +8,7 @@
   margin-left: 30%;
   padding: 5px;
   background-image: url("/Images/bg/pink.jpg");
+  background-repeat: no-repeat;
 
 }
 
@@ -31,10 +32,10 @@ height: 6vh;
 font-weight: 500;
 border-radius: 10px;
 color:rgb(223, 232, 223);
-background-color: rgb(108, 211, 231,0.5);
+background-color: rgba(105, 211, 215);
 }
 
-.submit-btn:hover{
+.submit-btn:hover:enabled{
   background-color: #a5c827;
 
 }

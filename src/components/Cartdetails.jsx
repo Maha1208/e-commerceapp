@@ -12,16 +12,12 @@ const Cartdetails = () => {
 
   const { key } = useParams();
 
-  // const history = useNavigate();
+  const getdata = useSelector((state) => state.cartreducer.carts); // selecting particular data from the cartreducer
+
   const dispatch = useDispatch();
-
-  const getdata = useSelector((state) => state.cartreducer.carts);
-  console.log(getdata);
-
   // add data
   const send = (e) => {
-    // console.log(e);
-    dispatch(ADD(e));
+    dispatch(ADD(e)); //contains the selected products
   }
 
   const dlt = (key) => {
