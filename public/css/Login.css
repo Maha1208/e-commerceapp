@@ -79,14 +79,14 @@ button:disabled{
   margin-left: 50px;
   border-radius: 10px;
   width: 45%;
+  cursor: not-allowed;
+
 
 }
 
 input:focus:valid:enabled{ 
-  outline: none !important;
+  outline: none;
   border-color: hsl(81, 77%, 47%);
-  box-shadow: 0 0 10px #719ECE;
-  accent-color: gold;
 }
 
 span{
@@ -96,7 +96,3 @@ span{
   display: none;
 }
 
-/* input:invalid:disabled{
-  display:block;
-  
-} */

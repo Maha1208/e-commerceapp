@@ -38,7 +38,7 @@ background-color: rgb(100, 197, 233);
 padding:10px;
 width:150px;
 border-radius: 100px;
-cursor: pointer;
+cursor: not-allowed;
 margin-top: 15px;
 margin-left: 120px;
 margin-bottom: 60px;
@@ -47,6 +47,8 @@ margin-bottom: 60px;
 #Reg:hover:enabled
 {
     background: #9fde69;
+    cursor: pointer;
+
 }
 
 
