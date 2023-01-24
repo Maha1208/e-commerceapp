@@ -13,8 +13,7 @@ export default function SignUp() {
   const [password, passwordchange] = useState("");
   const [phone, phonechange] = useState("");
 
-    const navigate=useNavigate();
-
+  const navigate=useNavigate();
 
   const submitData=(event)=>{
    

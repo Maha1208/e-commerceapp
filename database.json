@@ -6,15 +6,11 @@
       "password": "Maha1208",
       "phone": "9876543212",
       "id": 1
-    },
-    {
-      "name": "MAHA",
-      "email": "maha@gmail.com",
-      "password": "MAHA123412b",
-      "phone": "9176310412",
-      "id": 2
     }
   ],
+
+
+  
   "AddressPayment": [
     {
       "fullname": "maha",
