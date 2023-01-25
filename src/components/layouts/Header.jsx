@@ -6,17 +6,15 @@ import Nav from 'react-bootstrap/Nav';
 import Menu from '@mui/material/Menu';
 import { Table } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
-import { DLT } from '../../redux/actions/action';
+import { DLT } from '../../redux/actions/Action';
 import { NavLink, Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import "../style.css";
+import "../../css/style.css";
 
 const Header = () => {
     //navbar update
     const user = sessionStorage.getItem('email');
     // const navigate = useNavigate();
-
-
     const history = useNavigate();
 
 
@@ -55,6 +53,7 @@ const Header = () => {
 
     return (
         <>
+            <link rel='stylesheet' href='css/Home.css'></link>
             {
                 user ?
                     <Navbar bg="dark" className='navbar'>

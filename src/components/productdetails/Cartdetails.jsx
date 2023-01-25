@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Table from 'react-bootstrap/Table'
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { DLT, ADD, REMOVE } from '../redux/actions/action';
-import Header from './layouts/Header';
+import { DLT, ADD, REMOVE } from '../../redux/actions/Action';
+import Header from '../layouts/Header';
 import { useCallback } from 'react';
 
 const Cartdetails = () => {

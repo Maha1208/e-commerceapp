@@ -1,13 +1,16 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import CardsData from '../CardsData';
+import CardsData from '../mock/CardsData';
 import { useState } from "react";
 import { useDispatch } from 'react-redux';
-import { ADD } from '../../redux/actions/action';
+import { ADD } from '../../redux/actions/Action';
 import Header from '../layouts/Header';
-import "../style.css";
+import "../../css/style.css";
+import "../../css/bg.css";
+
 import { toast, ToastContainer } from 'react-toastify';
+
 
 const KidsWears = () => {
 
@@ -28,7 +31,6 @@ const KidsWears = () => {
   }
   return (
     <>
-      <link rel='stylesheet' href='css/product.css'></link>
       <Header />
       <h1 className="text-center text-black bg-info">Kids Wear Categories</h1>
       <div className='d-flex nav1'>

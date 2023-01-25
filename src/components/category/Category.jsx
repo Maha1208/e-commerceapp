@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from "../layouts/Header";
-import "../style.css";
+import "../../css/category.css";
+
+
 import {Link} from 'react-router-dom';
 
 function Category(){
     return (
         <div>
-            <link rel='stylesheet' href='css/Category.css'></link>
+
              <Header/>
             <h1><b>Welcome To Category Of Dresses </b></h1>
 

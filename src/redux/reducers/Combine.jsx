@@ -1,6 +1,6 @@
 //multiple reducers
 import { combineReducers } from "redux";
-import { cartreducer } from "./reducer";
+import { cartreducer } from "./Reducer";
 
 
 const rootreducer = combineReducers({

@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 export default function Home() {     
     return (
         <div>
-            <link rel='stylesheet' href='css/Home.css'></link>
             <Header/>
             {/* main background image */}
             <div className="main-background">
