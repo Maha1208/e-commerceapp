@@ -1,4 +1,4 @@
-body {
+.home {
     background-color: rgb(249, 240, 240);
     overflow-x: hidden;
     width:100%;
@@ -6,7 +6,7 @@ body {
 }
 
 .main-background {
-    background-image: url("/Images/Banner/banner1.jpg");
+    background-image:url("../../public/Images/Banner/banner1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

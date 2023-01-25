@@ -2,10 +2,12 @@ import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
 import { Link } from 'react-router-dom'
+import "../../css/home.css";
+
 
 export default function Home() {     
     return (
-        <div>
+        <div className='home'>
             <Header/>
             {/* main background image */}
             <div className="main-background">

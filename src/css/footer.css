@@ -1,4 +1,4 @@
-body{
+.bottomnav{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
 }
@@ -7,7 +7,7 @@ body{
 	padding:0;
 	box-sizing: border-box;
 }
-.container{
+.container1{
 	max-width: 1170px;
 	margin:auto;
 }
@@ -39,7 +39,7 @@ body{
 	width: 50px;
 }
 .footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 }
 .footer-col ul li a{
 	font-size: 16px;

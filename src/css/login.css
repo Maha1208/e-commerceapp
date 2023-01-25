@@ -1,0 +1,72 @@
+.log {
+  background-image:url("../../public/Images/Banner/b4.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh ;
+  overflow-y: hidden;
+  }
+
+#input {
+  width: 70%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+}
+
+
+.logincontainer {
+  padding: 15px;
+  margin-left: 3rem;
+}
+
+#loginform {
+  margin: 230px 0px 0px 154px;
+  border-radius: 30px;
+  padding: 10px 2px;
+  width: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:url("../../public/Images/Banner/c1.webp");
+}
+
+button:enabled{
+  background-color: #9fe73a;
+  color: white;
+  padding: 14px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  margin-left: 70px;
+  cursor: pointer;
+  width: 40%; 
+}
+
+button:disabled{
+  background-color: #9fa09d;
+  color: white;
+  padding: 14px 20px;
+  margin: 20px 0;
+  margin-left: 70px;
+  border-radius: 10px;
+  width: 40%;
+  cursor: not-allowed;
+}
+
+#input:focus:invalid { 
+  outline: none;
+  border-color: hsl(5, 74%, 55%);
+  box-shadow: 0 0 10px #719ECE;
+  margin-left: 20px;
+}
+
+#input:valid:enabled{ 
+  outline: none;
+  border-color: hsl(81, 77%, 47%);
+}
+
+

@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Header from '../layouts/Header';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import "../../css/login.css";
 
 export default function SignIn() {
     const [email, emailupdate] = useState('');
@@ -28,18 +28,17 @@ const onformsubmit=(event) =>{
 const isEnabled = email.length > 0 && password.length >0;
 
 return (
-    <div>
+    <div className='log'>
         <Header />
-        <link rel='stylesheet' href='css/Login.css'></link>
-        <form id='form' onSubmit={onformsubmit} >
+        <form id='loginform' onSubmit={onformsubmit} >
             <h1>Login</h1>
 
-            <div className="container">
+            <div className="logincontainer">
                 <label><b>Email</b></label><br />
-                <input type="text" value={email} onChange={e => emailupdate(e.target.value)} placeholder="Enter Emailid" name="email" required/><br />
+                <input type="text" value={email} onChange={e => emailupdate(e.target.value)} placeholder="Enter Emailid" name="email" id='input' required/><br />
 
                 <label><b>Password</b></label><br />
-                <input type="password" value={password} onChange={e => passwordupdate(e.target.value)} placeholder="Enter Password" name="password" required/><br />
+                <input type="password" value={password} onChange={e => passwordupdate(e.target.value)} placeholder="Enter Password" name="password" id='input' required/><br />
 
                 <button id='button' type="submit" disabled={!isEnabled}>Login</button><br />
 

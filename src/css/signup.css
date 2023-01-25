@@ -1,0 +1,90 @@
+.signup{
+    background-image:url("../../public/Images/Banner/b4.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh ;
+    overflow-y: hidden;
+}
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+ #form1{
+    margin-top: 30px;
+    margin-bottom: 180px;
+    margin-right: 45rem;
+    border-radius: 30px;
+    padding: 20px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url("../../public/Images/Banner/c1.webp");
+    text-decoration: none;
+
+}
+
+.box1{
+    width:300px;
+    height:35px;
+    border-radius: 10px;
+    margin:0px 0px 0px 15px ;
+    display: inline;
+}
+
+#Reg
+{
+background-color: rgb(100, 197, 233);
+padding:10px;
+width:150px;
+border-radius: 100px;
+cursor: not-allowed;
+margin-top: 15px;
+margin-left: 120px;
+margin-bottom: 60px;
+}
+
+#Reg:hover:enabled
+{
+    background: #9fde69;
+    cursor: pointer;
+
+}
+
+
+input:invalid { 
+    margin-left: 10px;
+    outline: none;
+    border-color: hsl(9, 73%, 50%);
+    box-shadow: 0 0 10px #719ECE;
+  }
+  
+  input:valid{ 
+    outline: none;
+    border-color: hsl(81, 77%, 47%);
+  }
+
+ span{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px;
+    color:rgb(8, 28, 101);
+    display: none;
+    margin:0px 0px 0px 15px ;
+
+ }
+
+ input:invalid ~ span{
+    display:block;
+    
+ }
+ h1{
+    text-align: center;
+ }
+
+ label{
+    font-weight: 600;
+    font: size 100px ;
+ }
