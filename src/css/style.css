@@ -1,14 +1,13 @@
-
 .card_style{
     cursor: pointer;
     transition: .3s;
 }
     
   .card_style:hover{
-      box-shadow: 0 0 5px 2px rgba(202, 25, 25, 0.082);
+    box-shadow: #8fb364;
   }
   
-  .itemsdetails{
+  .itemsdetails1{
       max-width: 800px;
       margin: auto;
       display: flex;
@@ -28,9 +27,7 @@
   .details{
       flex: .5;
       font-size: 20px;
-      color: white;
-
-      
+      color: white;      
   };
   
   @media screen and (max-width:772px){
@@ -61,7 +58,7 @@
       }
       
   }
-
+/* 
 .Backbutton{
     background-color: rgb(46, 213, 210);
     margin-top: 5%;
@@ -70,7 +67,7 @@
     width: 10%;
     height: 5%;
     padding:2px 5px;
-}
+} */
 
 .rating{
     background-color: green;
@@ -116,11 +113,12 @@
 
 .nav1{
     margin-left:5%;    
+    
 }
 
-.overlay {
+.layout1{
     border-radius:10px;
-    background: rgba(52, 129, 230, 0.5); /* Black see-through */
+    background: rgba(59, 138, 241, 0.5); /* Black see-through */
     width: 98%;
     color: rgb(9, 9, 9);
     font-size: 20px;

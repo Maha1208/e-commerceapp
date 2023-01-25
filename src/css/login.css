@@ -35,24 +35,26 @@ h1{
   background-image:url("../../public/Images/Banner/c1.webp");
 }
 
-button:enabled{
+#button:enabled{
   background-color: #9fe73a;
-  color: white;
+  color: rgb(5, 5, 5);
+  font-weight: 500;
   padding: 14px 20px;
   margin: 20px 0;
-  border-radius: 10px;
+  border-radius: 18px;
   margin-left: 70px;
   cursor: pointer;
   width: 40%; 
 }
 
-button:disabled{
+#button:disabled{
   background-color: #9fa09d;
   color: white;
+  font-weight: 500;
   padding: 14px 20px;
   margin: 20px 0;
   margin-left: 70px;
-  border-radius: 10px;
+  border-radius: 18px;
   width: 40%;
   cursor: not-allowed;
 }

@@ -1,24 +1,23 @@
-
-.container form{
-  border-radius: 20px;
-  width: 40%;
-  height: 70vh;
+.paymentform{
+  border-radius: 30px;
+  width: 30%;
   text-align: center;
   margin-top: 10%;
-  margin-left: 30%;
-  padding: 5px;
-  background-image: url("/Images/bg/pink.jpg");
+  margin-left: 40%;
+  padding: 10px;
+  /* background-image:url("../../public/Images/bg/pink.jpg"); */
+  background-image:linear-gradient(rgb(247, 204, 151),rgb(157, 235, 226));
   background-repeat: no-repeat;
 }
 
-.container label{
+.container3 label{
   margin-top: 5%;
   /* margin-left: 10%; */
   font-size: large;
   font-weight: 600;
 
 }
-.container input{
+#inputvalue{
   margin-top: 5%;
   margin-left: 2%;
   border-radius: 10px;
@@ -31,10 +30,10 @@ height: 6vh;
 font-weight: 500;
 border-radius: 10px;
 color:rgb(223, 232, 223);
-background-color: rgba(105, 211, 215);
+background-color: rgb(73, 164, 113);
 }
 
 .submit-btn:hover:enabled{
-  background-color: #a5c827;
+  background-color: #c08134;
 
 }

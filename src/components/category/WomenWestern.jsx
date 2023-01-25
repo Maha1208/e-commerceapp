@@ -35,10 +35,10 @@ const WomenWestern = () => {
       <Header />
       <h1 className="text-center text-black bg-info">Women Western Wear Categories</h1>
       <div className='d-flex nav1'>
-        <button className="btn  mb-2 mx-5 overlay" onClick={() => filterResult("tops")}><b>Tops and Tunics</b></button><br />
-        <button className="btn  mb-2 mx-5 overlay" onClick={() => filterResult("wtshirt")}><b>T-Shirt</b></button><br />
-        <button className="btn  mb-2 mx-5 overlay" onClick={() => filterResult("wjeans")}><b>Jeans</b></button><br />
-        <button className="btn  mb-2 mx-5 overlay" onClick={() => filterResult("jumpsuits")}><b>JumpSuits</b></button><br />
+        <button className="btn  mb-2 mx-5 layout1" onClick={() => filterResult("tops")}><b>Tops and Tunics</b></button><br />
+        <button className="btn  mb-2 mx-5 layout1" onClick={() => filterResult("wtshirt")}><b>T-Shirt</b></button><br />
+        <button className="btn  mb-2 mx-5 layout1" onClick={() => filterResult("wjeans")}><b>Jeans</b></button><br />
+        <button className="btn  mb-2 mx-5 layout1" onClick={() => filterResult("jumpsuits")}><b>JumpSuits</b></button><br />
       </div>
       <div className='container-fluid mx-5 mt-4'>
         <div className="row mt-5 mx-5">

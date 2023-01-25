@@ -36,10 +36,10 @@ const WomenEthnic = () => {
       <Header />
       <h2 className="text-center text-black bg-info">Women Ethnic Wear Categories</h2>
       <div className='d-flex nav1'>
-        <button className="btn  m-3 mx-5 overlay" onClick={() => filterResult("sarees")}><b>Sarees</b></button><br />
-        <button className="btn  m-3 mx-5 overlay" onClick={() => filterResult("plazoo")}><b>Plazoo</b></button><br />
-        <button className="btn  m-3 mx-5 overlay" onClick={() => filterResult("lehenga")}><b>Lehenga</b></button><br />
-        <button className="btn  m-3 mx-5 overlay" onClick={() => filterResult("kurtas")}><b>Kurtas</b></button><br />
+        <button className="btn  m-3 mx-5 layout1" onClick={() => filterResult("sarees")}><b>Sarees</b></button><br />
+        <button className="btn  m-3 mx-5 layout1" onClick={() => filterResult("plazoo")}><b>Plazoo</b></button><br />
+        <button className="btn  m-3 mx-5 layout1" onClick={() => filterResult("lehenga")}><b>Lehenga</b></button><br />
+        <button className="btn  m-3 mx-5 layout1" onClick={() => filterResult("kurtas")}><b>Kurtas</b></button><br />
       </div>
       <div className='container-fluid mx-5 mt-4'>
         <div className="row mt-5 mx-5">
