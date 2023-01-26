@@ -1,8 +1,6 @@
 import React from 'react';
 import Header from "../layouts/Header";
 import "../../css/category.css";
-
-
 import {Link} from 'react-router-dom';
 
 function Category(){

@@ -7,8 +7,6 @@ import { useDispatch } from 'react-redux';
 import { ADD } from '../../redux/actions/Action';
 import Header from '../layouts/Header';
 import "../../css/style.css";
-// import "../../css/bg.css";
-
 import { toast, ToastContainer } from 'react-toastify';
 
 
@@ -32,7 +30,7 @@ const KidsWears = () => {
   return (
     <>
       <Header />
-      <h1 className="text-center text-black bg-info">Kids Wear Categories</h1>
+      <h1 className="text-center text-black bg-info background">Kids Wear Categories</h1>
       <div className='d-flex nav1'>
         <button className="btn  mb-2 mx-5 layout1" onClick={() => filterResult("girl")}><b>Girl set</b></button><br />
         <button className="btn  mb-2 mx-5 layout1" onClick={() => filterResult("boy")}><b>Boy set</b></button><br />
@@ -45,7 +43,7 @@ const KidsWears = () => {
             data.map((values) => {
               const { key, image, rating, prname, price } = values;
               return (
-                <Card key={key} style={{ width: '23rem', border: 'black', height:'30rem' }} className="mx-4 mt-4 card_style">
+                <Card key={key} style={{ width: '23rem', border: 'black' }} className="mx-4 mt-4 card_style">
                   <Card.Img variant="top" src={image} style={{ height: "15rem" }} className="mt-3" />
                   <Card.Body>
                     <Card.Title>{prname}</Card.Title>

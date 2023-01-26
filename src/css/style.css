@@ -1,3 +1,10 @@
+body{
+    background-image:url("../../public/Images/bg/bgg1.jpg");
+    background-size: cover;   
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
 .card_style{
     cursor: pointer;
     transition: .3s;
@@ -7,84 +14,6 @@
     box-shadow: #8fb364;
   }
   
-  .itemsdetails1{
-      max-width: 800px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
-  }
-  .items_img{
-      flex: .4;
-  }
-
-  .items_img img{
-      width: 20rem;
-      border-radius: 5px;
-  }
-  
-  .details{
-      flex: .5;
-      font-size: 20px;
-      color: white;      
-  };
-  
-  @media screen and (max-width:772px){
-      .itemsdetails{
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-      }
-  }
-  
-  @media screen and (max-width:450px){
-      .largetrash{
-          display:none;
-      }
-      .smallclose{
-          display: none;
-      }
-      .itemsdetails{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-  
-      /* individual items details */
-     
-      .items_img img{
-          width: 16rem;
-      }
-      
-  }
-/* 
-.Backbutton{
-    background-color: rgb(46, 213, 210);
-    margin-top: 5%;
-    margin-left: 70%;
-    border-radius: 15px;
-    width: 10%;
-    height: 5%;
-    padding:2px 5px;
-} */
-
-.rating{
-    background-color: green;
-    color: #fff;
-    padding: 2px 5px;
-    border-Radius: 5px
-}
-
-/* .emptycart{
-    display: d-flex;
-    justify-content: center;
-    align-items: center;
-    width: "20rem";
-    padding: 10;
-    position: "relative"
-} */
-
 .checkout{
     padding: 10px;
     background-color: #48c5c3;
@@ -126,4 +55,4 @@
     height: fit-content;
     text-align:center;
 }
-
+ 

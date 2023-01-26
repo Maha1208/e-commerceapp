@@ -2,6 +2,7 @@
   background-image:url("../../public/Images/bg/bgg1.jpg");
   background-size: cover;   
   background-repeat: no-repeat;
+  height: 100vh;
  }
 
   h1{
@@ -22,7 +23,7 @@
     width:250px;
     margin:0 10px;
     box-shadow:0 0 20px 2px rgba(60, 39, 39, 0.1);
-    transition:2s;
+    transition: 3s;
     }
 
     .category img{

@@ -14,9 +14,9 @@ import "../../css/style.css";
 const Header = () => {
     //navbar update
     const user = sessionStorage.getItem('email');
+    
     // const navigate = useNavigate();
     const history = useNavigate();
-
 
     const [price, setPrice] = useState(0);
 
@@ -40,7 +40,7 @@ const Header = () => {
 
     const total = useCallback(() => {
         let price = 0;
-        getdata.map((ele, key) => {
+        getdata.map((ele,key) => { //,key 
            return price = ele.price * ele.qnty + price
         });
         setPrice(price);
@@ -53,7 +53,6 @@ const Header = () => {
 
     return (
         <>
-            <link rel='stylesheet' href='css/Home.css'></link>
             {
                 user ?
                     <Navbar bg="dark" className='navbar'>
@@ -108,9 +107,6 @@ const Header = () => {
                                                                         <th>{e.prname}</th><br/>
                                                                         <th>Price : ₹{e.price}</th><br/>
                                                                         <th>Quantity : {e.qnty}</th><br/>
-                                                                        {/* <th style={{ color: "red", fontSize: 20, cursor: "pointer" }} onClick={() => dlt(e.key)}>
-                                                                            <i className='fas fa-trash smalltrash'></i>
-                                                                        </th> */}
                                                                     </td>-
 
                                                                     <td className='mt-5' style={{ color: "red", fontSize: 20, cursor: "pointer" }} onClick={() => dlt(e.key)}>

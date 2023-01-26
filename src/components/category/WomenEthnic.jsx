@@ -7,7 +7,6 @@ import { useDispatch } from 'react-redux';
 import { ADD } from '../../redux/actions/Action';
 import Header from '../layouts/Header';
 import "../../css/style.css";
-import "../../css/bg.css";
 import { toast, ToastContainer } from 'react-toastify';
 
 
