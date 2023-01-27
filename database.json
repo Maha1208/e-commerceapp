@@ -8,9 +8,6 @@
       "id": 1
     }
   ],
-
-
-  
   "AddressPayment": [
     {
       "fullname": "maha",
@@ -20,6 +17,15 @@
       "state": "Tamilnadu",
       "zipcode": "600119",
       "id": 1
+    },
+    {
+      "name": "Mahalakshmi",
+      "email": "emahe1208@gmail.com",
+      "address": "12dff",
+      "city": "bnm,",
+      "state": "vhjkl",
+      "zipcode": "8765432",
+      "id": 2
     }
   ]
 }

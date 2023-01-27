@@ -17,7 +17,9 @@ const Payment = () => {
   const orderPlace = (event) => {
     axios.post("http://localhost:4000/AddressPayment", { name: `${fullname}`, email: `${email}`, address: `${address}`, city: `${city}`, state: `${state}`, zipcode: `${zipcode}` })
       .then(() => {
-        toast.success("Address updated successfully")
+        toast.success("Address added successfully");
+        toast.success("COD only Available")
+
       })
       .catch(error => {
         toast.error(error)
@@ -49,7 +51,7 @@ const Payment = () => {
           <input type="text" placeholder="state" name="state" onChange={e => statechange(e.target.value)} id="inputvalue" /><br />
 
           <label>zip code :</label>
-          <input type="text" placeholder="123 456" name="zipcode" onChange={e => zipcodechange(e.target.value)} id="inputvalue" /><br />
+          <input type="text" placeholder="123 456" name="zipcode" onChange={e => zipcodechange(e.target.value)} id="inputvalue" maxLength={6} /><br />
 
           <button type="submit" value="Place Order" className="submit-btn" disabled={!isEnabled}>Place Order</button>
         </form>
