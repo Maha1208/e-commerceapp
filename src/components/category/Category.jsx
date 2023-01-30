@@ -11,6 +11,11 @@ function Category(){
             <h1><b>Welcome To Category Of Dresses </b></h1>
 
             <div className="container2">
+            <div className="category">
+                    <Link to="/menwears" style={{ textDecoration: "none" }}>
+                        <img src="/Images/men.jpg" alt="men"/>
+                        <div className="overlay1">Men Wears</div></Link>
+                </div>
                 <div className="category">
                     <Link to="/womenethnic" style={{ textDecoration: "none" }}>
                         <img src="/Images/ethnic.jpg" alt="ethnic"/>
@@ -21,11 +26,7 @@ function Category(){
                         <img src="/Images/western.jpeg" alt="western"/>
                         <div className="overlay1">Women Western Wears</div></Link>
                 </div>
-                <div className="category">
-                    <Link to="/menwears" style={{ textDecoration: "none" }}>
-                        <img src="/Images/men.jpg" alt="men"/>
-                        <div className="overlay1">Men Wears</div></Link>
-                </div>
+               
                 <div className="category">
                     <Link to="/kidswears" style={{ textDecoration: "none" }}>
                         <img src="/Images/kids.jpg" alt="Kids"/>

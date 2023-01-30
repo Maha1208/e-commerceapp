@@ -13,7 +13,7 @@ export default function SignIn() {
 
     const usenavigate = useNavigate();
 
-const onformsubmit=(event) =>{
+const onFormSubmit=(event) =>{
     axios.get("http://localhost:4000/SignUp?email=" +email + "&password=" +password)
     .then(value=>{
             sessionStorage.setItem("email",value.data[0].email);
@@ -30,7 +30,7 @@ const isEnabled = email.length > 0 && password.length >0;
 return (
     <div className='log'>
         <Header />
-        <form id='loginform' onSubmit={onformsubmit} >
+        <form id='loginform' onSubmit={onFormSubmit} >
             <h1>Login</h1>
 
             <div className="logincontainer">
@@ -45,8 +45,7 @@ return (
             </div>
         </form>
         <ToastContainer
-            position="top-center"
-        />
+            position="top-center"/>
     </div>
 )
 }

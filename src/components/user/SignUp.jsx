@@ -20,8 +20,8 @@ export default function SignUp() {
   const submitData=(event)=>{
    
     axios.get("http://localhost:4000/SignUp?email=" +email)
-      .then (data=>{
-        if(data.data.length === 0){
+      .then (value=>{
+        if(value.data.length === 0){
           axios.post("http://localhost:4000/SignUp",{name:`${name}`,email:`${email}`,password:`${password}`,phone:`${phone}`})
             .then(()=>{
               alert("Account created successfully please login")
@@ -54,15 +54,15 @@ export default function SignUp() {
                 <br />
     
                 <label> Email </label><br />
-                <input className='box1' value={email} onChange={e => emailchange(e.target.value)} type="email" placeholder="email" name="email" required /><br />
+                <input className='box1' value={email} onChange={e => emailchange(e.target.value)} type="email" placeholder="email" required /><br />
                 <span>Enter valid email id</span><br />
     
                 <label>Password</label><br />
-                <input className='box1' value={password} onChange={e => passwordchange(e.target.value)} pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,15}$" minLength={8} maxLength={15} type="password" placeholder="Password" name="password" required /><br />
+                <input className='box1' value={password} onChange={e => passwordchange(e.target.value)} pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,15}$" minLength={8} maxLength={15} type="password" placeholder="Password" required /><br />
                 <span>must include 1 uppercase, 1 lowercase and 1 digit special character not allowed</span><br />
     
                 <label>PhoneNo</label><br />
-                <input className='box1' value={phone} onChange={e => phonechange(e.target.value)} pattern="^\d{10}$"  type="text" placeholder="phoneno" name="phoneno" required /><br />
+                <input className='box1' value={phone} onChange={e => phonechange(e.target.value)} pattern="^\d{10}$"  type="text" placeholder="phoneno" required /><br />
                 <span>must be 10 digits</span><br />
             
                <button  id='Reg' type="submit"  disabled={!isEnabled}>Register</button>

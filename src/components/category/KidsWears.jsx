@@ -8,16 +8,11 @@ import { ADD } from '../../redux/actions/Action';
 import Header from '../layouts/Header';
 import "../../css/style.css";
 import { toast, ToastContainer } from 'react-toastify';
-import { useParams } from 'react-router-dom';
-import { useEffect, useCallback } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const KidsWears = () => {
 
   const [data, setData] = useState([]);
-
-  const {key} = useParams();
-
 
   const filterResult = (items) => {
     const result = CardsData.filter((curData) => {
@@ -32,19 +27,6 @@ const KidsWears = () => {
     dispatch(ADD(e));
     toast.success("Product added in the cart");
   }
-
-  const compare = useCallback(() => {
-    let comparedata = CardsData.filter((e) => {
-      return e.key === key
-    });
-    setData(comparedata);
-
-  }, [key]);
-
-  useEffect(() => {
-    compare();
-  }, [compare])
-
   return (
     <>
       <Header />

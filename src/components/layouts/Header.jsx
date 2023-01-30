@@ -40,7 +40,7 @@ const Header = () => {
 
     const total = useCallback(() => {
         let price = 0;
-        getdata.map((ele,key) => { //,key 
+        getdata.map((ele) => { //,key 
            return price = ele.price * ele.qnty + price
         });
         setPrice(price);

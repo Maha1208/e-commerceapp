@@ -2,7 +2,6 @@ body{
     background-image:url("../../public/Images/bg/bgg1.jpg");
     background-size: cover;   
     background-repeat: no-repeat;
-    height: 150vh;
     overflow-x: hidden;
 
 }

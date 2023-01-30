@@ -38,13 +38,11 @@ const Cartdetails = () => {
       return e.key === key
     });
     setData(comparedata);
-
-  }, [getdata, key]);
+  },[getdata, key]);
 
   useEffect(() => {
     compare();
   }, [compare])
-
 
   return (
     <>
