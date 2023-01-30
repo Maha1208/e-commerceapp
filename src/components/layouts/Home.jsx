@@ -37,7 +37,7 @@ export default function Home() {
 
             {/* <!-- 2nd banner start --> */}
             <div className="inner-banner">
-                <Link href="/kidswears" id="shope-now">shop now</Link>
+                <Link to="/kidswears" id="shope-now">shop now</Link>
                 <img src="Images/Banner/banner6.jpg" alt=" " />
 
             </div>
@@ -48,17 +48,17 @@ export default function Home() {
                 <div className="main-product">
                     <div className="inner-product">
                         <img src="Images/Lehenga/babypink.jpg" alt="Lehenga" />
-                        <Link href="/womenethnic" id="shop-now">shop now</Link>
+                        <Link to="/womenethnic" id="shop-now">shop now</Link>
                     </div>
 
                     <div className="inner-product">
                         <img src="Images/western/wj1.jpg" alt=" " />
-                        <Link href="/womenwestern" id="shop-now">shop now</Link>
+                        <Link to="/womenwestern" id="shop-now">shop now</Link>
                     </div>
 
                     <div className="inner-product">
                         <img src="Images/KidsWear/b1.jpg" alt=" " />
-                        <Link href="/menwears" id="shop-now">shop now</Link>
+                        <Link to="/menwears" id="shop-now">shop now</Link>
                     </div>
                 </div>
             </div>
