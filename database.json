@@ -33,6 +33,15 @@
       "state": "vhjkl",
       "zipcode": "8765432",
       "id": 2
+    },
+    {
+      "name": "fghjkl",
+      "email": "emahe1208@gmail.com",
+      "address": "karpaga",
+      "city": "chennai",
+      "state": "Tamilnadu",
+      "zipcode": "600119",
+      "id": 3
     }
   ]
 }
