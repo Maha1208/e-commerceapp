@@ -6,8 +6,6 @@ import "../../css/footer.css";
 const Footer = () => {
 
     return (
-        <div className='bottomnav'>
-
             <footer className="footer">
                 <div className="container1">
                     <div className="row">
@@ -42,7 +40,6 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-        </div>
 
     )
 }
