@@ -22,11 +22,3 @@ export const REMOVE = (item) => {
     }
 }
 
-//include every item in product details
-
-// export const STORE_PRODUCT =(item) => {
-//     return{
-//         type:"STORE_PRODUCTS",
-//         payload:item
-//     }
-// }

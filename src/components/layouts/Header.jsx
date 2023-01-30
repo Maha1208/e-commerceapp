@@ -24,7 +24,6 @@ const Header = () => {
 
     const dispatch = useDispatch();
 
-
     const [anchorEl, setAnchorEl] = useState(null); //menu open
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -40,7 +39,7 @@ const Header = () => {
 
     const total = useCallback(() => {
         let price = 0;
-        getdata.map((ele) => { //,key 
+        getdata.map((ele) => { 
            return price = ele.price * ele.qnty + price
         });
         setPrice(price);
@@ -100,7 +99,7 @@ const Header = () => {
                                                                 <tr>
                                                                     <td>
                                                                         <Link to={`/cart/${e.key}`} onClick={handleClose}>
-                                                                            <img src={e.image} style={{ width: "10rem", height: "10rem" }} alt="" />
+                                                                            <img src={e.image} style={{ width: "10rem", height: "10rem" }} alt="" /><br/>
                                                                         </Link>
                                                                     </td>
                                                                     <td>

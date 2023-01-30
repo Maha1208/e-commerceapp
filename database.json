@@ -6,6 +6,13 @@
       "password": "Maha1208",
       "phone": "9876543212",
       "id": 1
+    },
+    {
+      "name": "ASDFG",
+      "email": "maha1208@gmail.com",
+      "password": "MAsdfghj54332",
+      "phone": "8765432124",
+      "id": 2
     }
   ],
   "AddressPayment": [
