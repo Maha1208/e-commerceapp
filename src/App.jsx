@@ -14,6 +14,7 @@ import Footer from "./components/layouts/Footer"
 import AddressPayment from "./components/checkout/AddressPayment"
 import Logout from "./components/user/Logout"
 import Header from './components/layouts/Header'
+import NotFound from './components/notfound/NotFound'
 
 function App() {
   return ( 
@@ -33,6 +34,7 @@ function App() {
       <Route path="/footer" element={<Footer/>}/>
       <Route path="/header" element={<Header/>}/>
       <Route path="/logout" element={<Logout/>}/>
+      <Route path='*' element={<NotFound />}/>
     </Routes>
     </div>
   )

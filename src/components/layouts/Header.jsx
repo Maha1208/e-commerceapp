@@ -98,7 +98,7 @@ const Header = () => {
                                                             <>
                                                                 <tr>
                                                                     <td>
-                                                                        <Link to={`/cart/${e.key}`} onClick={handleClose}>
+                                                                        <Link to={`/cart/${e.key}`}>
                                                                             <img src={e.image} style={{ width: "10rem", height: "10rem" }} alt="" /><br/>
                                                                         </Link>
                                                                     </td>
