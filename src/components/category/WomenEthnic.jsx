@@ -52,7 +52,7 @@ const WomenEthnic = () => {
                     <Card.Title>{prname}</Card.Title>
                     <Card.Text>
                       price:₹ {price}
-                      <Card.Title className='rating mt-3' style={{ width: '3rem', height: '1.5rem', border: "black", fontSize: '15px' }}>{rating}★</Card.Title>
+                      <Card.Title className='rating mt-3 ' style={{ width: '2.5rem', height: '1.5rem', fontSize: '15px' }}>{rating}★</Card.Title>
                     </Card.Text>
                     <div className='button_div d-flex justify-content-center'>
                       <Button variant="info"
