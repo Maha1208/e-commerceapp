@@ -16,7 +16,7 @@ const MenWears = () => {
 
     const filterResult = (items) => {
         const result = CardsData.filter((curData) => {
-            return curData.subcategory === items && curData;
+            return curData.subcategory === items;
         });
         setData(result)
 

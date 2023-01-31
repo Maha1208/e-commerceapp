@@ -8,7 +8,6 @@ import { ADD } from '../../redux/actions/Action';
 import Header from '../layouts/Header';
 import "../../css/style.css";
 import { toast, ToastContainer } from 'react-toastify';
-import { NavLink } from 'react-router-dom';
 
 const KidsWears = () => {
 
@@ -16,7 +15,7 @@ const KidsWears = () => {
 
   const filterResult = (items) => {
     const result = CardsData.filter((curData) => {
-      return curData.subcategory === items && curData;
+      return curData.subcategory === items;
     });
     setData(result)
   }
@@ -32,10 +31,10 @@ const KidsWears = () => {
       <Header />
       <h1 className="text-center text-black bg-info background">Kids Wear Categories</h1>
       <div className='d-flex nav1'>
-        <button className="btn  mb-2 mx-5 layout1" onClick={() => filterResult("girl")}><b>Girl set</b></button><br />
-        <button className="btn  mb-2 mx-5 layout1" onClick={() => filterResult("boy")}><b>Boy set</b></button><br />
-        <button className="btn  mb-2 mx-5 layout1" onClick={() => filterResult("gowns")}><b>Gowns</b></button><br />
-        <button className="btn  mb-2 mx-5 layout1" onClick={() => filterResult("nightwear")}><b>NightWear</b></button><br />
+        <button className="btn mb-2 mx-5 layout1" onClick={() => filterResult("girl")}><b>Girl set</b></button><br />
+        <button className="btn mb-2 mx-5 layout1" onClick={() => filterResult("boy")}><b>Boy set</b></button><br />
+        <button className="btn mb-2 mx-5 layout1" onClick={() => filterResult("gowns")}><b>Gowns</b></button><br />
+        <button className="btn mb-2 mx-5 layout1" onClick={() => filterResult("nightwear")}><b>NightWear</b></button><br />
       </div>
       <div className='container-fluid mx-5 mt-4'>
         <div className="row mt-5 mx-5">
@@ -44,9 +43,7 @@ const KidsWears = () => {
               const { key, image, rating, prname, price } = values;
               return (
                 <Card key={key} style={{ width: '23rem', border: 'black' }} className="mx-4 mt-4 card_style">
-                <NavLink to={`/cart/${key}`}>
                   <Card.Img variant="top" src={image} style={{ height: "15rem" }} className="mt-3" />
-                  </NavLink>
                   <Card.Body>
                     <Card.Title>{prname}</Card.Title>
                     <Card.Text>

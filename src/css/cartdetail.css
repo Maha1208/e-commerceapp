@@ -18,7 +18,7 @@
 }
 
 .itemsdetails{
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@
 }
 
 .details{
-    flex: .5;
+    flex: .6;
     font-size: 18px;
     color: white;      
 };
