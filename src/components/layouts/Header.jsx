@@ -87,9 +87,9 @@ const Header = () => {
                                             <thead>
                                                 <tr>
                                                     <th><b>Product Image</b></th>
-                                                    <th><b>Product Name</b></th>
-                                                    
+                                                    <th><b>Product Name</b></th>   
                                                 </tr>
+                                                <hr style={{width:"270%"}}/>
                                             </thead>
                                             <tbody>
                                                 {
@@ -112,9 +112,9 @@ const Header = () => {
                                                                         <i className='fas fa-trash largetrash'></i>
                                                                     </td>
                                                                 </tr>
-                                                                
-
+                                                                <hr style={{width:"270%"}}/>
                                                             </>
+
                                                         )
                                                     })
                                                 }
@@ -122,6 +122,7 @@ const Header = () => {
                                                     <button className="checkout" type="button"><b>₹{price}<br />Checkout</b></button>
                                                 </NavLink>
                                             </tbody>
+
                                         </Table>
                                     </div> :
 
