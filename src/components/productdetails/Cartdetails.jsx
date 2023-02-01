@@ -12,7 +12,7 @@ const Cartdetails = () => {
 
   const { key } = useParams();
 
-  const getdata = useSelector((state) => state.cartreducer.carts); // selecting particular data from the cartreducer
+  const products = useSelector((state) => state.cartreducer.carts); // selecting particular data from the cartreducer
 
   const dispatch = useDispatch();
   // add data
@@ -32,11 +32,11 @@ const Cartdetails = () => {
 
   //Getting page for selected Products
   const compare = useCallback(() => {
-    let comparedata = getdata.filter((e) => {
+    let comparedata = products.filter((e) => {
       return e.key === key;
     });
     setData(comparedata);
-  }, [getdata, key]);
+  }, [products, key]);
 
   useEffect(() => {
     compare();

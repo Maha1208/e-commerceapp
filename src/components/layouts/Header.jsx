@@ -19,7 +19,7 @@ const Header = () => {
 
   const [price, setPrice] = useState(0);
 
-  const getdata = useSelector((state) => state.cartreducer.carts); //products from the cartreducer
+  const products = useSelector((state) => state.cartreducer.carts); //products from the cartreducer
 
   const dispatch = useDispatch();
 
@@ -39,11 +39,11 @@ const Header = () => {
 
   const total = useCallback(() => {
     let price = 0;
-    getdata.map((ele) => {
+    products.map((ele) => {
       return (price = ele.price * ele.qnty + price);
     });
     setPrice(price);
-  }, [getdata]);
+  }, [products]);
 
   useEffect(() => {
     total();
@@ -78,7 +78,7 @@ const Header = () => {
               </Link>
             </Nav>
             <Badge
-              badgeContent={getdata.length}
+              badgeContent={products.length}
               color="primary" //cart icon increment
               id="basic-button"
               aria-controls={open ? "basic-menu" : undefined}
@@ -101,7 +101,7 @@ const Header = () => {
               "aria-labelledby": "basic-button",
             }}
           >
-            {getdata.length ? (
+            {products.length ? (
               <div
                 className="cart_details"
                 style={{ width: "55rem", padding: 20 }}
@@ -119,7 +119,7 @@ const Header = () => {
                     <hr style={{ width: "270%" }} />
                   </thead>
                   <tbody>
-                    {getdata.map((e) => {
+                    {products.map((e) => {
                       return (
                         <>
                           <tr>
