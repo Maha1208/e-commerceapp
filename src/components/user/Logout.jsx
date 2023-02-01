@@ -1,13 +1,13 @@
-import React from 'react';
-import { Navigate} from 'react-router-dom';
+import React from "react";
+import { Navigate } from "react-router-dom";
 
 const Logout = () => {
-    sessionStorage.clear();
+  sessionStorage.clear();
   return (
     <div>
-     <Navigate to="/SignIn"></Navigate>  
+      <Navigate to="/SignIn"></Navigate>
     </div>
-  )
-}
+  );
+};
 
-export default Logout
+export default Logout;

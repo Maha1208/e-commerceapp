@@ -2,9 +2,8 @@
 import { combineReducers } from "redux";
 import { cartreducer } from "./Reducer";
 
-
 const rootreducer = combineReducers({
-    cartreducer
+  cartreducer,
 });
 
-export default rootreducer
+export default rootreducer;

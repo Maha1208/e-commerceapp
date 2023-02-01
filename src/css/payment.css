@@ -1,4 +1,4 @@
-.paymentform{
+.paymentform {
   border-radius: 30px;
   width: 30%;
   text-align: center;
@@ -6,34 +6,32 @@
   margin-left: 40%;
   padding: 10px;
   /* background-image:url("../../public/Images/bg/pink.jpg"); */
-  background-image:linear-gradient(rgb(247, 204, 151),rgb(157, 235, 226));
+  background-image: linear-gradient(rgb(247, 204, 151), rgb(157, 235, 226));
   background-repeat: no-repeat;
 }
 
-.container3 label{
+.container3 label {
   margin-top: 5%;
   /* margin-left: 10%; */
   font-size: large;
   font-weight: 600;
-
 }
-#inputvalue{
+#inputvalue {
   margin-top: 5%;
   margin-left: 2%;
   border-radius: 10px;
 }
 
-.submit-btn{
-margin-top: 40px;
-width: 150px;
-height: 6vh;
-font-weight: 500;
-border-radius: 10px;
-color:rgb(223, 232, 223);
-background-color: rgb(73, 164, 113);
+.submit-btn {
+  margin-top: 40px;
+  width: 150px;
+  height: 6vh;
+  font-weight: 500;
+  border-radius: 10px;
+  color: rgb(223, 232, 223);
+  background-color: rgb(73, 164, 113);
 }
 
-.submit-btn:hover:enabled{
+.submit-btn:hover:enabled {
   background-color: #c08134;
-
 }
