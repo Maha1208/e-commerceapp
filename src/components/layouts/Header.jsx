@@ -15,7 +15,6 @@ const Header = () => {
     //navbar update
     const user = sessionStorage.getItem('email');
     
-    // const navigate = useNavigate();
     const history = useNavigate();
 
     const [price, setPrice] = useState(0);
@@ -33,7 +32,7 @@ const Header = () => {
         setAnchorEl(null);
     };
 
-    const dlt = (key) => {
+    const dlt = (key) => {  //removing
         dispatch(DLT(key))
     }
 
@@ -49,7 +48,6 @@ const Header = () => {
         total();
     }, [total]) //grant total
 
-
     return (
         <>
             {
@@ -59,7 +57,7 @@ const Header = () => {
                             <NavLink onClick={() => (history(-1))} className="text-decoration-none text-light"><b>Back</b></NavLink>
                             <Nav className="me-auto">
                                 <NavLink to="/" className="text-decoration-none text-light mx-4" ><b>Home</b></NavLink>
-                                <NavLink to="/Category" className="text-decoration-none text-light"><b>Category</b></NavLink>
+                                <NavLink to="/category" className="text-decoration-none text-light"><b>Category</b></NavLink>
                                 <Link to="/logout" className="text-decoration-none text-light mx-4"><b>Logout</b></Link>
                             </Nav>
                             <Badge badgeContent={getdata.length} color="primary" //cart icon increment

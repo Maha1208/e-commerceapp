@@ -23,7 +23,6 @@
     width:250px;
     margin:0 10px;
     box-shadow:0 0 20px 2px rgba(60, 39, 39, 0.1);
-    transition: 2s;
     }
 
     .category img{
@@ -35,6 +34,7 @@
     
     .category:hover{
     transform:scale(1.1);
+    transition: 2s;
     }
 
     .overlay1 {

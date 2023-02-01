@@ -39,7 +39,7 @@ export const cartreducer = (state=INIT_STATE,action) => {
                     carts:[...state.carts]
                 }
             }else if(state.carts[ItemIndex_dec].qnty === 1 ){
-                const data = state.carts.filter((el)=>el.key !== action.payload); //!==
+                const data = state.carts.filter((el)=>el.key !== action.payload); 
 
                 return {
                     ...state,

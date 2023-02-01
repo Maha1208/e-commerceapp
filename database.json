@@ -8,10 +8,10 @@
       "id": 1
     },
     {
-      "name": "ASDFG",
-      "email": "maha1208@gmail.com",
-      "password": "MAsdfghj54332",
-      "phone": "8765432124",
+      "name": "SASDFGH",
+      "email": "maha@gmail.com",
+      "password": "Maha1999",
+      "phone": "8765432111",
       "id": 2
     }
   ],
@@ -24,24 +24,6 @@
       "state": "Tamilnadu",
       "zipcode": "600119",
       "id": 1
-    },
-    {
-      "name": "Mahalakshmi",
-      "email": "emahe1208@gmail.com",
-      "address": "12dff",
-      "city": "bnm,",
-      "state": "vhjkl",
-      "zipcode": "8765432",
-      "id": 2
-    },
-    {
-      "name": "fghjkl",
-      "email": "emahe1208@gmail.com",
-      "address": "karpaga",
-      "city": "chennai",
-      "state": "Tamilnadu",
-      "zipcode": "600119",
-      "id": 3
     }
   ]
 }
