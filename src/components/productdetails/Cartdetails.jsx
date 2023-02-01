@@ -61,19 +61,15 @@ const Cartdetails = () => {
                       <tr>
                         <td>
                           <p>
-                            {" "}
                             <strong>Product</strong> :{ele.prname}
                           </p>
                           <p>
-                            {" "}
                             <strong>Price</strong> : ₹{ele.price}
                           </p>
                           <p>
-                            {" "}
                             <strong>Type</strong> :{ele.type}
                           </p>
-                          <p>
-                            {" "}
+                          <p>                         
                             <strong>Total</strong> :₹{ele.price * ele.qnty}
                           </p>
                           <div
@@ -106,7 +102,7 @@ const Cartdetails = () => {
                         </td>
                         <td>
                           <p>
-                            <strong>Rating </strong>:{" "}
+                            <strong>Rating </strong>:
                             <b className="rating"> {ele.rating}★</b>
                           </p>
                           <p>

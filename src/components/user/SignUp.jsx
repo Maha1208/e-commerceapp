@@ -99,7 +99,7 @@ export default function SignUp() {
           />
           <br />
           <span>
-            must include 1 uppercase, 1 lowercase and 1 digit special character
+            must include 1 Uppercase, 1 Lowercase and 1 digit special character
             not allowed
           </span>
           <br />
