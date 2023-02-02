@@ -7,12 +7,12 @@ import { useState } from "react";
 import "../../css/payment.css";
 
 const Payment = () => {
-  const [fullname, namechange] = useState("");
-  const [email, emailchange] = useState("");
-  const [address, addresschange] = useState("");
-  const [city, citychange] = useState("");
-  const [state, statechange] = useState("");
-  const [zipcode, zipcodechange] = useState("");
+  const [fullname, nameChange] = useState("");
+  const [email, emailChange] = useState("");
+  const [address, addressChange] = useState("");
+  const [city, cityChange] = useState("");
+  const [state, stateChange] = useState("");
+  const [zipcode, zipcodeChange] = useState("");
 
   const orderPlace = (event) => {
     axios
@@ -53,7 +53,7 @@ const Payment = () => {
             type="text"
             placeholder="Full name"
             name="fullname"
-            onChange={(e) => namechange(e.target.value)}
+            onChange={(e) => nameChange(e.target.value)}
             id="inputvalue"
           />
           <br />
@@ -63,7 +63,7 @@ const Payment = () => {
             type="email"
             placeholder="example@example.com"
             name="email"
-            onChange={(e) => emailchange(e.target.value)}
+            onChange={(e) => emailChange(e.target.value)}
             id="inputvalue"
           />
           <br />
@@ -73,7 +73,7 @@ const Payment = () => {
             type="text"
             placeholder="Door No - street - locality"
             name="address"
-            onChange={(e) => addresschange(e.target.value)}
+            onChange={(e) => addressChange(e.target.value)}
             id="inputvalue"
           />
           <br />
@@ -83,7 +83,7 @@ const Payment = () => {
             type="text"
             placeholder="city"
             name="city"
-            onChange={(e) => citychange(e.target.value)}
+            onChange={(e) => cityChange(e.target.value)}
             id="inputvalue"
           />
           <br />
@@ -93,7 +93,7 @@ const Payment = () => {
             type="text"
             placeholder="state"
             name="state"
-            onChange={(e) => statechange(e.target.value)}
+            onChange={(e) => stateChange(e.target.value)}
             id="inputvalue"
           />
           <br />
@@ -103,7 +103,7 @@ const Payment = () => {
             type="text"
             placeholder="123 456"
             name="zipcode"
-            onChange={(e) => zipcodechange(e.target.value)}
+            onChange={(e) => zipcodeChange(e.target.value)}
             id="inputvalue"
             maxLength={6}
           />
