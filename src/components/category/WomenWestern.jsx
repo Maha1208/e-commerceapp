@@ -64,7 +64,7 @@ const WomenWestern = () => {
       <div className="container-fluid mx-5 mt-4">
         <div className="row mt-5 mx-5">
           {data.map((values) => {
-            const { key, image, rating, prname, price } = values;
+            const { key, image, rating, productname, price } = values;
             return (
               <Card
                 key={key}
@@ -78,7 +78,7 @@ const WomenWestern = () => {
                   className="mt-3"
                 />
                 <Card.Body>
-                  <Card.Title>{prname}</Card.Title>
+                  <Card.Title>{productname}</Card.Title>
                   <Card.Text>
                     price:₹ {price}
                     <Card.Title

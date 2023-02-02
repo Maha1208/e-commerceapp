@@ -32,8 +32,8 @@ const Header = () => {
     setAnchorEl(null);
   };
 
+  //removing
   const dlt = (key) => {
-    //removing
     dispatch(DLT(key));
   };
 
@@ -113,7 +113,7 @@ const Header = () => {
                         <b>Product Image</b>
                       </th>
                       <th>
-                        <b>Product Name</b>
+                        <b>Product Details</b>
                       </th>
                     </tr>
                     <hr style={{ width: "270%" }} />
@@ -134,7 +134,7 @@ const Header = () => {
                               </Link>
                             </td>
                             <td>
-                              <th>{e.prname}</th>
+                              <th>{e.productname}</th>
                               <br />
                               <th>Price : ₹{e.price}</th>
                               <br />

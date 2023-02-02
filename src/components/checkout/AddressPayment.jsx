@@ -48,7 +48,7 @@ const Payment = () => {
         <form className="paymentform" onSubmit={orderPlace}>
           <h3 className="title"> Address for the Delivery</h3>
 
-          <label>Full name :</label>
+          <label>Full Name :</label>
           <input
             type="text"
             placeholder="Full name"
@@ -58,7 +58,7 @@ const Payment = () => {
           />
           <br />
 
-          <label>email :</label>
+          <label>Email :</label>
           <input
             type="email"
             placeholder="example@example.com"
@@ -68,7 +68,7 @@ const Payment = () => {
           />
           <br />
 
-          <label>address :</label>
+          <label>Address :</label>
           <input
             type="text"
             placeholder="Door No - street - locality"
@@ -78,7 +78,7 @@ const Payment = () => {
           />
           <br />
 
-          <label>city :</label>
+          <label>City :</label>
           <input
             type="text"
             placeholder="city"
@@ -88,7 +88,7 @@ const Payment = () => {
           />
           <br />
 
-          <label>state :</label>
+          <label>State :</label>
           <input
             type="text"
             placeholder="state"
@@ -98,7 +98,7 @@ const Payment = () => {
           />
           <br />
 
-          <label>zip code :</label>
+          <label>Zip Code :</label>
           <input
             type="text"
             placeholder="123 456"

@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 function Category() {
   return (
-    <div className="cate">
+    <div className="products">
       <Header />
       <h1>
         <b>Welcome To Category Of Dresses </b>
       </h1>
 
-      <div className="container2">
+      <div className="productcategory">
         <div className="category">
           <Link to="/menwears" style={{ textDecoration: "none" }}>
             <img src="/Images/men.jpg" alt="men" />

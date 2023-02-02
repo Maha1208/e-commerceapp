@@ -12,7 +12,7 @@ const Cartdetails = () => {
 
   const { key } = useParams();
 
-  const products = useSelector((state) => state.cartreducer.carts); // selecting particular data from the cartreducer
+  const products = useSelector((state) => state.cartreducer.carts);
 
   const dispatch = useDispatch();
   // add data
@@ -61,7 +61,7 @@ const Cartdetails = () => {
                       <tr>
                         <td>
                           <p>
-                            <strong>Product</strong> :{ele.prname}
+                            <strong>Product</strong> :{ele.productname}
                           </p>
                           <p>
                             <strong>Price</strong> : ₹{ele.price}
