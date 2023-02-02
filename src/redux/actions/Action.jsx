@@ -5,7 +5,7 @@ export const ADD = (item) => {
   };
 };
 
-// remove items
+// Delete items
 export const DLT = (key) => {
   return {
     type: "REMOVE_CART",
@@ -14,7 +14,6 @@ export const DLT = (key) => {
 };
 
 // remove individual item
-
 export const REMOVE = (item) => {
   return {
     type: "REMOVE_ONE",

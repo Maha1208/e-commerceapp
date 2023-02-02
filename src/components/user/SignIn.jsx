@@ -20,7 +20,6 @@ export default function SignIn() {
       )
       .then((value) => {
         sessionStorage.setItem("email", value.data[0].email);
-        toast.success("Login successful");
         usenavigate("/");
       })
       .catch(toast.error("Invalid email or password"));
