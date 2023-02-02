@@ -28,33 +28,30 @@ const KidsWears = () => {
   return (
     <>
       <Header />
-      <h1 className="text-center text-black bg-info background">
-        Kids Wear Categories
-      </h1>
-      <div className="d-flex nav1">
+      <div className="d-flex nav1 mt-3">
         <button
-          className="btn mb-2 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("girl")}
         >
           <b>Girl set</b>
         </button>
         <br />
         <button
-          className="btn mb-2 mx-5 layout1"
+          className="btn mt-5 mb-2 mx-5 layout1"
           onClick={() => filterResult("boy")}
         >
           <b>Boy set</b>
         </button>
         <br />
         <button
-          className="btn mb-2 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("gowns")}
         >
           <b>Gowns</b>
         </button>
         <br />
         <button
-          className="btn mb-2 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("nightwear")}
         >
           <b>NightWear</b>

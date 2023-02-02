@@ -28,33 +28,30 @@ const WomenWestern = () => {
   return (
     <>
       <Header />
-      <h1 className="text-center text-black bg-info">
-        Women Western Wear Categories
-      </h1>
-      <div className="d-flex nav1">
+      <div className="d-flex nav1 mt-3">
         <button
-          className="btn  mb-2 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("tops")}
         >
           <b>Tops and Tunics</b>
         </button>
         <br />
         <button
-          className="btn  mb-2 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("wtshirt")}
         >
           <b>T-Shirt</b>
         </button>
         <br />
         <button
-          className="btn  mb-2 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("wjeans")}
         >
           <b>Jeans</b>
         </button>
         <br />
         <button
-          className="btn  mb-2 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("jumpsuits")}
         >
           <b>JumpSuits</b>

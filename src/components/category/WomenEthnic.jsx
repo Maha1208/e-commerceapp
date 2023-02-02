@@ -28,33 +28,30 @@ const WomenEthnic = () => {
   return (
     <>
       <Header />
-      <h2 className="text-center text-black bg-info">
-        Women Ethnic Wear Categories
-      </h2>
-      <div className="d-flex nav1">
+      <div className="d-flex nav1 mt-3">
         <button
-          className="btn  m-3 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("sarees")}
         >
           <b>Sarees</b>
         </button>
         <br />
         <button
-          className="btn  m-3 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("plazoo")}
         >
           <b>Plazoo</b>
         </button>
         <br />
         <button
-          className="btn  m-3 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("lehenga")}
         >
           <b>Lehenga</b>
         </button>
         <br />
         <button
-          className="btn  m-3 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("kurtas")}
         >
           <b>Kurtas</b>

@@ -7,8 +7,7 @@ import Menu from "@mui/material/Menu";
 import { Table } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { DLT } from "../../redux/actions/Action";
-import { NavLink, Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import "../../css/style.css";
 
 const Header = () => {
@@ -21,8 +20,6 @@ const Header = () => {
 
   const products = useSelector((state) => state.cartreducer.carts); //products from the cartreducer
 
-  const dispatch = useDispatch();
-
   const [anchorEl, setAnchorEl] = useState(null); //menu open
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -31,6 +28,8 @@ const Header = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const dispatch = useDispatch();
 
   //removing
   const dlt = (key) => {

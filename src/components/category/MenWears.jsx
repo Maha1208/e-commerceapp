@@ -28,31 +28,30 @@ const MenWears = () => {
   return (
     <>
       <Header />
-      <h1 className="text-center text-black bg-info">Mens Wear Categories</h1>
-      <div className="d-flex nav1">
+      <div className="d-flex nav1 mt-3">
         <button
-          className="btn  mb-2 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("formal")}
         >
           <b>Mens Formal</b>
         </button>
         <br />
         <button
-          className="btn  mb-2 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("mshirt")}
         >
           <b>Men Shirts</b>
         </button>
         <br />
         <button
-          className="btn  mb-2 mx-5 layout1"
+          className="btn mt-5 mx-5 layout1"
           onClick={() => filterResult("mtshirt")}
         >
           <b>Mens T-Shirt</b>
         </button>
         <br />
         <button
-          className="btn  mb-2 mx-5 layout1"
+          className="btn mt-5 mb-2 mx-5 layout1"
           onClick={() => filterResult("mjeans")}
         >
           <b>Mens Jeans</b>

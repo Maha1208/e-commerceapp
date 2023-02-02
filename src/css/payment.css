@@ -5,16 +5,8 @@
   margin-top: 10%;
   margin-left: 40%;
   padding: 10px;
-  /* background-image:url("../../public/Images/bg/pink.jpg"); */
   background-image: linear-gradient(rgb(247, 204, 151), rgb(157, 235, 226));
   background-repeat: no-repeat;
-}
-
-.container3 label {
-  margin-top: 5%;
-  /* margin-left: 10%; */
-  font-size: large;
-  font-weight: 600;
 }
 #inputvalue {
   margin-top: 5%;
