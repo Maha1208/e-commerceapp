@@ -55,23 +55,23 @@ const Header = () => {
           <Container>
             <NavLink
               onClick={() => history(-1)}
-              className="text-decoration-none text-light"
+              className="text-decoration-none link-color"
             >
               <b>Back</b>
             </NavLink>
             <Nav className="me-auto">
-              <NavLink to="/" className="text-decoration-none text-light mx-4">
+              <NavLink to="/" className="text-decoration-none link-color">
                 <b>Home</b>
               </NavLink>
               <NavLink
                 to="/category"
-                className="text-decoration-none text-light"
+                className="text-decoration-none link-color"
               >
                 <b>Category</b>
               </NavLink>
               <Link
                 to="/logout"
-                className="text-decoration-none text-light mx-4"
+                className="text-decoration-none link-color"
               >
                 <b>Logout</b>
               </Link>
@@ -86,8 +86,7 @@ const Header = () => {
               onClick={handleClick}
             >
               <i
-                className="fa-solid fa-cart-shopping text-light"
-                style={{ fontSize: 30, cursor: "pointer" }}
+                className="fa-solid fa-cart-shopping shopping-cart"
               ></i>
             </Badge>
           </Container>
@@ -103,19 +102,18 @@ const Header = () => {
             {products.length ? (
               <div
                 className="cart_details"
-                style={{ width: "55rem", padding: 20 }}
               >
                 <Table>
                   <thead>
                     <tr>
                       <th>
-                        <b>Product Image</b>
+                        Product Image
                       </th>
                       <th>
-                        <b>Product Details</b>
+                        Product Details
                       </th>
                     </tr>
-                    <hr style={{ width: "270%" }} />
+                    <hr/>
                   </thead>
                   <tbody>
                     {products.map((e) => {
@@ -126,8 +124,7 @@ const Header = () => {
                               <Link to={`/cart/${e.key}`}>
                                 <img
                                   src={e.image}
-                                  style={{ width: "10rem", height: "10rem" }}
-                                  alt=""
+                                  alt="" className="cart_image"
                                 />
                                 <br />
                               </Link>
@@ -142,25 +139,18 @@ const Header = () => {
                             </td>
                             -
                             <td
-                              className="mt-5"
-                              style={{
-                                color: "red",
-                                fontSize: 20,
-                                cursor: "pointer",
-                              }}
                               onClick={() => dlt(e.key)}
                             >
-                              <i className="fas fa-trash largetrash"></i>
+                              <i className="fas fa-trash trash_button"></i>
                             </td>
                           </tr>
-                          <hr style={{ width: "270%" }} />
+                          <hr/>
                         </>
                       );
                     })}
                     <NavLink
                       to={`/checkout`}
-                      onClick={handleClose}
-                      style={{ textDecoration: "none" }}
+                      className="text-decoration-none"
                     >
                       <button className="checkout" type="button">
                         <b>
@@ -175,41 +165,33 @@ const Header = () => {
               </div>
             ) : (
               <div
-                className="card_details d-flex justify-content-center align-items-center"
-                style={{ width: "24rem", padding: 10, position: "relative" }}
+                className="card_details d-flex"
               >
                 <i
-                  className="fas fa-close smallclose"
+                  className="fas fa-close close_button"
                   onClick={handleClose}
-                  style={{
-                    position: "absolute",
-                    top: 2,
-                    right: 20,
-                    fontSize: 23,
-                    cursor: "pointer",
-                  }}
                 ></i>
-                <p style={{ fontSize: 20 }}>Your carts is empty</p>
+                <p>Your cart is empty</p>
               </div>
             )}
           </Menu>
         </Navbar>
       ) : (
-        <Navbar bg="dark" variant="light" className="navbar">
+        <Navbar className="navbar">
           <Container>
             <Nav className="me-auto">
-              <NavLink to="/" className="text-decoration-none text-light">
+              <NavLink to="/" className="text-decoration-none link-color">
                 <b>Home</b>
               </NavLink>
               <NavLink
                 to="/SignUp"
-                className="text-decoration-none text-light mx-5"
+                className="text-decoration-none link-color"
               >
                 <b>Register</b>
               </NavLink>
               <NavLink
                 to="/SignIn"
-                className="text-decoration-none text-light mx-2 "
+                className="text-decoration-none link-color"
               >
                 <b>Login</b>
               </NavLink>

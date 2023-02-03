@@ -3,6 +3,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  text-decoration: none;
 }
 
 .card_style {
@@ -35,7 +36,7 @@ body {
   width: 80%;
 }
 .checkout:hover {
-  background-color: rgb(44, 235, 66);
+  background-color: rgb(89, 95, 89);
 }
 
 .navbar {
@@ -47,6 +48,8 @@ body {
   width: 100%;
   z-index: 3;
   top: 0%;
+  color: rgb(240, 248, 255);
+  background-color: black;
 }
 
 .nav1 {
@@ -90,4 +93,61 @@ body {
 
 .button_div{
 justify-content: center;
+}
+
+.shopping-cart{
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+
+}
+
+.link-color{
+  color:white;
+  padding: 20px;
+  margin-right:20px;
+}
+
+.link-color:hover{
+  color: rgb(117, 133, 80);
+}
+
+.cart_details{
+  width: 55rem;
+  padding: 40px;
+}
+hr{
+  width:390%
+}
+.cart_image{
+  width:8rem;
+}
+
+.trash_button{
+  color: red;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+thead th{
+  font-weight:200%;
+  font-size: large;
+}
+
+.card_details{
+  justify-content: center; 
+  align-items: center;
+  font-size: 20px;
+  width: 24rem;
+  padding: 10;
+  position: relative;
+}
+
+.close_button{
+  position: absolute;
+  top: 2px;
+  right: 20px;
+  font-size: 23px;
+  cursor:pointer;
+
 }
