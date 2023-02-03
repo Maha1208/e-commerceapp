@@ -28,68 +28,61 @@ const MenWears = () => {
   return (
     <>
       <Header />
-      <div className="d-flex nav1 mt-3">
+      <div className="d-flex nav1">
         <button
-          className="btn mt-5 mx-5 layout1"
+          className="layout1"
           onClick={() => filterResult("formal")}
         >
           <b>Mens Formal</b>
         </button>
         <br />
         <button
-          className="btn mt-5 mx-5 layout1"
+          className="layout1"
           onClick={() => filterResult("mshirt")}
         >
           <b>Men Shirts</b>
         </button>
         <br />
         <button
-          className="btn mt-5 mx-5 layout1"
+          className="layout1"
           onClick={() => filterResult("mtshirt")}
         >
           <b>Mens T-Shirt</b>
         </button>
         <br />
         <button
-          className="btn mt-5 mb-2 mx-5 layout1"
+          className="layout1"
           onClick={() => filterResult("mjeans")}
         >
           <b>Mens Jeans</b>
         </button>
         <br />
       </div>
-      <div className="container-fluid mx-5 mt-4">
-        <div className="row mt-5 mx-5">
+      <div className="product-container">
+        <div className="row">
           {data.map((values) => {
             const { key, image, rating, productname, price } = values;
             return (
               <Card
                 key={key}
-                style={{ width: "23rem", border: "black" }}
-                className="mx-4 mt-4 card_style"
+                className="card_style"
               >
                 <Card.Img
                   variant="top"
                   src={image}
-                  style={{ height: "15rem" }}
-                  className="mt-3"
+                  className="card_img"
                 />
                 <Card.Body>
                   <Card.Title>{productname}</Card.Title>
                   <Card.Text>
                     price:₹ {price}
                     <Card.Title
-                      className="rating mt-3 "
-                      style={{
-                        width: "2.5rem",
-                        height: "1.5rem",
-                        fontSize: "15px",
-                      }}
+                      className="rating1"
                     >
                       {rating}★
                     </Card.Title>
                   </Card.Text>
-                  <div className="button_div d-flex justify-content-center">
+                  <div className="button_div d-flex">
                     <Button
                       variant="info"
                       onClick={() => send(values)}

@@ -8,6 +8,16 @@ body {
 .card_style {
   cursor: pointer;
   transition: 0.3s;
+  width: 23rem;
+  border: black;
+  border-radius: 15px;
+  margin:10px 20px 30px 20px;
+
+}
+.card_img{
+  height:15rem;
+  margin-top: 20px;
+
 }
 
 .card_style:hover {
@@ -41,15 +51,43 @@ body {
 
 .nav1 {
   margin-left: 5%;
+  margin-top: 15px;
+
 }
 
 .layout1 {
   border-radius: 10px;
   background: rgba(59, 138, 241, 0.5); /* Black see-through */
-  width: 98%;
+  width: 18%;
   color: rgb(9, 9, 9);
   font-size: 20px;
   padding: 1px;
   height: fit-content;
   text-align: center;
+  margin: 50px 25px 0px 50px;
+}
+
+.rating1{
+  width: 2.5rem;
+  height: 1.5rem;
+  font-size: 15px;
+  background-color: green;
+  border-radius: 3px;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.product-container{
+  margin-left: 55px;
+  margin-bottom:10px;
+}
+
+.row{
+  margin-top: 40px;
+  margin-left: 55px;
+}
+
+.button_div{
+justify-content: center;
 }
