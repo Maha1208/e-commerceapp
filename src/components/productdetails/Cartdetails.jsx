@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { DLT, ADD, REMOVE } from "../../redux/actions/Action";
+import { DELETE_CART, ADD_CART, REMOVE_ITEM } from "../../redux/actions/Action";
 import Header from "../layouts/Header";
 import { useCallback } from "react";
 import "../../css/cartdetail.css";
@@ -17,17 +17,16 @@ const Cartdetails = () => {
   const dispatch = useDispatch();
   // add data
   const send = (e) => {
-    dispatch(ADD(e)); //contains the selected products
+    dispatch(ADD_CART(e)); //contains the selected products
   };
 
-  const dlt = (key) => {
-    dispatch(DLT(key));
-    window.history.back();
+  const deleteCart = (key) => {
+    dispatch(DELETE_CART(key));
   };
 
   // remove one
-  const remove = (item) => {
-    dispatch(REMOVE(item));
+  const removeItem = (item) => {
+    dispatch(REMOVE_ITEM(item));
   };
 
   //Getting page for selected Products
@@ -73,7 +72,7 @@ const Cartdetails = () => {
                               Remove :
                               <i
                                 className="fas fa-trash trash_button"
-                                onClick={() => dlt(ele.key)}
+                                onClick={() => deleteCart(ele.key)}
                               ></i>
                             </p>
                             <p>Total :₹{ele.price * ele.qnty}</p>
@@ -88,8 +87,8 @@ const Cartdetails = () => {
                               className="quantity_size"
                               onClick={
                                 ele.qnty <= 1
-                                  ? () => dlt(ele.key)
-                                  : () => remove(ele)
+                                  ? () => deleteCart(ele.key)
+                                  : () => removeItem(ele)
                               }
                             >
                               -

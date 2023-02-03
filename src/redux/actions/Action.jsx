@@ -1,4 +1,4 @@
-export const ADD = (item) => {
+export const ADD_CART = (item) => {
   return {
     type: "ADD_CART",
     payload: item,
@@ -6,17 +6,17 @@ export const ADD = (item) => {
 };
 
 // Delete items
-export const DLT = (key) => {
+export const DELETE_CART = (key) => {
   return {
-    type: "REMOVE_CART",
+    type: "DELETE_CART",
     payload: key,
   };
 };
 
 // remove individual item
-export const REMOVE = (item) => {
+export const REMOVE_ITEM = (item) => {
   return {
-    type: "REMOVE_ONE",
+    type: "REMOVE_ONE_ITEM",
     payload: item,
   };
 };

@@ -23,14 +23,14 @@ export const cartreducer = (state = INIT_STATE, action) => {
         };
       }
 
-    case "REMOVE_CART":
+    case "DELETE_CART":
       const data = state.carts.filter((el) => el.key !== action.payload);
       return {
         ...state,
         carts: data,
       };
 
-    case "REMOVE_ONE":
+    case "REMOVE_ONE_ITEM":
       const ItemIndex_dec = state.carts.findIndex(
         (item) => item.key === action.payload.key
       );

@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import CardsData from "../mock/CardsData";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { ADD } from "../../redux/actions/Action";
+import { ADD_CART } from "../../redux/actions/Action";
 import Header from "../layouts/Header";
 import "../../css/style.css";
 import { toast, ToastContainer } from "react-toastify";
@@ -21,7 +21,7 @@ const MenWears = () => {
   const dispatch = useDispatch();
 
   const send = (e) => {
-    dispatch(ADD(e));
+    dispatch(ADD_CART(e));
     toast.success("Product added in the cart");
   };
 

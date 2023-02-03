@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Menu from "@mui/material/Menu";
 import { Table } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
-import { DLT } from "../../redux/actions/Action";
+import { DELETE_CART } from "../../redux/actions/Action";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import "../../css/style.css";
 
@@ -32,8 +32,8 @@ const Header = () => {
   const dispatch = useDispatch();
 
   //removing
-  const dlt = (key) => {
-    dispatch(DLT(key));
+  const deleteCart = (key) => {
+    dispatch(DELETE_CART(key));
   };
 
   const total = useCallback(() => {
@@ -139,7 +139,7 @@ const Header = () => {
                             </td>
                             -
                             <td
-                              onClick={() => dlt(e.key)}
+                              onClick={() => deleteCart(e.key)}
                             >
                               <i className="fas fa-trash trash_button"></i>
                             </td>
