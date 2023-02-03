@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <div>
       <Header />
-      <img src="/Images/notfound.webp" alt="404" style={{ width: "100%" }} />
+      <img src="/Images/notfound.webp" alt="404" className="not_found" />
     </div>
   );
 }

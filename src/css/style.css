@@ -149,5 +149,8 @@ thead th{
   right: 20px;
   font-size: 23px;
   cursor:pointer;
+}
 
+.not_found{
+  width:100%;
 }

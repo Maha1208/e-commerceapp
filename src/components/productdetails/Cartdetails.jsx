@@ -45,9 +45,9 @@ const Cartdetails = () => {
   return (
     <>
       <Header />
-      <div className="productcontainer mt-5">
-        <h2 className="text-center mb-5">Product Details Page </h2>
-        <section className="detailcontainer mt-5">
+      <div className="productcontainer">
+        <h2 className="text-center">Product Details Page </h2>
+        <section className="detailcontainer">
           <div className="itemsdetails">
             {data.map((ele) => {
               return (
@@ -60,29 +60,32 @@ const Cartdetails = () => {
                     <Table>
                       <tr>
                         <td>
-                          <p>
-                            <strong>Product</strong> :{ele.productname}
-                          </p>
-                          <p>
-                            <strong>Price</strong> : ₹{ele.price}
-                          </p>
-                          <p>
-                            <strong>Type</strong> :{ele.type}
-                          </p>
-                          <p>                         
-                            <strong>Total</strong> :₹{ele.price * ele.qnty}
-                          </p>
+                          <div className="detail_size">
+                            <p>Product : {ele.productname}</p>
+                            <p>Price : ₹{ele.price}</p>
+                            <p>Type : {ele.type}</p>
+                            <p>
+                              Rating:
+                              <b className="rating"> {ele.rating}★</b>
+                            </p>
+                            <p>Order Review: {ele.somedata}</p>
+                            <p>
+                              Remove :
+                              <i
+                                className="fas fa-trash trash_button"
+                                onClick={() => dlt(ele.key)}
+                              ></i>
+                            </p>
+                            <p>Total :₹{ele.price * ele.qnty}</p>
+                          </div>
                           <div
-                            className="mt-5 mx-5 d-flex justify-content-between align-items-center"
+                            className="d-flex quantity_button"
                             style={{
-                              width: 100,
-                              cursor: "pointer",
                               background: "#ddd",
-                              color: "#111",
                             }}
                           >
                             <p
-                              style={{ fontSize: 24 }}
+                              className="quantity_size"
                               onClick={
                                 ele.qnty <= 1
                                   ? () => dlt(ele.key)
@@ -91,35 +94,16 @@ const Cartdetails = () => {
                             >
                               -
                             </p>
-                            <p style={{ fontSize: 26 }}>{ele.qnty}</p>
+                            <p>
+                              <b>{ele.qnty}</b>
+                            </p>
                             <p
-                              style={{ fontSize: 24 }}
+                              className="quantity_size"
                               onClick={() => send(ele)}
                             >
                               +
                             </p>
                           </div>
-                        </td>
-                        <td>
-                          <p>
-                            <strong>Rating </strong>:
-                            <b className="rating"> {ele.rating}★</b>
-                          </p>
-                          <p>
-                            <strong>Order Review </strong>: {ele.somedata}
-                          </p>
-                          <p>
-                            <strong>Remove :</strong>
-                            <i
-                              className="fas fa-trash"
-                              onClick={() => dlt(ele.key)}
-                              style={{
-                                color: "red",
-                                fontSize: 20,
-                                cursor: "pointer",
-                              }}
-                            ></i>
-                          </p>
                         </td>
                       </tr>
                     </Table>

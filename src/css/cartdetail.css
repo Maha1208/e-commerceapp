@@ -2,6 +2,7 @@
   background-image: linear-gradient(rgb(226, 207, 207), rgb(238, 185, 164));
   height: 95vh;
   overflow-y: hidden;
+  margin-top: 50px;
 }
 
 .rating {
@@ -15,6 +16,7 @@
 .detailcontainer {
   width: 70%;
   margin-left: 200px;
+  margin-top:50px
 }
 
 .itemsdetails {
@@ -39,3 +41,31 @@
   font-size: 18px;
   color: white;
 }
+
+.detail_size{
+  font-size: large;
+  font-weight: 700;  
+  padding: 20px;
+  text-align: left;
+  margin:10px;
+
+
+
+}
+
+.quantity_button{
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left:40px;
+  font-size: large;
+  align-items: center;
+  width: 30%;
+  cursor:pointer;
+  color: #111;
+}
+
+.quantity_size{
+  font-size: 31px;
+}
+
+
