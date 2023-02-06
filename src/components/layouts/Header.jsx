@@ -64,7 +64,7 @@ const Header = () => {
                 <b>Home</b>
               </NavLink>
               <NavLink
-                to="/category"
+                to="/category1"
                 className="text-decoration-none link-color"
               >
                 <b>Category</b>

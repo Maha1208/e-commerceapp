@@ -61,13 +61,13 @@ const Cartdetails = () => {
                         <td>
                           <div className="detail_size">
                             <p>Product : {ele.productname}</p>
-                            <p>Price : ₹{ele.price}</p>
                             <p>Type : {ele.type}</p>
+                            <p>Order Review: {ele.somedata}</p>
                             <p>
                               Rating:
                               <b className="rating"> {ele.rating}★</b>
                             </p>
-                            <p>Order Review: {ele.somedata}</p>
+                            <p>Price : ₹{ele.price}</p>
                             <p>
                               Remove :
                               <i
