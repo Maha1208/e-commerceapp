@@ -15,6 +15,7 @@
     width:150px;
     border-radius: 9px;
     margin-top: 9px; 
+    margin-left: 30px;
     color: #fefafa;
     font-size: 15px;
     background: rgba(9, 99, 215, 0.5); /* Black see-through */
@@ -25,6 +26,7 @@
     width:150px;
     border-radius: 9px;
     margin-top: 9px; 
+    margin-left: 30px;
     color: rgb(128, 237, 235);
     font-weight: 400;
     transform: scale(1.1);

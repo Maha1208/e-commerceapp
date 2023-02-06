@@ -36,7 +36,7 @@ const Category = () => {
   <div class="sidenav">
 
   <div>
-  <h4><ChildCareIcon/>KidsWears</h4> 
+  <h4 className='heading'><ChildCareIcon/>KidsWears</h4> 
   <button onClick={() => filterResult("gowns")}>Gowns</button>
   <button onClick={() => filterResult("girl")}>Girl Set</button> 
   <button onClick={() => filterResult("boy")}>Boy Set</button>
