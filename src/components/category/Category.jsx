@@ -1,3 +1,70 @@
+// import React from 'react'
+// // import CardsData from '../mock/CardsData';
+// // import { useState } from 'react';
+// import Button from "react-bootstrap/Button";
+// import Card from "react-bootstrap/Card";
+// import { useDispatch } from "react-redux";
+// import { ADD_CART } from "../../redux/actions/Action";
+// import "../../css/category1.css";
+// import Header from '../layouts/Header';
+// import { toast, ToastContainer } from "react-toastify";
+
+// const Category = (props) => {
+//   const dispatch = useDispatch();
+
+//   const send = (e) => {
+//     dispatch(ADD_CART(e));
+//     toast.success("Product added in the cart");
+//   };
+
+//   return (
+//     <>
+//     <Header/>
+//       <div className="product-container">
+//         <div className="row">
+//           {props.data?.map((values) => {
+//             const { key, image, rating, productname, price } = values;
+//             return (
+//               <Card
+//                 key={key} className="card_style"
+//               >
+//                 <Card.Img
+//                   variant="top"
+//                   src={image}
+//                   className="card_img"
+//                 />
+//                 <Card.Body>
+//                   <Card.Title>{productname}</Card.Title>
+//                   <Card.Text>
+//                     price:₹ {price}
+//                     <Card.Title
+//                       className="rating1"
+//                     >
+//                       {rating}★
+//                     </Card.Title>
+//                   </Card.Text>
+//                   <div className="button_div d-flex">
+//                     <Button
+//                       variant="info"
+//                       onClick={() => send(values)}
+//                       className="col-lg-12"
+//                     >
+//                       Add to Cart
+//                     </Button>
+//                   </div>
+//                 </Card.Body>
+//               </Card>
+//             );
+//           })}
+//         </div>
+//       </div>
+//       <ToastContainer />
+//     </>
+//   )
+// }
+
+// export default Category
+
 import React from 'react'
 import CardsData from '../mock/CardsData';
 import { useState } from 'react';
