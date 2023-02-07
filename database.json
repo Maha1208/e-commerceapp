@@ -8,10 +8,11 @@
       "id": 1
     },
     {
+      "name": "MAHDGS",
+      "email": "rajamahalakshmi786@gmail.com",
+      "password": "Maha1208",
+      "phone": "8765432112",
       "id": 2
-    },
-    {
-      "id": 3
     }
   ],
   "AddressPayment": [
