@@ -6,12 +6,6 @@
       "password": "Maha1208",
       "phone": "9876543212",
       "id": 1
-    },
-    {
-      "id": 2
-    },
-    {
-      "id": 3
     }
   ],
   "AddressPayment": [
@@ -23,15 +17,6 @@
       "state": "Tamilnadu",
       "zipcode": "600119",
       "id": 1
-    },
-    {
-      "name": "b",
-      "email": "maha@gmail.com",
-      "address": "m",
-      "city": "m",
-      "state": "k",
-      "zipcode": "9u",
-      "id": 2
     }
   ]
 }

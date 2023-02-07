@@ -79,9 +79,6 @@ const Cartdetails = () => {
                           </div>
                           <div
                             className="d-flex quantity_button"
-                            style={{
-                              background: "#ddd",
-                            }}
                           >
                             <p
                               className="quantity_size"

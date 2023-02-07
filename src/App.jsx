@@ -19,14 +19,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/category1" element={<Category/>} />
         <Route path="/cart/:key" element={<Cartdetails />} />
         <Route path="/cart" element={<Cartdetails />} />
         <Route path="/checkout" element={<AddressPayment />} />
         <Route path="/footer" element={<Footer />} />
         <Route path="/header" element={<Header />} />
         <Route path="/logout" element={<Logout />} />   
-        <Route path="/category1" element={<Category/>} />
-         <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

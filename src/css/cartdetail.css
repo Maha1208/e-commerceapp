@@ -1,6 +1,9 @@
 .productcontainer {
-  background-image: linear-gradient(rgb(226, 207, 207), rgb(238, 185, 164));
+  background-image: url("../../public/Images/bg/gradient.jpg");
   height: 95vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow-y: hidden;
   margin-top: 50px;
 }

@@ -8,8 +8,8 @@ import { useNavigate } from "react-router-dom";
 import "../../css/login.css";
 
 export default function SignIn() {
-  const [email, emailupdate] = useState("");
-  const [password, passwordupdate] = useState("");
+  const [email, emailUpdate] = useState("");
+  const [password, passwordUpdate] = useState("");
 
   const usenavigate = useNavigate();
 
@@ -42,7 +42,7 @@ export default function SignIn() {
           <input
             type="text"
             value={email}
-            onChange={(e) => emailupdate(e.target.value)}
+            onChange={(e) => emailUpdate(e.target.value)}
             placeholder="Enter Emailid"
             name="email"
             id="input"
@@ -57,7 +57,7 @@ export default function SignIn() {
           <input
             type="password"
             value={password}
-            onChange={(e) => passwordupdate(e.target.value)}
+            onChange={(e) => passwordUpdate(e.target.value)}
             placeholder="Enter Password"
             name="password"
             id="input"

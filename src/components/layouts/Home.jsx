@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
       {/* main background image */}
       <div className="main-background">
-        <Link to="/womenethnic" className="shopnow-btn">
+        <Link to="" className="shopnow-btn">
           Shop now
         </Link>
       </div>
@@ -23,21 +23,21 @@ export default function Home() {
         <div className="main-product">
           <div className="inner-product">
             <img src="Images/sarees/purple.jpeg" alt="Saree" />
-            <Link to="/womenethnic" id="shop-now">
+            <Link to="" id="shop-now">
               shop now
             </Link>
           </div>
 
           <div className="inner-product">
             <img src="Images/KidsWear/g3.jpg" alt=" " />
-            <Link to="/kidswears" id="shop-now">
+            <Link to="" id="shop-now">
               shop now
             </Link>
           </div>
 
           <div className="inner-product">
             <img src="Images/MensWears/S6.jpg" alt=" " />
-            <Link to="/menswears" id="shop-now">
+            <Link to="" id="shop-now">
               shop now
             </Link>
           </div>
@@ -46,7 +46,7 @@ export default function Home() {
 
       {/* <!-- 2nd banner start --> */}
       <div className="inner-banner">
-        <Link to="/kidswears" id="shope-now">
+        <Link to="" id="shope-now">
           shop now
         </Link>
         <img src="Images/Banner/banner6.jpg" alt=" " />
@@ -60,21 +60,21 @@ export default function Home() {
         <div className="main-product">
           <div className="inner-product">
             <img src="Images/Lehenga/babypink.jpg" alt="Lehenga" />
-            <Link to="/womenethnic" id="shop-now">
+            <Link to="" id="shop-now">
               shop now
             </Link>
           </div>
 
           <div className="inner-product">
             <img src="Images/western/wj1.jpg" alt=" " />
-            <Link to="/womenwestern" id="shop-now">
+            <Link to="" id="shop-now">
               shop now
             </Link>
           </div>
 
           <div className="inner-product">
             <img src="Images/KidsWear/b1.jpg" alt=" " />
-            <Link to="/menwears" id="shop-now">
+            <Link to="" id="shop-now">
               shop now
             </Link>
           </div>
