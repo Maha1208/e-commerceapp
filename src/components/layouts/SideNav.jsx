@@ -18,7 +18,7 @@ const SideNav = () => {
     
   return (
   <div class="sidenav">
-  <Category filterResult={data} />
+  <Category result={filterResult.data} />
   <div>
   <h4><ChildCareIcon/>KidsWears</h4> 
   <button onClick={() => filterResult("gowns")}>Gowns</button>

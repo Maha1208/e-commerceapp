@@ -11,22 +11,24 @@ import Logout from "./components/user/Logout";
 import Header from "./components/layouts/Header";
 import NotFound from "./components/notfound/NotFound";
 import Category from "./components/category/Category";
+import Protected from "./routing/Protected";
 
 function App() {
+  
   return (
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/footer" element={<Footer />} />
+        <Route path="/header" element={<Header />}/>
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/category1" element={<Category/>} />
-        <Route path="/cart/:key" element={<Cartdetails />} />
-        <Route path="/cart" element={<Cartdetails />} />
-        <Route path="/checkout" element={<AddressPayment />} />
-        <Route path="/footer" element={<Footer />} />
-        <Route path="/header" element={<Header />} />
         <Route path="/logout" element={<Logout />} />   
-        <Route path="*" element={<NotFound />} />
+        <Route path="/category1" element={<Protected><Category/></Protected>}/>
+        <Route path="/cart/:key" element={<Protected><Cartdetails /></Protected>} />
+        <Route path="/cart" element={<Protected><Cartdetails /></Protected>} />
+        <Route path="/checkout" element={<Protected><AddressPayment /></Protected>} />
+        <Route path="*" element={<Protected><NotFound /></Protected>} />
       </Routes>
     </div>
   );
