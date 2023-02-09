@@ -1,45 +1,52 @@
 import axios from "axios";
-import { toast } from "react-toastify";
-import { ToastContainer } from "react-toastify";
+import { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "../layouts/Header";
-import { useState } from "react";
 import "../../css/payment.css";
+import swal from 'sweetalert';
 
 const Payment = () => {
-  const [fullname, nameChange] = useState("");
-  const [email, emailChange] = useState("");
-  const [address, addressChange] = useState("");
-  const [city, cityChange] = useState("");
-  const [state, stateChange] = useState("");
-  const [zipcode, zipcodeChange] = useState("");
+  const [address, addressChange] = useState({
+    fullname:"",
+    email:"",
+    address:"",
+    city:"",
+    state:"",
+    zipcode:""
+  });
+
+  const handleAddress=(e)=>{
+    const {name,value}=e.target;
+    addressChange((prev)=>{
+    return{...prev,[name]:value}
+    })
+    };
 
   const orderPlace = (event) => {
     axios
       .post("http://localhost:4000/AddressPayment", {
-        name: `${fullname}`,
-        email: `${email}`,
-        address: `${address}`,
-        city: `${city}`,
-        state: `${state}`,
-        zipcode: `${zipcode}`,
+        name: `${address.fullname}`,
+        email: `${address.email}`,
+        address: `${address.address}`,
+        city: `${address.city}`,
+        state: `${address.state}`,
+        zipcode: `${address.zipcode}`,
       })
       .then(() => {
-        toast.success("Address added successfully");
-        toast.success("COD only Available");
+        swal("Order Placed successfully", "Cash On Delivery", "success");
       })
       .catch((error) => {
-        toast.error(error);
+        swal(error);
       });
     event.preventDefault();
   };
   const isEnabled =
-    email.length > 0 &&
-    fullname.length > 0 &&
-    address.length > 0 &&
-    city.length > 0 &&
-    state.length &&
-    zipcode.length;
+  address.email.length > 0 &&
+  address.fullname.length > 0 &&
+  address.address.length > 0 &&
+  address.city.length > 0 &&
+  address.state.length &&
+  address.zipcode.length;
 
   return (
     <div>
@@ -53,7 +60,8 @@ const Payment = () => {
             type="text"
             placeholder="Full name"
             name="fullname"
-            onChange={(e) => nameChange(e.target.value)}
+            value={address.fullname}
+            onChange={handleAddress}
             id="inputvalue"
           />
           <br />
@@ -63,7 +71,7 @@ const Payment = () => {
             type="email"
             placeholder="example@example.com"
             name="email"
-            onChange={(e) => emailChange(e.target.value)}
+            onChange={handleAddress}
             id="inputvalue"
           />
           <br />
@@ -73,7 +81,7 @@ const Payment = () => {
             type="text"
             placeholder="Door No - street - locality"
             name="address"
-            onChange={(e) => addressChange(e.target.value)}
+            onChange={handleAddress}
             id="inputvalue"
           />
           <br />
@@ -83,7 +91,7 @@ const Payment = () => {
             type="text"
             placeholder="city"
             name="city"
-            onChange={(e) => cityChange(e.target.value)}
+            onChange={handleAddress}
             id="inputvalue"
           />
           <br />
@@ -93,7 +101,7 @@ const Payment = () => {
             type="text"
             placeholder="state"
             name="state"
-            onChange={(e) => stateChange(e.target.value)}
+            onChange={handleAddress}
             id="inputvalue"
           />
           <br />
@@ -103,7 +111,7 @@ const Payment = () => {
             type="text"
             placeholder="123 456"
             name="zipcode"
-            onChange={(e) => zipcodeChange(e.target.value)}
+            onChange={handleAddress}
             id="inputvalue"
             maxLength={6}
           />
@@ -118,7 +126,6 @@ const Payment = () => {
             Place Order
           </button>
         </form>
-        <ToastContainer position="top-center" />
       </div>
     </div>
   );

@@ -22,13 +22,12 @@ export default function SignIn() {
           return response.json();
         })
         .then((response) => {
-          // console.log(response)
           if (Object.keys(response).length === 0) {
             toast.error("Please Enter valid email");
           } else {
             if (response[0].password === password) {
               sessionStorage.setItem("email", email);
-              swal("Login Successful!", `Welcome ${email}`, "success");
+              swal("Login Successful!", `Welcome ${email}`,"success");
               usenavigate("/");
             } else {
               toast.error("Please Enter valid password");

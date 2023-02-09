@@ -1,26 +1,21 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-import Badge from "@mui/material/Badge";
-import Nav from "react-bootstrap/Nav";
-import Menu from "@mui/material/Menu";
-import { Table } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { DELETE_CART } from "../../redux/actions/Action";
 import { NavLink, Link, useNavigate } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import Badge from "@mui/material/Badge";
+import Menu from "@mui/material/Menu";
+import { Table } from "@mui/material";
 import "../../css/style.css";
 
 const Header = () => {
-  //navbar update
   const user = sessionStorage.getItem("email");
-
   const history = useNavigate();
-
   const [price, setPrice] = useState(0);
-
-  const products = useSelector((state) => state.cartreducer.carts); //products from the cartreducer
-
-  const [anchorEl, setAnchorEl] = useState(null); //menu open
+  const products = useSelector((state) => state.cartreducer.carts);
+  const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -28,10 +23,8 @@ const Header = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   const dispatch = useDispatch();
 
-  //removing
   const deleteCart = (key) => {
     dispatch(DELETE_CART(key));
   };
@@ -46,7 +39,7 @@ const Header = () => {
 
   useEffect(() => {
     total();
-  }, [total]); //grant total
+  }, [total]);
 
   return (
     <>

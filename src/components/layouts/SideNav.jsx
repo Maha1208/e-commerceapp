@@ -4,21 +4,19 @@ import CardsData from '../mock/CardsData';
 import WomanIcon from '@mui/icons-material/Woman';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import ChildCareIcon from '@mui/icons-material/ChildCare';
-import Category from '../category/Category';
 
 const SideNav = () => {
     const [data, setData] = useState([]);
 
-    const filterResult = (items) => {
+    const filterResult = (products) => {
         const result = CardsData.filter((curData) => {
-          return curData.subcategory === items;
+          return curData.subcategory === products;
         });
         setData(result);
       };
     
   return (
   <div class="sidenav">
-  <Category result={filterResult.data} />
   <div>
   <h4><ChildCareIcon/>KidsWears</h4> 
   <button onClick={() => filterResult("gowns")}>Gowns</button>

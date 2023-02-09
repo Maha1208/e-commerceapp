@@ -1,35 +1,26 @@
 import React, { useEffect, useState } from "react";
-import Table from "react-bootstrap/Table";
-import { useParams } from "react-router-dom";
+import { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { DELETE_CART, ADD_CART, REMOVE_ITEM } from "../../redux/actions/Action";
-import Header from "../layouts/Header";
-import { useCallback } from "react";
+import { useParams } from "react-router-dom";
+import Table from "react-bootstrap/Table";
 import "../../css/cartdetail.css";
+import Header from "../layouts/Header";
 
 const Cartdetails = () => {
   const [data, setData] = useState([]);
-
   const { key } = useParams();
-
   const products = useSelector((state) => state.cartreducer.carts);
-
   const dispatch = useDispatch();
-  // add data
   const send = (e) => {
-    dispatch(ADD_CART(e)); //contains the selected products
+    dispatch(ADD_CART(e)); 
   };
-
   const deleteCart = (key) => {
     dispatch(DELETE_CART(key));
   };
-
-  // remove one
   const removeItem = (item) => {
     dispatch(REMOVE_ITEM(item));
   };
-
-  //Getting page for selected Products
   const compare = useCallback(() => {
     let comparedata = products.filter((e) => {
       return e.key === key;

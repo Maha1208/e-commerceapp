@@ -1,8 +1,8 @@
 import React from "react";
+import "../../css/home.css";
 import Footer from "./Footer";
 import Header from "./Header";
 import { Link } from "react-router-dom";
-import "../../css/home.css";
 
 export default function Home() {
   return (

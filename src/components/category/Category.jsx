@@ -1,13 +1,13 @@
-// import React from 'react'
-// // import CardsData from '../mock/CardsData';
-// // import { useState } from 'react';
+// import React from 'react';
 // import Button from "react-bootstrap/Button";
 // import Card from "react-bootstrap/Card";
 // import { useDispatch } from "react-redux";
 // import { ADD_CART } from "../../redux/actions/Action";
 // import "../../css/category1.css";
 // import Header from '../layouts/Header';
+// import CardsData from '../mock/CardsData';
 // import { toast, ToastContainer } from "react-toastify";
+// import SideNav from '../layouts/SideNav';
 
 // const Category = (props) => {
 //   const dispatch = useDispatch();
@@ -20,9 +20,10 @@
 //   return (
 //     <>
 //     <Header/>
+//     <SideNav/>
 //       <div className="product-container">
 //         <div className="row">
-//           {props.data?.map((values) => {
+//           {CardsData.map((values) => {
 //             const { key, image, rating, productname, price } = values;
 //             return (
 //               <Card
@@ -66,31 +67,28 @@
 // export default Category
 
 import React from 'react'
-import CardsData from '../mock/CardsData';
 import { useState } from 'react';
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import { useDispatch } from "react-redux";
 import { ADD_CART } from "../../redux/actions/Action";
-import "../../css/category1.css";
-import Header from '../layouts/Header';
+import CardsData from '../mock/CardsData';
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 import { toast, ToastContainer } from "react-toastify";
 import WomanIcon from '@mui/icons-material/Woman';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import ChildCareIcon from '@mui/icons-material/ChildCare';
-
+import "../../css/category1.css";
+import Header from '../layouts/Header';
 
 const Category = () => {
-  const [data, setData] = useState([]);
-
+  const [products, setProducts] = useState([]);
   const filterResult = (items) => {
     const result = CardsData.filter((curData) => {
       return curData.subcategory === items;
     });
-    setData(result);
+    setProducts(result);
   };
   const dispatch = useDispatch();
-
   const send = (e) => {
     dispatch(ADD_CART(e));
     toast.success("Product added in the cart");
@@ -101,7 +99,6 @@ const Category = () => {
     <Header/>
   <div>
   <div class="sidenav">
-
   <div>
   <h4 className='heading'><ChildCareIcon/>KidsWears</h4> 
   <button onClick={() => filterResult("gowns")}>Gowns</button>
@@ -137,7 +134,7 @@ const Category = () => {
 
 <div className="product-container">
         <div className="row">
-          {data.map((values) => {
+          {products.map((values) => {
             const { key, image, rating, productname, price } = values;
             return (
               <Card

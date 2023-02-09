@@ -11,7 +11,7 @@ import Logout from "./components/user/Logout";
 import Header from "./components/layouts/Header";
 import NotFound from "./components/notfound/NotFound";
 import Category from "./components/category/Category";
-import Protected from "./routing/Protected";
+import Protected from "./components/routing/Protected";
 
 function App() {
   

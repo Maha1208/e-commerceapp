@@ -1,24 +1,24 @@
 import React from "react";
 import { toast } from "react-toastify";
 
-const Toastify = (message, type) => {
+const Toastify = (errorMessage, type) => {
   switch (type) {
     case "success":
       return toast.success(
         <div>
-          <p>{message}</p>
+          <p>{errorMessage}</p>
         </div>
       );
     case "error":
       return toast.error(
         <div>
-          <p>{message}</p>
+          <p>{errorMessage}</p>
         </div>
       );
     case "warning":
       return toast.warning(
         <div>
-          <p>{message}</p>
+          <p>{errorMessage}</p>
         </div>
       );
     default:
@@ -30,3 +30,5 @@ const Toastify = (message, type) => {
   }
 };
 export default Toastify;
+
+
