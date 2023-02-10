@@ -12,6 +12,7 @@ import Header from "./components/layouts/Header";
 import NotFound from "./components/notfound/NotFound";
 import Category from "./components/category/Category";
 import Protected from "./components/routing/Protected";
+import AddProduct from "./components/adminpage/AddProduct";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/footer" element={<Footer />} />
+        <Route path="/addproduct" element={<AddProduct/>} />
         <Route path="/header" element={<Header />}/>
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />

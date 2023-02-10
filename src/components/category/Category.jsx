@@ -6,7 +6,6 @@
 // import "../../css/category1.css";
 // import Header from '../layouts/Header';
 // import CardsData from '../mock/CardsData';
-// import { toast, ToastContainer } from "react-toastify";
 // import SideNav from '../layouts/SideNav';
 
 // const Category = (props) => {
@@ -59,7 +58,6 @@
 //           })}
 //         </div>
 //       </div>
-//       <ToastContainer />
 //     </>
 //   )
 // }

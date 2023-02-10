@@ -24,7 +24,7 @@ const Toastify = (message, type) => {
     default:
       return toast.warning(
         <div>
-          <p>Toast not defined...</p>
+          <p> not defined...</p>
         </div>
       );
   }

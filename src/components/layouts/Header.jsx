@@ -9,6 +9,7 @@ import Badge from "@mui/material/Badge";
 import Menu from "@mui/material/Menu";
 import { Table } from "@mui/material";
 import "../../css/style.css";
+import { ToastContainer } from "react-toastify";
 
 const Header = () => {
   const user = sessionStorage.getItem("email");
@@ -57,7 +58,7 @@ const Header = () => {
                 <b>Home</b>
               </NavLink>
               <NavLink
-                to="/category1"
+                to="/addproduct"
                 className="text-decoration-none link-color"
               >
                 <b>Category</b>
@@ -192,6 +193,7 @@ const Header = () => {
           </Container>
         </Navbar>
       )}
+      <ToastContainer  position="top-center"/>
     </>
   );
 };
