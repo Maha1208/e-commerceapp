@@ -1,5 +1,5 @@
 const INIT_STATE = {
-  carts: [], //data store
+  carts: []
 };
 
 export const cartreducer = (state = INIT_STATE, action) => {

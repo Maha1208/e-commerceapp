@@ -71,7 +71,7 @@ const Header = () => {
             </Nav>
             <Badge
               badgeContent={products.length}
-              color="primary" //cart icon increment
+              color="primary" 
               id="basic-button"
               aria-controls={open ? "basic-menu" : undefined}
               aria-haspopup="true"

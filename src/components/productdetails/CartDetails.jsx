@@ -7,7 +7,7 @@ import Table from "react-bootstrap/Table";
 import "../../css/cartdetail.css";
 import Header from "../layouts/Header";
 
-const Cartdetails = () => {
+const CartDetails = () => {
   const [data, setData] = useState([]);
   const { key } = useParams();
   const products = useSelector((state) => state.cartreducer.carts);
@@ -22,10 +22,10 @@ const Cartdetails = () => {
     dispatch(REMOVE_ITEM(item));
   };
   const compare = useCallback(() => {
-    let comparedata = products.filter((e) => {
+    let compareData = products.filter((e) => {
       return e.key === key;
     });
-    setData(comparedata);
+    setData(compareData);
   }, [products, key]);
 
   useEffect(() => {
@@ -105,4 +105,4 @@ const Cartdetails = () => {
   );
 };
 
-export default Cartdetails;
+export default CartDetails;

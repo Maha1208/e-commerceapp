@@ -6,13 +6,13 @@ import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import ChildCareIcon from '@mui/icons-material/ChildCare';
 
 const SideNav = () => {
-    const [data, setData] = useState([]);
+    const [products, setProducts] = useState([]);
 
     const filterResult = (products) => {
         const result = CardsData.filter((curData) => {
           return curData.subcategory === products;
         });
-        setData(result);
+        setProducts(result);
       };
     
   return (

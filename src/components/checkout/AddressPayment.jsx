@@ -1,10 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
-import Header from "../layouts/Header";
 import "../../css/payment.css";
 import swal from 'sweetalert';
-
+import Header from "../layouts/Header";
+import Toastify from "../toast/Toastify";
 const Payment = () => {
   const [address, addressChange] = useState({
     fullname:"",
@@ -21,6 +22,7 @@ const Payment = () => {
     return{...prev,[name]:value}
     })
     };
+  const navigate = useNavigate();
 
   const orderPlace = (event) => {
     axios
@@ -34,9 +36,11 @@ const Payment = () => {
       })
       .then(() => {
         swal("Order Placed successfully", "Cash On Delivery", "success");
+        navigate("/");
+
       })
       .catch((error) => {
-        swal(error);
+        Toastify("Failed:" + error.message,'error');
       });
     event.preventDefault();
   };
@@ -61,7 +65,7 @@ const Payment = () => {
             placeholder="Full name"
             name="fullname"
             value={address.fullname}
-            onChange={handleAddress}
+            onInput={handleAddress}
             id="inputvalue"
           />
           <br />
@@ -71,7 +75,7 @@ const Payment = () => {
             type="email"
             placeholder="example@example.com"
             name="email"
-            onChange={handleAddress}
+            onInput={handleAddress}
             id="inputvalue"
           />
           <br />
@@ -81,7 +85,7 @@ const Payment = () => {
             type="text"
             placeholder="Door No - street - locality"
             name="address"
-            onChange={handleAddress}
+            onInput={handleAddress}
             id="inputvalue"
           />
           <br />
@@ -91,7 +95,7 @@ const Payment = () => {
             type="text"
             placeholder="city"
             name="city"
-            onChange={handleAddress}
+            onInput={handleAddress}
             id="inputvalue"
           />
           <br />
@@ -101,7 +105,7 @@ const Payment = () => {
             type="text"
             placeholder="state"
             name="state"
-            onChange={handleAddress}
+            onInput={handleAddress}
             id="inputvalue"
           />
           <br />
@@ -111,7 +115,7 @@ const Payment = () => {
             type="text"
             placeholder="123 456"
             name="zipcode"
-            onChange={handleAddress}
+            onInput={handleAddress}
             id="inputvalue"
             maxLength={6}
           />

@@ -2,10 +2,31 @@
   "SignUp": [
     {
       "name": "MAHA",
-      "email": "emahe@gmail.com",
+      "email": "emahe1208@gmail.com",
       "password": "Maha1208",
       "phone": "9876543212",
       "id": 1
+    },
+    {
+      "name": "ASDFGHJKLLKJHGFDSA",
+      "email": "emahe1208@gmail.com",
+      "password": "Maha1208",
+      "phoneno": "9876543211",
+      "id": 2
+    },
+    {
+      "name": "AGFSD",
+      "email": "emahe1208@gmail.com",
+      "password": "Maha1208",
+      "phoneno": "9176310412",
+      "id": 3
+    },
+    {
+      "name": "ASDFGHJ",
+      "email": "emahe1208@gmail.com",
+      "password": "Mgfds124567",
+      "phoneno": "9876543211",
+      "id": 4
     }
   ],
   "AddressPayment": [
@@ -17,7 +38,24 @@
       "state": "Tamilnadu",
       "zipcode": "600119",
       "id": 1
+    },
+    {
+      "name": "Mahalakshmi",
+      "email": "emahe1208@gmail.com",
+      "address": "12dff",
+      "city": "bnm,",
+      "state": "tamilnadu",
+      "zipcode": "98765",
+      "id": 2
+    },
+    {
+      "name": "lkjhgfds",
+      "email": "lkjhgfdx@gmail.com",
+      "address": "12dff",
+      "city": "bnm,",
+      "state": "vhjkl",
+      "zipcode": "876543",
+      "id": 3
     }
-    
   ]
 }

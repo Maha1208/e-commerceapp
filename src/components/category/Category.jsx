@@ -63,7 +63,6 @@
 //     </>
 //   )
 // }
-
 // export default Category
 
 import React from 'react'
@@ -73,12 +72,12 @@ import { ADD_CART } from "../../redux/actions/Action";
 import CardsData from '../mock/CardsData';
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { toast, ToastContainer } from "react-toastify";
 import WomanIcon from '@mui/icons-material/Woman';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import ChildCareIcon from '@mui/icons-material/ChildCare';
 import "../../css/category1.css";
 import Header from '../layouts/Header';
+import Toastify from '../toast/Toastify';
 
 const Category = () => {
   const [products, setProducts] = useState([]);
@@ -91,7 +90,7 @@ const Category = () => {
   const dispatch = useDispatch();
   const send = (e) => {
     dispatch(ADD_CART(e));
-    toast.success("Product added in the cart");
+    Toastify("Product added in the cart","success");
   };
 
   return (
@@ -171,7 +170,6 @@ const Category = () => {
         </div>
       </div>
       </div>
-      <ToastContainer />
     </>
   )
 }

@@ -1,24 +1,24 @@
 import React from "react";
 import { toast } from "react-toastify";
 
-const Toastify = (errorMessage, type) => {
+const Toastify = (message, type) => {
   switch (type) {
     case "success":
       return toast.success(
         <div>
-          <p>{errorMessage}</p>
+          <p>{message}</p>
         </div>
       );
     case "error":
       return toast.error(
         <div>
-          <p>{errorMessage}</p>
+          <p>{message}</p>
         </div>
       );
     case "warning":
       return toast.warning(
         <div>
-          <p>{errorMessage}</p>
+          <p>{message}</p>
         </div>
       );
     default:
