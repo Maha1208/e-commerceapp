@@ -11,15 +11,15 @@ import Logout from "./components/user/Logout";
 import Header from "./components/layouts/Header";
 import NotFound from "./components/notfound/NotFound";
 import ProductPage from "./components/products/ProductPage";
-import Protected from "./components/routing/Protected";
+import Protected from "./Protected";
 
 function App() {
   return (
     <div>
+      <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/footer" element={<Footer />} />
-        <Route path="/header" element={<Header />}/>
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/logout" element={<Logout />} />   

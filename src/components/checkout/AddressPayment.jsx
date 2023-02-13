@@ -1,75 +1,76 @@
-import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import "../../css/payment.css";
-import swal from 'sweetalert';
-import Header from "../layouts/Header";
+import swal from "sweetalert";
 import Toastify from "../toast/Toastify";
+
 const Payment = () => {
   const [address, addressChange] = useState({
-    fullName:"",
-    email:"",
-    address:"",
-    city:"",
-    state:"",
-    zipcode:""
+    fullName: "",
+    email: "",
+    address: "",
+    city: "",
+    state: "",
+    zipcode: "",
   });
 
-  const handleAddress=(e)=>{
-    const {name,value}=e.target;
-    addressChange((prev)=>{
-    return{...prev,[name]:value}
-    })
-    };
-  const navigate = useNavigate();
+  const handleAddress = (e) => {
+    const { name, value } = e.target;
+    addressChange((prev) => {
+      return { ...prev, [name]: value };
+    });
+  };
 
+  const navigate = useNavigate();
   const orderPlace = (event) => {
-    axios
-      .post("http://localhost:4000/AddressPayment", {
+    fetch("http://localhost:4000/AddressPayment", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
         name: `${address.fullName}`,
         email: `${address.email}`,
         address: `${address.address}`,
         city: `${address.city}`,
         state: `${address.state}`,
         zipcode: `${address.zipcode}`,
-      })
+      }),
+    })
+      .then((response) => response.json())
       .then(() => {
         swal("Order Placed successfully", "Cash On Delivery", "success");
         navigate("/");
-
       })
       .catch((error) => {
-        Toastify("Failed:" + error.message,'error');
+        Toastify("Failed:" + error.message, "error");
       });
     event.preventDefault();
   };
+
   const isEnabled =
-  address.email.length > 0 &&
-  address.fullName.length > 0 &&
-  address.address.length > 0 &&
-  address.city.length > 0 &&
-  address.state.length &&
-  address.zipcode.length;
+    address.email.length > 0 &&
+    address.fullName.length > 0 &&
+    address.address.length > 0 &&
+    address.city.length > 0 &&
+    address.state.length &&
+    address.zipcode.length;
 
   return (
     <div>
-      <Header />
       <div>
         <form className="paymentform" onSubmit={orderPlace}>
           <h3 className="title"> Address for the Delivery</h3>
-
           <label>Full Name :</label>
           <input
             type="text"
             placeholder="Full name"
-            name="fullname"
-            value={address.fullname}
+            name="fullName"
+            value={address.fullName}
             onInput={handleAddress}
             id="inputvalue"
           />
-          <br />
-
           <label>Email :</label>
           <input
             type="email"
@@ -78,8 +79,6 @@ const Payment = () => {
             onInput={handleAddress}
             id="inputvalue"
           />
-          <br />
-
           <label>Address :</label>
           <input
             type="text"
@@ -88,8 +87,6 @@ const Payment = () => {
             onInput={handleAddress}
             id="inputvalue"
           />
-          <br />
-
           <label>City :</label>
           <input
             type="text"
@@ -98,8 +95,6 @@ const Payment = () => {
             onInput={handleAddress}
             id="inputvalue"
           />
-          <br />
-
           <label>State :</label>
           <input
             type="text"
@@ -108,8 +103,6 @@ const Payment = () => {
             onInput={handleAddress}
             id="inputvalue"
           />
-          <br />
-
           <label>Zip Code :</label>
           <input
             type="text"
@@ -119,8 +112,6 @@ const Payment = () => {
             id="inputvalue"
             maxLength={6}
           />
-          <br />
-
           <button
             type="submit"
             value="Place Order"

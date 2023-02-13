@@ -46,7 +46,6 @@ body {
   text-transform: capitalize;
   position: fixed;
   width: 100%;
-  z-index: 3;
   top: 0%;
   color: rgb(240, 248, 255);
   background-color: black;

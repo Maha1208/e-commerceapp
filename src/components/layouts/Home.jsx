@@ -1,13 +1,11 @@
 import React from "react";
 import "../../css/home.css";
 import Footer from "./Footer";
-import Header from "./Header";
 import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <div className="home">
-      <Header />
       {/* main background image */}
       <div className="main-background">
         <Link to="/category1" className="shopnow-btn">
