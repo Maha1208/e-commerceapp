@@ -15,12 +15,6 @@ const Toastify = (message, type) => {
           <p>{message}</p>
         </div>
       );
-    case "warning":
-      return toast.warning(
-        <div>
-          <p>{message}</p>
-        </div>
-      );
       case "info":
       return toast.info(
         <div>

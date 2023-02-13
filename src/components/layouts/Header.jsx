@@ -193,7 +193,7 @@ const Header = () => {
           </Container>
         </Navbar>
       )}
-      <ToastContainer  position="top-center"/>
+      <ToastContainer position="top-center"/>
     </>
   );
 };
