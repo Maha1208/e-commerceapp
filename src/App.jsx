@@ -10,7 +10,7 @@ import AddressPayment from "./components/checkout/AddressPayment";
 import Logout from "./components/user/Logout";
 import Header from "./components/layouts/Header";
 import NotFound from "./components/notfound/NotFound";
-import Category from "./components/category/ProductPage";
+import ProductPage from "./components/products/ProductPage";
 import Protected from "./components/routing/Protected";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/logout" element={<Logout />} />   
-        <Route path="/category1" element={<Protected><Category/></Protected>}/>
+        <Route path="/products" element={<Protected><ProductPage/></Protected>}/>
         <Route path="/cart/:key" element={<Protected><CartDetails /></Protected>} />
         <Route path="/cart" element={<Protected><CartDetails /></Protected>} />
         <Route path="/checkout" element={<Protected><AddressPayment /></Protected>} />
