@@ -16,6 +16,7 @@ const Header = () => {
   const history = useNavigate();
   const [price, setPrice] = useState(0);
   const products = useSelector((state) => state.cartreducer.carts);
+
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -24,8 +25,8 @@ const Header = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  const dispatch = useDispatch();
 
+  const dispatch = useDispatch();
   const deleteCart = (key) => {
     dispatch(DELETE_CART(key));
   };
