@@ -7,7 +7,6 @@
   overflow-y: hidden;
   margin-top: 50px;
 }
-
 .rating {
   background-color: green;
   color: #ffffff;
@@ -15,13 +14,11 @@
   width: 47px;
   border-radius: 4px;
 }
-
 .detailcontainer {
   width: 70%;
   margin-left: 200px;
   margin-top:50px
 }
-
 .itemsdetails {
   max-width: 900px;
   margin: auto;
@@ -33,29 +30,22 @@
 .items_img {
   flex: 0.4;
 }
-
 .items_img img {
   width: 20rem;
   border-radius: 5px;
 }
-
 .details {
   flex: 0.6;
   font-size: 18px;
   color: white;
 }
-
 .detail_size{
   font-size: large;
   font-weight: 700;  
   padding: 20px;
   text-align: left;
   margin:10px;
-
-
-
 }
-
 .quantity_button{
   justify-content: space-between;
   margin-top: 50px;
@@ -66,7 +56,6 @@
   cursor:pointer;
   color: #111;
 }
-
 .quantity_size{
   font-size: 31px;
 }

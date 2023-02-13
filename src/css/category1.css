@@ -1,47 +1,41 @@
 .sidenav {
-    height: 100%;
-    width: 230px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-image: url("../../public/Images/bg/pink.jpg");
-    overflow-x: hidden;
-    padding-top: 20px;
-    margin-top:35px;
-  }
-
-  .sidenav button{
-    width:150px;
-    border-radius: 9px;
-    margin-top: 9px; 
-    margin-left: 30px;
-    color: #fefafa;
-    font-size: 15px;
-    background: rgba(9, 99, 215, 0.5); /* Black see-through */
-
-  }
-
-  .sidenav button:hover{
-    width:150px;
-    border-radius: 9px;
-    margin-top: 9px; 
-    margin-left: 30px;
-    color: rgb(128, 237, 235);
-    font-weight: 400;
-    transform: scale(1.1);
-    transition: 2s;
-
-  }
-  
-  .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+  height: 100%;
+  width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url("../../public/Images/bg/pink.jpg");
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top:35px;
+}
+.sidenav button{
+  width:150px;
+  border-radius: 9px;
+  margin-top: 9px; 
+  margin-left: 30px;
+  color: #fefafa;
+  font-size: 15px;
+  background: rgba(9, 99, 215, 0.5); /* Black see-through */
+}
+.sidenav button:hover{
+  width:150px;
+  border-radius: 9px;
+  margin-top: 9px; 
+  margin-left: 30px;
+  color: rgb(128, 237, 235);
+  font-weight: 400;
+  transform: scale(1.1);
+  transition: 2s;
+} 
+.main{
+  margin-left: 200px; /* Same as the width of the sidenav */
+}  
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
   
 
   

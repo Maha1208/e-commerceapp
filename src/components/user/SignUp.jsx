@@ -58,11 +58,7 @@ export default function SignUp() {
   
 
   const isEnabled =
-    details.email.length > 0 &&
-    details.password.length > 0 &&
-    details.name.length > 0 &&
-    details.phoneno.length > 0;
-
+  Object.values(details).every(value => value.length > 0);
   return (
     <div className="signup">
       <Header/>

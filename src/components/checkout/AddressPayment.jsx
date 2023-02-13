@@ -50,13 +50,7 @@ const Payment = () => {
   };
 
   const isEnabled =
-    address.email.length > 0 &&
-    address.fullName.length > 0 &&
-    address.address.length > 0 &&
-    address.city.length > 0 &&
-    address.state.length &&
-    address.zipcode.length;
-
+    Object.values(address).every(value => value.length > 0);
   return (
     <div>
       <div>

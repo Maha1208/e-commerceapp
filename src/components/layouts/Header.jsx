@@ -10,13 +10,11 @@ import Menu from "@mui/material/Menu";
 import { Table } from "@mui/material";
 import "../../css/style.css";
 import { ToastContainer } from "react-toastify";
-
 const Header = () => {
   const user = sessionStorage.getItem("email");
   const history = useNavigate();
   const [price, setPrice] = useState(0);
   const products = useSelector((state) => state.cartreducer.carts);
-
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -25,12 +23,10 @@ const Header = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   const dispatch = useDispatch();
   const deleteCart = (key) => {
     dispatch(DELETE_CART(key));
   };
-
   const total = useCallback(() => {
     let price = 0;
     products.map((ele) => {
@@ -38,11 +34,9 @@ const Header = () => {
     });
     setPrice(price);
   }, [products]);
-
   useEffect(() => {
     total();
   }, [total]);
-
   return (
     <>
       {user ? (
@@ -64,25 +58,20 @@ const Header = () => {
               >
                 <b>Category</b>
               </NavLink>
-              <Link
-                to="/logout"
-                className="text-decoration-none link-color"
-              >
+              <Link to="/logout" className="text-decoration-none link-color">
                 <b>Logout</b>
               </Link>
             </Nav>
             <Badge
               badgeContent={products.length}
-              color="primary" 
+              color="primary"
               id="basic-button"
               aria-controls={open ? "basic-menu" : undefined}
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}
               onClick={handleClick}
             >
-              <i
-                className="fa-solid fa-cart-shopping shopping-cart"
-              ></i>
+              <i className="fa-solid fa-cart-shopping shopping-cart"></i>
             </Badge>
           </Container>
           <Menu
@@ -95,20 +84,14 @@ const Header = () => {
             }}
           >
             {products.length ? (
-              <div
-                className="cart_details"
-              >
+              <div className="cart_details">
                 <Table>
                   <thead>
                     <tr>
-                      <th>
-                        Product Image
-                      </th>
-                      <th>
-                        Product Details
-                      </th>
+                      <th>Product Image</th>
+                      <th>Product Details</th>
                     </tr>
-                    <hr/>
+                    <hr />
                   </thead>
                   <tbody>
                     {products.map((e) => {
@@ -119,7 +102,8 @@ const Header = () => {
                               <Link to={`/cart/${e.key}`}>
                                 <img
                                   src={e.image}
-                                  alt="" className="cart_image"
+                                  alt=""
+                                  className="cart_image"
                                 />
                                 <br />
                               </Link>
@@ -133,20 +117,15 @@ const Header = () => {
                               <br />
                             </td>
                             -
-                            <td
-                              onClick={() => deleteCart(e.key)}
-                            >
+                            <td onClick={() => deleteCart(e.key)}>
                               <i className="fas fa-trash trash_button"></i>
                             </td>
                           </tr>
-                          <hr/>
+                          <hr />
                         </>
                       );
                     })}
-                    <NavLink
-                      to={`/checkout`}
-                      className="text-decoration-none"
-                    >
+                    <NavLink to={`/checkout`} className="text-decoration-none">
                       <button className="checkout" type="button">
                         <b>
                           ₹{price}
@@ -159,9 +138,7 @@ const Header = () => {
                 </Table>
               </div>
             ) : (
-              <div
-                className="card_details d-flex"
-              >
+              <div className="card_details d-flex">
                 <i
                   className="fas fa-close close_button"
                   onClick={handleClose}
@@ -178,23 +155,17 @@ const Header = () => {
               <NavLink to="/" className="text-decoration-none link-color">
                 <b>Home</b>
               </NavLink>
-              <NavLink
-                to="/SignUp"
-                className="text-decoration-none link-color"
-              >
+              <NavLink to="/SignUp" className="text-decoration-none link-color">
                 <b>Register</b>
               </NavLink>
-              <NavLink
-                to="/SignIn"
-                className="text-decoration-none link-color"
-              >
+              <NavLink to="/SignIn" className="text-decoration-none link-color">
                 <b>Login</b>
               </NavLink>
             </Nav>
           </Container>
         </Navbar>
       )}
-      <ToastContainer position="top-center"/>
+      <ToastContainer position="top-center" />
     </>
   );
 };

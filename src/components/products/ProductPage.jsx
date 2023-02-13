@@ -28,7 +28,6 @@ const Category = () => {
 
   return (
     <>
-    <Header/>
   <div>
   <div class="sidenav">
   <div>

@@ -21,7 +21,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
           <div className="footer-col">
             <h4>Dress Kart online shop</h4>
             <ul>

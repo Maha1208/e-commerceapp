@@ -13,7 +13,6 @@
   margin-left: 2%;
   border-radius: 10px;
 }
-
 .submit-btn {
   margin-top: 40px;
   width: 150px;
@@ -23,7 +22,6 @@
   color: rgb(223, 232, 223);
   background-color: rgb(73, 164, 113);
 }
-
 .submit-btn:hover:enabled {
   background-color: #c08134;
 }
