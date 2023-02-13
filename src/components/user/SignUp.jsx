@@ -12,7 +12,7 @@ export default function SignUp() {
     password:"",
     phoneno:""
   });
-     
+
   const navigate = useNavigate();
 
   const handleInputChange=(e)=>{
@@ -22,22 +22,41 @@ export default function SignUp() {
     })
     };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    let handleInputChange =details;
-      fetch("http://localhost:4000/SignUp", {
-        method: "post",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(handleInputChange),
-      })
-        .then(() => {
-          swal("Registered Successfully", `${details.name}please Login`, "success");
-          navigate("/SignIn");
-        })
-        .then((error) => {
-          Toastify("Failed:" + error.message,'error');
-        });
-  };
+    const handleSubmit = async (event) => {
+      event.preventDefault();
+      try {
+        const res = await fetch(`http://localhost:4000/SignUp?email=${details.email}`);
+        const json = await res.json();
+        
+        if (json.length === 0) {
+          const res = await fetch("http://localhost:4000/SignUp", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: `${details.name}`,
+              email: `${details.email}`,
+              password: `${details.password}`,
+              phone: `${details.phoneno}`,
+            }),
+          });
+          console.log(res)
+          if (res.status === 201) {
+            swal("Account created successfully, please login",`Welcome ${details.name}`,"success");
+            navigate("/SignIn");
+          }
+        } else {
+          Toastify(
+            "Account already exists, please Login or use a different email id to register","info"
+          );
+        }
+      } catch (error) {
+        Toastify("something went wrong","error");
+      }
+    };
+  
+
   const isEnabled =
     details.email.length > 0 &&
     details.password.length > 0 &&
@@ -128,3 +147,4 @@ export default function SignUp() {
     </div>
   );
 }
+

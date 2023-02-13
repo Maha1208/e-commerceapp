@@ -8,7 +8,7 @@ import Header from "../layouts/Header";
 import Toastify from "../toast/Toastify";
 const Payment = () => {
   const [address, addressChange] = useState({
-    fullname:"",
+    fullName:"",
     email:"",
     address:"",
     city:"",
@@ -27,7 +27,7 @@ const Payment = () => {
   const orderPlace = (event) => {
     axios
       .post("http://localhost:4000/AddressPayment", {
-        name: `${address.fullname}`,
+        name: `${address.fullName}`,
         email: `${address.email}`,
         address: `${address.address}`,
         city: `${address.city}`,
@@ -46,7 +46,7 @@ const Payment = () => {
   };
   const isEnabled =
   address.email.length > 0 &&
-  address.fullname.length > 0 &&
+  address.fullName.length > 0 &&
   address.address.length > 0 &&
   address.city.length > 0 &&
   address.state.length &&
