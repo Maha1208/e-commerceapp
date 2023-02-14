@@ -1,4 +1,4 @@
-.log {
+.login-page {
   background-image: url("../../public/Images/Banner/b4.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -6,7 +6,12 @@
   overflow-y: hidden;
 }
 
-#input {
+#login-form label{
+  display: block;
+  font-weight: 600;
+}
+
+#login-form input{
   width: 70%;
   padding: 12px 20px;
   border-radius: 10px;
@@ -19,12 +24,12 @@ h1 {
   text-align: center;
 }
 
-.logincontainer {
+.login-form__container {
   padding: 15px;
   margin-left: 3rem;
 }
 
-#loginform {
+#login-form {
   margin: 230px 0px 0px 148px;
   border-radius: 30px;
   padding: 10px 2px;
@@ -34,7 +39,7 @@ h1 {
   background-image: url("../../public/Images/Banner/c1.webp");
 }
 
-#button:enabled {
+#login-button:enabled {
   background-color: #9fe73a;
   color: rgb(5, 5, 5);
   font-weight: 500;
@@ -46,7 +51,7 @@ h1 {
   width: 40%;
 }
 
-#button:disabled {
+#login-button:disabled {
   background-color: #9fa09d;
   color: white;
   font-weight: 500;
@@ -58,14 +63,14 @@ h1 {
   cursor: not-allowed;
 }
 
-#input:focus:invalid {
+#login-form input:focus:invalid {
   outline: none;
   border-color: hsl(5, 74%, 55%);
   box-shadow: 0 0 10px #719ece;
   margin-left: 20px;
 }
 
-#input:valid:enabled {
+#login-form input:valid:enabled {
   outline: none;
   border-color: hsl(81, 77%, 47%);
 }

@@ -2,14 +2,13 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 import swal from 'sweetalert'
 
-const Logout = () => {
+export default function Logout(){
   sessionStorage.clear();
-  swal("Your are Logged out Successfully!","Thank you","success");
-  return (
+  swal("You are Logged out Successfully!","Thank you","success");
+  return(
     <div>
-      <Navigate to="/"></Navigate>
+    <Navigate to="/"/>
     </div>
-  );
-};
+  )
+}
 
-export default Logout;

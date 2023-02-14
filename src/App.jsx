@@ -4,12 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/layouts/Home";
 import SignIn from "./components/user/SignIn";
 import SignUp from "./components/user/SignUp";
-import CartDetails from "./components/productdetails/CartDetails";
+import CartDetails from "./components/productDetail/CartDetails";
+import Header from "./components/layouts/Header";
 import Footer from "./components/layouts/Footer";
 import AddressPayment from "./components/checkout/AddressPayment";
 import Logout from "./components/user/Logout";
-import Header from "./components/layouts/Header";
-import NotFound from "./components/notfound/NotFound";
+import NotFound from "./components/notFound/NotFound";
 import ProductPage from "./components/products/ProductPage";
 import Protected from "./Protected";
 

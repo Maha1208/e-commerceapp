@@ -5,14 +5,13 @@ import { DELETE_CART, ADD_CART, REMOVE_ITEM } from "../../redux/actions/Action";
 import { useParams } from "react-router-dom";
 import Table from "react-bootstrap/Table";
 import "../../css/cartdetail.css";
-import Header from "../layouts/Header";
 
 const CartDetails = () => {
   const [data, setData] = useState([]);
   const { key } = useParams();
   const products = useSelector((state) => state.cartreducer.carts);
   const dispatch = useDispatch();
-  const send = (e) => {
+  const sendToCart = (e) => {
     dispatch(ADD_CART(e)); 
   };
   const deleteCart = (key) => {
@@ -34,11 +33,10 @@ const CartDetails = () => {
 
   return (
     <>
-      <Header />
-      <div className="productcontainer">
+      <div className="product-container">
         <h2 className="text-center">Product Details Page </h2>
-        <section className="detailcontainer">
-          <div className="itemsdetails">
+        <section className="detail-container">
+          <div className="items-details">
             {data.map((ele) => {
               return (
                 <>
@@ -56,7 +54,7 @@ const CartDetails = () => {
                             <p>Order Review: {ele.somedata}</p>
                             <p>
                               Rating:
-                              <b className="rating"> {ele.rating}★</b>
+                              <b className="product-rating"> {ele.rating}★</b>
                             </p>
                             <p>Price : ₹{ele.price}</p>
                             <p>
@@ -86,7 +84,7 @@ const CartDetails = () => {
                             </p>
                             <p
                               className="quantity_size"
-                              onClick={() => send(ele)}
+                              onClick={() => sendToCart(ele)}
                             >
                               +
                             </p>

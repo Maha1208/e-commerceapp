@@ -15,7 +15,7 @@ const Toastify = (message, type) => {
           <p>{message}</p>
         </div>
       );
-      case "info":
+    case "info":
       return toast.info(
         <div>
           <p>{message}</p>

@@ -1,8 +1,13 @@
+import WomanIcon from '@mui/icons-material/Woman';
+// import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
+// import ChildCareIcon from '@mui/icons-material/ChildCare';
+
 const CardsData = [
   {
     key: "1",
     category: "womenswear",
     subcategory: "sarees",
+    icon:<WomanIcon/>,
     productname: "Chiffon pink and flower printed saree ",
     image: "/Images/sarees/chiffonsaree.jpg ",
     type: "material(chiffon)",

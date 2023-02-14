@@ -5,79 +5,76 @@ import "../../css/login.css";
 import swal from "sweetalert";
 import Toastify from "../toast/Toastify";
 
-export default function SignIn() {
+export default function SignIn(props) {
   const [email, emailUpdate] = useState("");
   const [password, passwordUpdate] = useState("");
 
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handlingLogin = (e) => 
+  {
     e.preventDefault();
     fetch("http://localhost:4000/SignUp?email=" + email)
-      .then((response) => {
+      .then((response) => 
+      {
         return response.json();
       })
-      .then((response) => {
-        if (Object.keys(response).length === 0) {
+      .then((response) =>
+       {
+        if (Object.keys(response).length === 0) 
+        {
           Toastify("Please Enter valid email!", "error");
-        } else {
-          if (response[0].password === password) {
+        } 
+        else 
+        {
+          if (response[0].password === password) 
+          {
             sessionStorage.setItem("email", email);
             swal("Login Successful!", `Welcome ${email}`, "success");
             navigate("/");
-          } else {
+          } 
+          else 
+          {
             Toastify("Please Enter valid password!", "error");
           }
         }
       })
-      .catch((error) => {
-        Toastify("Login Failed due to :" + error.message, "error");
+      .catch((error) => 
+      {
+        Toastify(`Login Failed due to : ${error.message}`, "error");
       });
   };
   const isEnabled = email.length > 0 && password.length > 0;
-
   return (
-    <div className="log">
-      <form id="loginform" onSubmit={handleLogin}>
+    <div className="login-page">
+      <form id="login-form" onSubmit={handlingLogin}>
         <h1>Login</h1>
-
-        <div className="logincontainer">
+        <div className="login-form__container">
           <label>
-            <b>Email</b>
+            Email
           </label>
-          <br />
           <input
             type="text"
-            id="input"
-            value={email}
             onInput={(e) => emailUpdate(e.target.value)}
             placeholder="Enter Emailid"
             name="email"
-            required
           />
-          <br />
-
           <label>
-            <b>Password</b>
+            Password
           </label>
-          <br />
           <input
             type="password"
-            id="input"
-            value={password}
             onInput={(e) => passwordUpdate(e.target.value)}
             placeholder="Enter Password"
-            name="password"
-            required
+            name="password"  
           />
-          <br />
-
-          <button id="button" type="submit" disabled={!isEnabled}>
+          <button id="login-button" type="submit" disabled={!isEnabled}>
             Login
           </button>
-          <br />
         </div>
       </form>
     </div>
   );
 }
+
+

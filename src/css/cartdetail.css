@@ -1,37 +1,36 @@
-.productcontainer {
+.product-container {
   background-image: url("../../public/Images/bg/gradient.jpg");
-  height: 95vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow-y: hidden;
   margin-top: 50px;
 }
-.rating {
+.product-rating {
   background-color: green;
   color: #ffffff;
   padding: 1px;
   width: 47px;
   border-radius: 4px;
 }
-.detailcontainer {
+.detail-container {
   width: 70%;
-  margin-left: 200px;
+  margin-left: 100px;
   margin-top:50px
 }
-.itemsdetails {
-  max-width: 900px;
+.items-details {
+  max-width: 800px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
 }
-.items_img {
-  flex: 0.4;
-}
+
 .items_img img {
   width: 20rem;
+  flex: 0.6;
   border-radius: 5px;
 }
 .details {

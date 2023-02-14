@@ -15,7 +15,7 @@ const Payment = () => {
     zipcode: "",
   });
 
-  const handleAddress = (e) => {
+  const handlingAddress = (e) => {
     const { name, value } = e.target;
     addressChange((prev) => {
       return { ...prev, [name]: value };
@@ -23,7 +23,7 @@ const Payment = () => {
   };
 
   const navigate = useNavigate();
-  const orderPlace = (event) => {
+  const placingOrder = (event) => {
     fetch("http://localhost:4000/AddressPayment", {
       method: "POST",
       headers: {
@@ -54,62 +54,50 @@ const Payment = () => {
   return (
     <div>
       <div>
-        <form className="paymentform" onSubmit={orderPlace}>
+        <form className="paymentform" onSubmit={placingOrder}>
           <h3 className="title"> Address for the Delivery</h3>
-          <label>Full Name :</label>
+          <label>Full Name </label>
           <input
             type="text"
-            placeholder="Full name"
             name="fullName"
-            value={address.fullName}
-            onInput={handleAddress}
-            id="inputvalue"
+            onInput={handlingAddress}
           />
-          <label>Email :</label>
+          <label>Email</label>
           <input
             type="email"
-            placeholder="example@example.com"
             name="email"
-            onInput={handleAddress}
-            id="inputvalue"
+            onInput={handlingAddress}
           />
-          <label>Address :</label>
+          <label>Address</label>
           <input
             type="text"
             placeholder="Door No - street - locality"
             name="address"
-            onInput={handleAddress}
-            id="inputvalue"
+            onInput={handlingAddress}
           />
-          <label>City :</label>
+          <label>City</label>
           <input
             type="text"
-            placeholder="city"
             name="city"
-            onInput={handleAddress}
-            id="inputvalue"
+            onInput={handlingAddress}
           />
-          <label>State :</label>
+          <label>State</label>
           <input
             type="text"
-            placeholder="state"
             name="state"
-            onInput={handleAddress}
-            id="inputvalue"
+            onInput={handlingAddress}
           />
-          <label>Zip Code :</label>
+          <label>Zip Code</label>
           <input
             type="text"
-            placeholder="123 456"
             name="zipcode"
-            onInput={handleAddress}
-            id="inputvalue"
+            onInput={handlingAddress}
             maxLength={6}
-          />
+          /><br />
           <button
             type="submit"
             value="Place Order"
-            className="submit-btn"
+            className="submit-button"
             disabled={!isEnabled}
           >
             Place Order
