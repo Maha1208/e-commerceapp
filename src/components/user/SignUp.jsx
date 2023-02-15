@@ -11,8 +11,8 @@ export default function SignUp() {
     password:"",
     phoneno:""
   });
-
   const navigate = useNavigate();
+  
   const handlingInputChange=(e)=>{
     const {name,value}=e.target;
     detailsChange((prev)=>{
@@ -26,15 +26,15 @@ export default function SignUp() {
         const res = await fetch(`http://localhost:4000/SignUp?email=${details.email}`);
         const json = await res.json();
         if (json.length === 0) {
-          const res = await fetch("http://localhost:4000/SignUp", {
+          const res = await fetch("http://localhost:4000/SignUp",{
             method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-              name: `${details.name}`,
-              email: `${details.email}`,
-              password: `${details.password}`,
+              name:`${details.name}`,
+              email:`${details.email}`,
+              password:`${details.password}`,
               phone: `${details.phoneno}`,
             }),
           });

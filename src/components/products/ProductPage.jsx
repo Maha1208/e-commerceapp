@@ -1,24 +1,23 @@
 import React from 'react'
-import { useState } from 'react';
-import { useDispatch } from "react-redux";
-import { ADD_CART } from "../../redux/actions/Action";
+import { categories } from '../mock/CardsData';
 import CardsData from '../mock/CardsData';
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-// import WomanIcon from '@mui/icons-material/Woman';
-// import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
-// import ChildCareIcon from '@mui/icons-material/ChildCare';
-import "../../css/category1.css";
 import Toastify from '../toast/Toastify';
+import { useState } from 'react';
+import { useDispatch } from "react-redux";
+import { ADD_CART } from "../../redux/actions/Action";
+import "../../css/category1.css";
 
-const Category = () => {
+function ProductList() {
   const [products, setProducts] = useState([]);
-  const filterResult = (items) => {
+  const filterProducts = (items) => {
     const result = CardsData.filter((curData) => {
       return curData.subcategory === items;
     });
     setProducts(result);
   };
+
   const dispatch = useDispatch();
   const sendToCart = (e) => {
     dispatch(ADD_CART(e));
@@ -26,23 +25,17 @@ const Category = () => {
   };
   return (
     <>
-      <div class="sidenav">
-        {/* code for category buttons */}
-        return (
-        <div class="sidenav">
-          {CardsData.map(categories => (
-            <div>
-              <h4 className="heading">{categories.icon} {categories.category}</h4>
-              {categories.CardsData.map(subCategories => (
-                <button onClick={() => filterResult(subCategories.subcategory)}>
-                  {subCategories.subcategory}
-                </button>
-              ))}
-            </div>
+     <div className="side-nav">
+       {categories.map(category => (
+        <div>
+          <h3>{category.icon}{category.name}</h3>
+            {category.subcategories.map(subcategory => (
+            <button key={subcategory.subcategoryType} onClick={() => filterProducts(subcategory.subcategoryType)}>{subcategory.productName}</button>
           ))}
         </div>
-        );
+      ))}
       </div>
+      <div>
       <div className="product-container">
         <div className="row">
           {products.map((values) => {
@@ -61,7 +54,7 @@ const Category = () => {
                   <Card.Text>
                     price:₹ {price}
                     <Card.Title
-                      className="rating1"
+                      className="product-rating"
                     >
                       {rating}★
                     </Card.Title>
@@ -81,8 +74,9 @@ const Category = () => {
           })}
         </div>
       </div>
+      </div>
     </>
   )
 }
 
-export default Category
+export default ProductList;

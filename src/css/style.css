@@ -6,25 +6,6 @@ body {
   text-decoration: none;
 }
 
-.card_style {
-  cursor: pointer;
-  transition: 0.3s;
-  width: 23rem;
-  border: black;
-  border-radius: 15px;
-  margin:10px 20px 30px 20px;
-
-}
-.card_img{
-  height:15rem;
-  margin-top: 25px;
-
-}
-
-.card_style:hover {
-  box-shadow: #8fb364;
-}
-
 .checkout {
   padding: 10px;
   background-color: #48c5c3;

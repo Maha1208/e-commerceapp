@@ -5,13 +5,12 @@ import "../../css/login.css";
 import swal from "sweetalert";
 import Toastify from "../toast/Toastify";
 
-export default function SignIn(props) {
+export default function SignIn() {
   const [email, emailUpdate] = useState("");
   const [password, passwordUpdate] = useState("");
-
   const navigate = useNavigate();
-
-  const handlingLogin = (e) => 
+  
+  const handlingSignIn = (e) => 
   {
     e.preventDefault();
     fetch("http://localhost:4000/SignUp?email=" + email)
@@ -30,7 +29,7 @@ export default function SignIn(props) {
           if (response[0].password === password) 
           {
             sessionStorage.setItem("email", email);
-            swal("Login Successful!", `Welcome ${email}`, "success");
+            swal("Login Successful!", `Welcome ${email}`,"success");
             navigate("/");
           } 
           else 
@@ -47,7 +46,7 @@ export default function SignIn(props) {
   const isEnabled = email.length > 0 && password.length > 0;
   return (
     <div className="login-page">
-      <form id="login-form" onSubmit={handlingLogin}>
+      <form id="login-form" onSubmit={handlingSignIn}>
         <h1>Login</h1>
         <div className="login-form__container">
           <label>

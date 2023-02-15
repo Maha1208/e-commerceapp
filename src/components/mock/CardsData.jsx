@@ -1,13 +1,13 @@
 import WomanIcon from '@mui/icons-material/Woman';
-// import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
-// import ChildCareIcon from '@mui/icons-material/ChildCare';
+import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
+import ChildCareIcon from '@mui/icons-material/ChildCare';
 
 const CardsData = [
   {
     key: "1",
-    category: "womenswear",
+    name: 'Saree Collections',
+    category: "EthnicWears",
     subcategory: "sarees",
-    icon:<WomanIcon/>,
     productname: "Chiffon pink and flower printed saree ",
     image: "/Images/sarees/chiffonsaree.jpg ",
     type: "material(chiffon)",
@@ -18,7 +18,8 @@ const CardsData = [
   },
   {
     key: "2",
-    category: "womenswear",
+    name: 'Saree Collections',
+    category: "EthnicWears",
     subcategory: "sarees",
     productname: "Purple Saree with new Designs",
     image: "/Images/sarees/purple.jpeg ",
@@ -31,7 +32,7 @@ const CardsData = [
   {
     key: "3",
     productname: "Cotton sarees",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "sarees",
     image: "/Images/sarees/orange.jpeg",
     type: "Orange color saree for every occasions",
@@ -42,7 +43,7 @@ const CardsData = [
   },
   {
     key: "4",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "sarees",
     productname: "Embroidery Design Cotton saree",
     image: "./Images/sarees/cottonsaree.jpg",
@@ -54,7 +55,7 @@ const CardsData = [
   },
   {
     key: "5",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "sarees",
     productname: "Green color silk saree",
     image: "./Images/sarees/green.jpg",
@@ -66,7 +67,7 @@ const CardsData = [
   },
   {
     key: "6",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "sarees",
     prname: "Red color Bridal Saree",
     image: "./Images/sarees/red.jpeg ",
@@ -78,7 +79,7 @@ const CardsData = [
   },
   {
     key: "7",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "plazoo",
     productname: "Women Western Ruffle plazzo",
     image: "/Images/plazzo/wrplazzo.jpg ",
@@ -90,7 +91,7 @@ const CardsData = [
   },
   {
     key: "8",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "plazoo",
     productname: "Soft & Stretchable Plazzo Pants(pack of 3)",
     image: "/Images/plazzo/3plazzo.jpg ",
@@ -102,7 +103,7 @@ const CardsData = [
   },
   {
     key: "9",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "plazoo",
     productname: "Soft & Stretchable Black Plazzo ",
     image: "/Images/plazzo/bplazzo.jpg",
@@ -114,7 +115,7 @@ const CardsData = [
   },
   {
     key: "10",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "plazoo",
     productname: "Transparent Black color Jeans",
     image: "/Images/plazzo/bjean.jpeg",
@@ -126,7 +127,7 @@ const CardsData = [
   },
   {
     key: "11",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "plazoo",
     productname: "Transparent ripped Jean",
     image: "/Images/plazzo/tjeans.png",
@@ -138,7 +139,7 @@ const CardsData = [
   },
   {
     key: "12",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "plazoo",
     productname: "Ripped blue color Jeans",
     image: "/Images/plazzo/rjeans.jpg ",
@@ -150,7 +151,7 @@ const CardsData = [
   },
   {
     key: "13",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "lehenga",
     productname: "Red Bridal Lehenga with handmade embroid",
     image: "/Images/Lehenga/redlehenga.png ",
@@ -162,7 +163,7 @@ const CardsData = [
   },
   {
     key: "14",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "lehenga",
     productname: "Purple Color Lehenga with Golden border",
     image: "/Images/Lehenga/purplelehenga.png ",
@@ -174,7 +175,7 @@ const CardsData = [
   },
   {
     key: "15",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "lehenga",
     productname: "Pink Lehenga Choli Designs",
     image: "/Images/Lehenga/pinkLehenga.jpeg",
@@ -186,7 +187,7 @@ const CardsData = [
   },
   {
     key: "16",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "lehenga",
     productname: "Blue Lehenga With Orange Border",
     image: "./Images/Lehenga/bluelehenga.png",
@@ -198,7 +199,7 @@ const CardsData = [
   },
   {
     key: "17",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "lehenga",
     productname: "Semi-Stitched Chiffon Fish Cut Lehenga Choli",
     image: "./Images/Lehenga/fishcut.jpg",
@@ -210,7 +211,7 @@ const CardsData = [
   },
   {
     key: "18",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "lehenga",
     productname: "Baby pink part wear lehenga",
     image: "./Images/Lehenga/babypink.jpg ",
@@ -222,7 +223,7 @@ const CardsData = [
   },
   {
     key: "19",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "kurtas",
     productname: "Red Color Kurta",
     image: "/Images/kurtas/kurtas1.jpg ",
@@ -234,7 +235,7 @@ const CardsData = [
   },
   {
     key: "20",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "kurtas",
     productname: "Blue color casual kurtas",
     image: "/Images/kurtas/kurtas2.jpg ",
@@ -246,7 +247,7 @@ const CardsData = [
   },
   {
     key: "21",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "kurtas",
     productname: "Straight kurtas with pants",
     image: "/Images/kurtas/kurtas3.jpg",
@@ -258,7 +259,7 @@ const CardsData = [
   },
   {
     key: "22",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "kurtas",
     productname: "Yellow Color Kurta with plain look",
     image: "/Images/kurtas/kurtas4.jpg",
@@ -270,7 +271,7 @@ const CardsData = [
   },
   {
     key: "23",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "kurtas",
     productname: "Pear-White Kurta",
     image: "/Images/kurtas/kurtas5.jpg",
@@ -282,7 +283,7 @@ const CardsData = [
   },
   {
     key: "24",
-    category: "womenswear",
+    category: "EthnicWears",
     subcategory: "kurtas",
     productname: "Black color Kurta",
     image: "/Images/kurtas/kurtas6.jpg ",
@@ -296,7 +297,7 @@ const CardsData = [
   {
     key: "25",
     subcategory: "tops",
-    category: "womensethnic",
+    category: "WesternWears",
     productname: "Western Top and Tunics",
     image: "/Images/western/ts1.jpg ",
     type: "Comprised of a premium, cotton blend and comfort.",
@@ -307,7 +308,7 @@ const CardsData = [
   },
   {
     key: "26",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "tops",
     productname: "Western Top and Tunics",
     image: "/Images/western/ts2.jpg ",
@@ -319,7 +320,7 @@ const CardsData = [
   },
   {
     key: "27",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "tops",
     productname: "Western Top and Tunics",
     image: "/Images/western/ts3.jpg ",
@@ -331,7 +332,7 @@ const CardsData = [
   },
   {
     key: "28",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "tops",
     productname: "Western Top and Tunics",
     image: "/Images/western/ts4.jpg ",
@@ -343,7 +344,7 @@ const CardsData = [
   },
   {
     key: "29",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "tops",
     productname: "Western Top and Tunics",
     image: "/Images/western/ts5.jpg ",
@@ -355,7 +356,7 @@ const CardsData = [
   },
   {
     key: "30",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "tops",
     productname: "Western Top and Tunics",
     image: "/Images/western/ts6.jpg ",
@@ -368,7 +369,7 @@ const CardsData = [
 
   {
     key: "31",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "wtshirt",
     productname: "Black cotton regular fit mens-Tshirt",
     image: "/Images/western/wt1.jpg",
@@ -380,7 +381,7 @@ const CardsData = [
   },
   {
     key: "32",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "wtshirt",
     productname: "ColorBlack Half Sleeve T-shirt",
     image: "/Images/western/wt2.jpg ",
@@ -392,7 +393,7 @@ const CardsData = [
   },
   {
     key: "33",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "wtshirt",
     productname: "Half Sleeve Round Neck Casual T-shirt",
     image: "/Images/western/wt3.jpg",
@@ -404,7 +405,7 @@ const CardsData = [
   },
   {
     key: "34",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "wtshirt",
     productname: "V-neck Full Sleeve T-shirt",
     image: "/Images/western/wt4.jpg",
@@ -416,7 +417,7 @@ const CardsData = [
   },
   {
     key: "35",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "wtshirt",
     productname: "Plain Blue color T-shirt",
     image: "/Images/western/wt5.jpg",
@@ -428,7 +429,7 @@ const CardsData = [
   },
   {
     key: "36",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "wtshirt",
     productname: "Red Color T-shirt",
     image: "/Images/western/wt6.jpg",
@@ -440,7 +441,7 @@ const CardsData = [
   },
   {
     key: "37",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "wjeans",
     productname: "Ripped Jean blue color",
     image: "/Images/western/j1.jpg ",
@@ -452,7 +453,7 @@ const CardsData = [
   },
   {
     key: "38",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "wjeans",
     productname: "Light blue Jean",
     image: "/Images/western/j2.jpg ",
@@ -464,7 +465,7 @@ const CardsData = [
   },
   {
     key: "39",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "wjeans",
     productname: "Dark blue with white strip Jean",
     image: "/Images/western/j3.jpg",
@@ -476,7 +477,7 @@ const CardsData = [
   },
   {
     key: "40",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "wjeans",
     productname: "Black color plain Jean",
     image: "/Images/western/j4.jpg",
@@ -488,7 +489,7 @@ const CardsData = [
   },
   {
     key: "41",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "wjeans",
     productname: "Slim Fit Men's High Quality White Jeans",
     image: "/Images/western/j5.jpg",
@@ -500,7 +501,7 @@ const CardsData = [
   },
   {
     key: "42",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "wjeans",
     productname: "Best Men's Jeans Blue color",
     image: "/Images/western/j6.jpg",
@@ -512,7 +513,7 @@ const CardsData = [
   },
   {
     key: "43",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "jumpsuits",
     productname: "Formal White Pant",
     image: "/Images/western/wj1.jpg ",
@@ -524,7 +525,7 @@ const CardsData = [
   },
   {
     key: "44",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "jumpsuits",
     productname: "Formal Black Color plain Pant",
     image: "/Images/western/wj2.jpg ",
@@ -536,7 +537,7 @@ const CardsData = [
   },
   {
     key: "45",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "jumpsuits",
     productname: "The Frederic Plaid Slim Fit Suit Pants",
     image: "/Images/western/wj5.jpg",
@@ -548,7 +549,7 @@ const CardsData = [
   },
   {
     key: "46",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "jumpsuits",
     productname: "Santorelli Luxury Flat Front",
     image: "/Images/western/wj6.jpg",
@@ -560,7 +561,7 @@ const CardsData = [
   },
   {
     key: "47",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "jumpsuits",
     productname: "Formal Pink Color Pant",
     image: "/Images/western/wj3.jpg",
@@ -572,7 +573,7 @@ const CardsData = [
   },
   {
     key: "48",
-    category: "womensethnic",
+    category: "WesternWears",
     subcategory: "jumpsuits",
     productname: "Formal Slim Fit Linen Pant",
     image: "/Images/western/wj4.jpg",
@@ -584,7 +585,7 @@ const CardsData = [
   },
   {
     key: "49",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "girl",
     productname: "Kids Ethnic Wear ",
     image: "/Images/KidsWear/g1.jpg ",
@@ -596,7 +597,7 @@ const CardsData = [
   },
   {
     key: "50",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "girl",
     productname: "baby girl designed Kurta",
     image: "/Images/KidsWear/g2.jpg ",
@@ -608,7 +609,7 @@ const CardsData = [
   },
   {
     key: "51",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "girl",
     productname: "Toqruoise Green and Pumpkin Orange Hand-embroidered dress",
     image: "/Images/KidsWear/g3.jpg ",
@@ -620,7 +621,7 @@ const CardsData = [
   },
   {
     key: "52",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "girl",
     productname: "Dark Red Formal shirt plain",
     image: "/Images/KidsWear/g4.jpg ",
@@ -632,7 +633,7 @@ const CardsData = [
   },
   {
     key: "53",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "girl",
     productname: "Children Floral Tops Overalls Suit Clothes Sets ",
     image: "/Images/KidsWear/g5.jpg ",
@@ -644,7 +645,7 @@ const CardsData = [
   },
   {
     key: "54",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "girl",
     productname: "Torani Green Velvet Embroidered Kurta And Pant",
     image: "/Images/KidsWear/g6.jpg ",
@@ -656,7 +657,7 @@ const CardsData = [
   },
   {
     key: "55",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "boy",
     productname: "Stylish Navy Blue Coat with Waist Coat and Pant Set",
     image: "/Images/KidsWear/b1.jpg ",
@@ -668,7 +669,7 @@ const CardsData = [
   },
   {
     key: "56",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "boy",
     productname: "Teeny Tiny Traditions Colorful festive kurtas lehenga",
     image: "/Images/KidsWear/b2.jpg ",
@@ -680,7 +681,7 @@ const CardsData = [
   },
   {
     key: "57",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "boy",
     productname: "Boys Denim Clothes Set",
     image: "/Images/KidsWear/b3.jpg ",
@@ -692,7 +693,7 @@ const CardsData = [
   },
   {
     key: "58",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "boy",
     productname: "white shirt with ripped jeans kids set",
     image: "/Images/KidsWear/b4.jpg ",
@@ -704,7 +705,7 @@ const CardsData = [
   },
   {
     key: "59",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "boy",
     productname: "Wedding Tuxedo Formal Check Romper One Piece Outfit Suit",
     image: "/Images/KidsWear/b5.jpg ",
@@ -716,7 +717,7 @@ const CardsData = [
   },
   {
     key: "60",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "boy",
     productname: "Kalki Boys White Dhoti Set With Angrakha Kurta",
     image: "/Images/KidsWear/b6.jpg ",
@@ -728,7 +729,7 @@ const CardsData = [
   },
   {
     key: "61",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "gowns",
     productname: "Girls Gowns Latest Gowns",
     image: "/Images/KidsWear/G1.jpg ",
@@ -740,7 +741,7 @@ const CardsData = [
   },
   {
     key: "62",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "gowns",
     productname: "red kid party dress",
     image: "/Images/KidsWear/G2.jpg ",
@@ -752,7 +753,7 @@ const CardsData = [
   },
   {
     key: "63",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "gowns",
     productname: "Party wear designer dress for girls kids",
     image: "/Images/KidsWear/G3.jpg ",
@@ -764,7 +765,7 @@ const CardsData = [
   },
   {
     key: "64",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "gowns",
     productname: "Straps Flowers Bowknot Girls Party Dress",
     image: "/Images/KidsWear/G4.jpg ",
@@ -776,7 +777,7 @@ const CardsData = [
   },
   {
     key: "65",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "gowns",
     productname: "Girls Pink Dress",
     image: "/Images/KidsWear/G5.jpg ",
@@ -788,7 +789,7 @@ const CardsData = [
   },
   {
     key: "66",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "gowns",
     productname: "Yellow and light green lehenga set",
     image: "/Images/KidsWear/G6.jpg ",
@@ -800,7 +801,7 @@ const CardsData = [
   },
   {
     key: "67",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "nightwear",
     productname: "Girls Night Dress",
     image: "/Images/KidsWear/n1.jpg ",
@@ -812,7 +813,7 @@ const CardsData = [
   },
   {
     key: "68",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "nightwear",
     productname: "Girls Night Dress",
     image: "/Images/KidsWear/n2.jpg ",
@@ -824,7 +825,7 @@ const CardsData = [
   },
   {
     key: "69",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "nightwear",
     productname: "Girls Night Dress",
     image: "/Images/KidsWear/n3.jpg ",
@@ -836,7 +837,7 @@ const CardsData = [
   },
   {
     key: "70",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "nightwear",
     productname: "Girls Night Dress",
     image: "/Images/KidsWear/n4.jpg ",
@@ -848,7 +849,7 @@ const CardsData = [
   },
   {
     key: "71",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "nightwear",
     productname: "Boys Night Dress",
     image: "/Images/KidsWear/n5.jpg ",
@@ -860,7 +861,7 @@ const CardsData = [
   },
   {
     key: "72",
-    category: "kidswear",
+    category: "KidsWears",
     subcategory: "nightwear",
     productname: "Boys Night Dress",
     image: "/Images/KidsWear/n6.jpg ",
@@ -872,7 +873,7 @@ const CardsData = [
   },
   {
     key: "73",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "formal",
     productname: "Formal White Pant",
     image: "/Images/MensWears/F1.jpg ",
@@ -884,7 +885,7 @@ const CardsData = [
   },
   {
     key: "74",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "formal",
     productname: "Formal Black Color plain Pant",
     image: "/Images/MensWears/F2.jpg ",
@@ -896,7 +897,7 @@ const CardsData = [
   },
   {
     key: "75",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "formal",
     productname: "The Frederic Plaid Slim Fit Suit Pants",
     image: "/Images/MensWears/F5.jpg",
@@ -908,7 +909,7 @@ const CardsData = [
   },
   {
     key: "76",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "formal",
     productname: "Santorelli Luxury Flat Front",
     image: "/Images/MensWears/F6.jpg",
@@ -920,7 +921,7 @@ const CardsData = [
   },
   {
     key: "77",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "formal",
     productname: "Formal Pink Color Pant",
     image: "/Images/MensWears/F3.jpg",
@@ -932,7 +933,7 @@ const CardsData = [
   },
   {
     key: "78",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "formal",
     productname: "Formal Slim Fit Linen Pant",
     image: "/Images/MensWears/F4.jpg",
@@ -944,7 +945,7 @@ const CardsData = [
   },
   {
     key: "79",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mshirt",
     productname: "Formal shirt plain ",
     image: "/Images/MensWears/S1.png ",
@@ -956,7 +957,7 @@ const CardsData = [
   },
   {
     key: "80",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mshirt",
     productname: "Mint Green color Formal shirt plain ",
     image: "/Images/MensWears/S2.png ",
@@ -968,7 +969,7 @@ const CardsData = [
   },
   {
     key: "81",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mshirt",
     productname: "Formal shirt plain",
     image: "/Images/MensWears/S3.jpg",
@@ -980,7 +981,7 @@ const CardsData = [
   },
   {
     key: "82",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mshirt",
     productname: "Dark Red Formal shirt plain",
     image: "/Images/MensWears/S4.jpg",
@@ -992,7 +993,7 @@ const CardsData = [
   },
   {
     key: "83",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mshirt",
     productname: "MultiColor Formal shirt plain",
     image: "/Images/MensWears/S5.png",
@@ -1004,7 +1005,7 @@ const CardsData = [
   },
   {
     key: "84",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mshirt",
     productname: "Louis Slim Fit Striped Formal Shirt",
     image: "/Images/MensWears/S6.jpg ",
@@ -1016,7 +1017,7 @@ const CardsData = [
   },
   {
     key: "85",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mtshirt",
     productname: "Black cotton regular fit mens-Tshirt",
     image: "/Images/MensWears/T1.jpg",
@@ -1028,7 +1029,7 @@ const CardsData = [
   },
   {
     key: "86",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mtshirt",
     productname: "ColorBlack Half Sleeve T-shirt",
     image: "/Images/MensWears/T2.jpg ",
@@ -1040,7 +1041,7 @@ const CardsData = [
   },
   {
     key: "87",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mtshirt",
     productname: "Half Sleeve Round Neck Casual T-shirt",
     image: "/Images/MensWears/T3.jpeg",
@@ -1052,7 +1053,7 @@ const CardsData = [
   },
   {
     key: "88",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mtshirt",
     productname: "V-neck Full Sleeve T-shirt",
     image: "/Images/MensWears/T4.jpg",
@@ -1064,7 +1065,7 @@ const CardsData = [
   },
   {
     key: "89",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mtshirt",
     productname: "Plain Blue color T-shirt",
     image: "/Images/MensWears/T5.jpg",
@@ -1076,7 +1077,7 @@ const CardsData = [
   },
   {
     key: "90",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mtshirt",
     productname: "Red Color T-shirt",
     image: "/Images/MensWears/T6.jpeg",
@@ -1088,7 +1089,7 @@ const CardsData = [
   },
   {
     key: "91",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mjeans",
     productname: "Ripped Jean blue color",
     image: "/Images/MensWears/J1.jpg ",
@@ -1100,7 +1101,7 @@ const CardsData = [
   },
   {
     key: "92",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mjeans",
     productname: "Light blue Jean",
     image: "/Images/MensWears/J2.jpg ",
@@ -1112,7 +1113,7 @@ const CardsData = [
   },
   {
     key: "93",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mjeans",
     productname: "Dark blue with white strip Jean",
     image: "/Images/MensWears/J3.jpg",
@@ -1124,7 +1125,7 @@ const CardsData = [
   },
   {
     key: "94",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mjeans",
     productname: "Black color plain Jean",
     image: "/Images/MensWears/J4.jpg",
@@ -1136,7 +1137,7 @@ const CardsData = [
   },
   {
     key: "95",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mjeans",
     productname: "Slim Fit Men's High Quality White Jeans",
     image: "/Images/MensWears/J5.jpg",
@@ -1148,7 +1149,7 @@ const CardsData = [
   },
   {
     key: "96",
-    category: "menswear",
+    category: "MensWears",
     subcategory: "mjeans",
     productname: "Best Men's Jeans Blue color",
     image: "/Images/MensWears/J6.jpg",
@@ -1160,3 +1161,47 @@ const CardsData = [
   },
 ];
 export default CardsData;
+
+export const categories = [  
+  {  
+     name: 'KidsWears',
+     icon: <ChildCareIcon />,
+     subcategories: [   
+         { productName: 'Gowns', subcategoryType: 'gowns' }, 
+         { productName: 'Girl Set', subcategoryType: 'girl' },     
+         { productName: 'Boy Set', subcategoryType: 'boy' },    
+         { productName: 'Night Wear', subcategoryType: 'nightwear'}  
+    ]
+  },
+  {
+    name: 'EthnicWears',
+    icon: <WomanIcon />,
+    subcategories: [
+      { productName: 'Saree Collections', subcategoryType: 'sarees' },
+      { productName: 'Lehenga Collections', subcategoryType: 'lehenga' },
+      { productName: 'Kutas Collection', subcategoryType: 'kurtas' },
+      { productName: 'Plazoo Collections', subcategoryType: 'plazoo' }
+    ]
+  },
+  {
+    name: 'WesternWears',
+    icon: <WomanIcon />,
+    subcategories: [
+      { productName: 'Women Tops & Tunics', subcategoryType: 'tops' },
+      { productName: 'Women T-Shirts', subcategoryType: 'wtshirt' },
+      { productName: 'Women Jeans', subcategoryType: 'wjeans' },
+      { productName: 'Women Jump Suits', subcategoryType: 'jumpsuits' }
+    ]
+  },
+  {
+    name: 'Mens Wear',
+    icon: <EmojiPeopleIcon />,
+    subcategories: [
+      { productName: 'Men Formal Pants', subcategoryType: 'formal' },
+      { productName: 'Men Shirts', subcategoryType: 'mshirt' },
+      { productName: 'Men T-shirts', subcategoryType: 'mtshirt' },
+      { productName: 'Men Jeans', subcategoryType: 'mjeans' }
+    ]
+  }
+];
+
