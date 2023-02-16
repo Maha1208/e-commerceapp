@@ -15,7 +15,7 @@ const Payment = () => {
     zipcode: "",
   });
 
-  const handlingAddress = (e) => {
+  const handleAddress = (e) => {
     const { name, value } = e.target;
     addressChange((prev) => {
       return { ...prev, [name]: value };
@@ -51,60 +51,56 @@ const Payment = () => {
 
   const isEnabled =
     Object.values(address).every(value => value.length > 0);
+
   return (
-    <div>
-      <div>
-        <form className="paymentform" onSubmit={placingOrder}>
-          <h3 className="title"> Address for the Delivery</h3>
-          <label>Full Name </label>
-          <input
-            type="text"
-            name="fullName"
-            onInput={handlingAddress}
-          />
-          <label>Email</label>
-          <input
-            type="email"
-            name="email"
-            onInput={handlingAddress}
-          />
-          <label>Address</label>
-          <input
-            type="text"
-            placeholder="Door No - street - locality"
-            name="address"
-            onInput={handlingAddress}
-          />
-          <label>City</label>
-          <input
-            type="text"
-            name="city"
-            onInput={handlingAddress}
-          />
-          <label>State</label>
-          <input
-            type="text"
-            name="state"
-            onInput={handlingAddress}
-          />
-          <label>Zip Code</label>
-          <input
-            type="text"
-            name="zipcode"
-            onInput={handlingAddress}
-            maxLength={6}
-          /><br />
-          <button
-            type="submit"
-            value="Place Order"
-            className="submit-button"
-            disabled={!isEnabled}
-          >
-            Place Order
-          </button>
-        </form>
-      </div>
-    </div>
+    <form className="paymentform" onSubmit={placingOrder}>
+      <h3 className="title"> Address for the Delivery</h3>
+      <label>Full Name </label>
+      <input
+        type="text"
+        name="fullName"
+        onInput={handleAddress}
+      />
+      <label>Email</label>
+      <input
+        type="email"
+        name="email"
+        onInput={handleAddress}
+      />
+      <label>Address</label>
+      <input
+        type="text"
+        placeholder="Door No - street - locality"
+        name="address"
+        onInput={handleAddress}
+      />
+      <label>City</label>
+      <input
+        type="text"
+        name="city"
+        onInput={handleAddress}
+      />
+      <label>State</label>
+      <input
+        type="text"
+        name="state"
+        onInput={handleAddress}
+      />
+      <label>Zip Code</label>
+      <input
+        type="text"
+        name="zipcode"
+        onInput={handleAddress}
+        maxLength={6}
+      /><br />
+      <button
+        type="submit"
+        className="submit-button"
+        disabled={!isEnabled}
+      >
+        Place Order
+      </button>
+    </form>
   );
 };
 export default Payment;

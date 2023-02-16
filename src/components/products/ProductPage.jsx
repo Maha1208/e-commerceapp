@@ -1,10 +1,10 @@
-import React from 'react'
-import { categories } from '../mock/CardsData';
-import CardsData from '../mock/CardsData';
+import React from "react";
+import { categories } from "../mock/CardsData";
+import CardsData from "../mock/CardsData";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Toastify from '../toast/Toastify';
-import { useState } from 'react';
+import Toastify from "../toast/Toastify";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { ADD_CART } from "../../redux/actions/Action";
 import "../../css/category1.css";
@@ -17,7 +17,6 @@ function ProductList() {
     });
     setProducts(result);
   };
-
   const dispatch = useDispatch();
   const sendToCart = (e) => {
     dispatch(ADD_CART(e));
@@ -26,13 +25,21 @@ function ProductList() {
   return (
     <>
      <div className="side-nav">
-       {categories.map(category => (
-        <div>
-          <h3>{category.icon}{category.name}</h3>
-            {category.subcategories.map(subcategory => (
-            <button key={subcategory.subcategoryType} onClick={() => filterProducts(subcategory.subcategoryType)}>{subcategory.productName}</button>
+        {categories.map((category) => (
+          <div>
+            <h3>
+              {category.icon}
+              {category.name}
+            </h3>
+            {category.subcategories.map((subcategory) => (
+              <button
+                key={subcategory.subcategoryType}
+                onClick={() => filterProducts(subcategory.subcategoryType)}
+              >
+                {subcategory.productName}
+              </button>
           ))}
-        </div>
+          </div>
       ))}
       </div>
       <div className="product-list">
@@ -40,31 +47,24 @@ function ProductList() {
           {products.map((values) => {
             const { key, image, rating, productname, price } = values;
             return (
-              <Card
-                key={key} className="card_style"
-              >
-                <Card.Img
-                  variant="top"
-                  src={image}
-                  className="card_img"
+              <Card key={key} className="card_style">
+                <Card.Img 
+                variant="top" 
+                src={image} 
+                className="card_img" 
                 />
                 <Card.Body>
                   <Card.Title>{productname}</Card.Title>
                   <Card.Text>
                     price:₹ {price}
-                    <Card.Title
-                      className="rating"
-                    >
-                      {rating}★
-                    </Card.Title>
+                  <Card.Title className="rating"> {rating}★</Card.Title>
                   </Card.Text>
                   <div className="button_div d-flex">
                     <Button
-                      variant="info"
-                      onClick={() => sendToCart(values)}
-                      className="col-lg-12"
-                    >
-                      Add to Cart
+                    variant="info"
+                    onClick={() => sendToCart(values)}
+                    className="col-lg-12">
+                    Add to Cart
                     </Button>
                   </div>
                 </Card.Body>
@@ -74,7 +74,7 @@ function ProductList() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default ProductList;

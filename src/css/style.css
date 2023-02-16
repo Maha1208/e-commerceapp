@@ -130,3 +130,7 @@ thead th{
 .not_found{
   width:100%;
 }
+
+.navbar NavLink{
+  font-weight: bold;
+}

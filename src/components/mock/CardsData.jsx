@@ -69,7 +69,7 @@ const CardsData = [
     key: "6",
     category: "EthnicWears",
     subcategory: "sarees",
-    prname: "Red color Bridal Saree",
+    productname: "Red color Bridal Saree",
     image: "./Images/sarees/red.jpeg ",
     type: "Stunning red saree with bright look",
     somedata: "600+ orders",

@@ -10,6 +10,7 @@ import Menu from "@mui/material/Menu";
 import { Table } from "@mui/material";
 import "../../css/style.css";
 import { ToastContainer } from "react-toastify";
+
 const Header = () => {
   const user = sessionStorage.getItem("email");
   const history = useNavigate();
@@ -69,9 +70,8 @@ const Header = () => {
               aria-controls={open ? "basic-menu" : undefined}
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}
-              onClick={handleClick}
-            >
-              <i className="fa-solid fa-cart-shopping shopping-cart"></i>
+              onClick={handleClick}>
+             <i className="fa-solid fa-cart-shopping shopping-cart"></i>
             </Badge>
           </Container>
           <Menu

@@ -7,7 +7,7 @@ export default function Logout(){
   swal("You are Logged out Successfully!","Thank you","success");
   return(
     <div>
-    <Navigate to="/"/>
+      <Navigate to="/"/>
     </div>
   )
 }

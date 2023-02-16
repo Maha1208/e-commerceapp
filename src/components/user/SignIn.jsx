@@ -9,64 +9,48 @@ export default function SignIn() {
   const [email, emailUpdate] = useState("");
   const [password, passwordUpdate] = useState("");
   const navigate = useNavigate();
-  
-  const handlingSignIn = (e) => 
-  {
+  const handleSignIn = (e) => {
     e.preventDefault();
     fetch("http://localhost:4000/SignUp?email=" + email)
-      .then((response) => 
-      {
+      .then((response) => {
         return response.json();
       })
-      .then((response) =>
-       {
-        if (Object.keys(response).length === 0) 
-        {
+      .then((response) => {
+        if (Object.keys(response).length === 0) {
           Toastify("Please Enter valid email!", "error");
-        } 
-        else 
-        {
-          if (response[0].password === password) 
-          {
-            sessionStorage.setItem("email",response[0].email);
-            swal("Login Successful!", `Welcome ${response[0].email}`,"success");
+        }
+        else {
+          if (response[0].password === password) {
+            sessionStorage.setItem("email", response[0].email);
+            swal("Login Successful!", `Welcome ${response[0].email}`, "success");
             navigate("/");
-          } 
-          else 
-          {
+          }
+          else {
             Toastify("Please Enter valid password!", "error");
           }
         }
-      })
-      .catch((error) => 
-      {
+      }).catch((error) => {
         Toastify(`Login Failed due to : ${error.message}`, "error");
       });
   };
   const isEnabled = email.length > 0 && password.length > 0;
   return (
     <div className="login-page">
-      <form id="login-form" onSubmit={handlingSignIn}>
+      <form id="login-form" onSubmit={handleSignIn}>
         <h1>Login</h1>
         <div className="login-form__container">
-          <label>
-            Email
-          </label>
+          <label>Email</label>
           <input
             type="text"
             onInput={(e) => emailUpdate(e.target.value)}
             placeholder="Enter Emailid"
-            name="email"
-          />
-          <label>
-            Password
-          </label>
+            name="email" />
+          <label>Password </label>
           <input
             type="password"
             onInput={(e) => passwordUpdate(e.target.value)}
             placeholder="Enter Password"
-            name="password"  
-          />
+            name="password" />
           <button id="login-button" type="submit" disabled={!isEnabled}>
             Login
           </button>
