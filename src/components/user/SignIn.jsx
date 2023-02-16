@@ -28,8 +28,8 @@ export default function SignIn() {
         {
           if (response[0].password === password) 
           {
-            sessionStorage.setItem("email", email);
-            swal("Login Successful!", `Welcome ${email}`,"success");
+            sessionStorage.setItem("email",response[0].email);
+            swal("Login Successful!", `Welcome ${response[0].email}`,"success");
             navigate("/");
           } 
           else 

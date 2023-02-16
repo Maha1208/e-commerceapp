@@ -35,8 +35,7 @@ function ProductList() {
         </div>
       ))}
       </div>
-      <div>
-      <div className="product-container">
+      <div className="product-list">
         <div className="row">
           {products.map((values) => {
             const { key, image, rating, productname, price } = values;
@@ -54,7 +53,7 @@ function ProductList() {
                   <Card.Text>
                     price:₹ {price}
                     <Card.Title
-                      className="product-rating"
+                      className="rating"
                     >
                       {rating}★
                     </Card.Title>
@@ -73,7 +72,6 @@ function ProductList() {
             );
           })}
         </div>
-      </div>
       </div>
     </>
   )

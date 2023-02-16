@@ -4,7 +4,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
+  position: sticky;
   margin-top: 50px;
 }
 .product-rating {
