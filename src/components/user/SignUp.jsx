@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../../css/signup.css";
 import swal from 'sweetalert'
 import Toastify from "../toast/Toastify";
+import FormInput from "../clubComponent/FormInput";
 
 export default function SignUp() {
   const [details, detailsChange] = useState({
@@ -12,7 +13,7 @@ export default function SignUp() {
     phoneno: ""
   });
   const navigate = useNavigate();
-  const handlingInputChange = (e) => {
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
     detailsChange((prev) => {
       return { ...prev, [name]: value }
@@ -24,7 +25,7 @@ export default function SignUp() {
     try {
       const response = await fetch(`http://localhost:4000/SignUp?email=${details.email}`);
       const json = await response.json();
-      if (json.length === 0) {
+      if(json.length === 0) {
         const response = await fetch("http://localhost:4000/SignUp", {
           method: "POST",
           headers: {
@@ -37,7 +38,7 @@ export default function SignUp() {
             phone: `${details.phoneno}`,
           }),
         });
-        if (response.status === 201) {
+        if(response.status === 201) {
           swal("Account created successfully, please login", `Welcome ${details.name}`, "success");
           navigate("/SignIn");
         }
@@ -56,47 +57,43 @@ export default function SignUp() {
     <div className="signup">
       <form id="signup-form" onSubmit={handleSignUp}>
         <h1>Register</h1>
-        <label>Name</label>
-        <input
-          onInput={handlingInputChange}
-          pattern="^[A-Z]{4,20}$"
-          type="text"
-          name="name"
-          required
+        <FormInput
+        label="Name"
+        onInput={handleInputChange}
+        pattern="^[A-Z]{4,20}$"
+        type="text"
+        name="name"
+        span="Name should be in UpperCase"
         />
-        <span>Name should be in UpperCase</span>
-        <label> Email </label>
-        <input
-          onInput={handlingInputChange}
-          type="email"
-          name="email"
-          required
+        <FormInput 
+        label="Email"
+        onInput={handleInputChange}
+        type="email"
+        name="email"
+        span="Enter valid email id"
         />
-        <span>Enter valid email id</span>
-        <label>Password</label>
-        <input
-          onInput={handlingInputChange}
-          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,15}$"
-          type="password"
-          name="password"
-          required
+        <FormInput
+        label="Password"
+        onInput={handleInputChange}
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,15}$"
+        type="password"
+        name="password"
+        span="must include 1 uppercase, 1 lowercase and 1 digit special character not allowed"
         />
-        <span>
-          must include 1 uppercase, 1 lowercase and 1 digit special character
-          not allowed
-        </span>
-        <label>PhoneNo</label>
-        <input
-          onInput={handlingInputChange}
-          pattern="^\d{10}$"
-          type="text"
-          name="phoneno"
-          required
+        <FormInput 
+        label="PhoneNo"
+        onInput={handleInputChange}
+        pattern="^\d{10}$"
+        type="text"
+        name="phoneno"
+        span="must be 10 digits"
         />
-        <span>must be 10 digits</span>
-        <button id="signup-button" type="submit" disabled={!isEnabled}>
-          Register
-        </button>
+        <FormInput
+        id="signup-button" 
+        type="submit" 
+        value="Register"
+        disabled={!isEnabled}
+        />
       </form>
     </div>
   );

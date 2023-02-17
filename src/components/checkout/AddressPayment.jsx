@@ -4,6 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "../../css/payment.css";
 import swal from "sweetalert";
 import Toastify from "../toast/Toastify";
+import FormInput from "../clubComponent/FormInput";
 
 const Payment = () => {
   const [address, addressChange] = useState({
@@ -55,51 +56,49 @@ const Payment = () => {
   return (
     <form className="paymentform" onSubmit={placingOrder}>
       <h3 className="title"> Address for the Delivery</h3>
-      <label>Full Name </label>
-      <input
-        type="text"
-        name="fullName"
-        onInput={handleAddress}
+      <FormInput
+      label="Full Name"
+      type="text"
+      name="fullName"
+      onInput={handleAddress}
       />
-      <label>Email</label>
-      <input
-        type="email"
-        name="email"
-        onInput={handleAddress}
+      <FormInput
+      label="Email"
+      type="email"
+      name="email"
+      onInput={handleAddress}
       />
-      <label>Address</label>
-      <input
-        type="text"
-        placeholder="Door No - street - locality"
-        name="address"
-        onInput={handleAddress}
+      <FormInput
+      label="Address"
+      type="text"
+      placeholder="Door No - street - locality"
+      name="address"
+      onInput={handleAddress}
       />
-      <label>City</label>
-      <input
-        type="text"
-        name="city"
-        onInput={handleAddress}
+      <FormInput
+      label="City"
+      type="text"
+      name="city"
+      onInput={handleAddress}
       />
-      <label>State</label>
-      <input
-        type="text"
-        name="state"
-        onInput={handleAddress}
+      <FormInput
+      label="State"
+      type="text"
+      name="state"
+      onInput={handleAddress}
       />
-      <label>Zip Code</label>
-      <input
-        type="text"
-        name="zipcode"
-        onInput={handleAddress}
-        maxLength={6}
-      /><br />
-      <button
-        type="submit"
-        className="submit-button"
-        disabled={!isEnabled}
-      >
-        Place Order
-      </button>
+      <FormInput
+      label="Zip Code"
+      type="text"
+      name="zipcode"
+      onInput={handleAddress}
+      />
+      <FormInput
+      type="submit"
+      className="submit-button"
+      disabled={!isEnabled}
+      value="Place Order"
+      />
     </form>
   );
 };

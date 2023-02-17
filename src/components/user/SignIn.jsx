@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "../../css/login.css";
 import swal from "sweetalert";
 import Toastify from "../toast/Toastify";
+import FormInput from "../clubComponent/FormInput";
 
 export default function SignIn() {
   const [email, emailUpdate] = useState("");
@@ -39,21 +40,25 @@ export default function SignIn() {
       <form id="login-form" onSubmit={handleSignIn}>
         <h1>Login</h1>
         <div className="login-form__container">
-          <label>Email</label>
-          <input
-            type="text"
-            onInput={(e) => emailUpdate(e.target.value)}
-            placeholder="Enter Emailid"
-            name="email" />
-          <label>Password </label>
-          <input
-            type="password"
-            onInput={(e) => passwordUpdate(e.target.value)}
-            placeholder="Enter Password"
-            name="password" />
-          <button id="login-button" type="submit" disabled={!isEnabled}>
-            Login
-          </button>
+          <FormInput
+          label="Email"
+          type="email"
+          placeholder="Enter Email Id"
+          onInput={(e) => emailUpdate(e.target.value)}
+          name="email" 
+          />
+          <FormInput
+          label="Password"
+          type="password"
+          placeholder="Enter password"
+          onInput={(e) => passwordUpdate(e.target.value)}
+          name="password" 
+          />
+          <FormInput 
+          id="login-button" 
+          type="submit" 
+          disabled={!isEnabled} 
+          value="Login"/>
         </div>
       </form>
     </div>

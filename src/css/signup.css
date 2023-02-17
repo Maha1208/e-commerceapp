@@ -21,7 +21,7 @@
   background-image: url("../../public/Images/Banner/c1.webp");
 }
 
-#signup-form input {
+#signup-form FormInput {
   width: 300px;
   height: 35px;
   border-radius: 10px;
@@ -36,7 +36,7 @@
   border-radius: 100px;
   cursor: not-allowed;
   margin-top: 20px;
-  margin-left: 150px;
+  margin-left: 160px;
   margin-bottom: 60px;
 }
 
@@ -44,10 +44,18 @@
   background: #9fde69;
   cursor: pointer;
 }
+#signup-button:enabled{
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
+}
 
 #signup-form input:invalid {
   margin-left: 50px;
   outline: none;
+  border-radius: 80px;
+  width: 65%;
+  height: 4.5vh;
   border-color: hsl(9, 73%, 50%);
   box-shadow: 0 0 10px #719ece;
 }
@@ -55,6 +63,9 @@
 #signup-form input:valid {
   margin-left: 50px;
   outline: none;
+  width: 65%;
+  height: 4.5vh;
+  border-radius: 80px;
   border-color: hsl(81, 77%, 47%);
 }
 
