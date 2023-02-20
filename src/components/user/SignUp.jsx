@@ -48,7 +48,7 @@ export default function SignUp() {
         );
       }
     } catch (error) {
-      Toastify("something went wrong", "error");
+      Toastify(`${error.message}`, "error");
     }
   };
   const isEnabled =

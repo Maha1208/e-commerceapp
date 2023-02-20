@@ -5,7 +5,6 @@ import ChildCareIcon from '@mui/icons-material/ChildCare';
 const CardsData = [
   {
     key: "1",
-    name: 'Saree Collections',
     category: "EthnicWears",
     subcategory: "sarees",
     productname: "Chiffon pink and flower printed saree ",
@@ -18,7 +17,6 @@ const CardsData = [
   },
   {
     key: "2",
-    name: 'Saree Collections',
     category: "EthnicWears",
     subcategory: "sarees",
     productname: "Purple Saree with new Designs",
@@ -31,9 +29,9 @@ const CardsData = [
   },
   {
     key: "3",
-    productname: "Cotton sarees",
     category: "EthnicWears",
     subcategory: "sarees",
+    productname: "Cotton sarees",
     image: "/Images/sarees/orange.jpeg",
     type: "Orange color saree for every occasions",
     somedata: "250+ orders",

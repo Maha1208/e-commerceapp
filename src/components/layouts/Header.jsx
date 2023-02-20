@@ -28,19 +28,22 @@ const Header = () => {
   const deleteCart = (key) => {
     dispatch(DELETE_CART(key));
   };
-  const total = useCallback(() => {
-    let price = 0;
-    products.map((ele) => {
-      return (price = ele.price * ele.qnty + price);
-    });
+
+  const setGrandTotal = useCallback(() => {
+    const price = products.reduce((totalPrice, product) => {
+      return totalPrice + (product.price * product.qnty);
+    },0);
     setPrice(price);
   }, [products]);
+  
   useEffect(() => {
-    total();
-  }, [total]);
+    setGrandTotal();
+  }, [setGrandTotal]);
+  
   return (
     <>
-      {user ? (
+      {
+      user ? (
         <Navbar bg="dark" className="navbar">
           <Container>
             <NavLink
