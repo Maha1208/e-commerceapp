@@ -1,12 +1,10 @@
 .product-container {
   background-image: url("../../public/Images/bg/gradient.jpg");
-  height: 100vh;
+  height: 70vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* overflow-y: hidden; */
   position: sticky;
-  margin-top: 50px;
 }
 .product-rating {
   background-color: green;
@@ -17,7 +15,7 @@
 }
 .detail-container {
   width: 70%;
-  margin-left: 100px;
+  margin-left: 200px;
   margin-top:50px
 }
 .items-details {

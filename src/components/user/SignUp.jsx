@@ -38,16 +38,17 @@ export default function SignUp() {
             phone: `${details.phoneno}`,
           }),
         });
-        if(response.status === 201) {
+        if(response.status === 201){
           swal("Account created successfully, please login", `Welcome ${details.name}`, "success");
           navigate("/SignIn");
         }
-      } else {
-        Toastify(
-          "Account already exists, please Login or use a different email id to register", "info"
-        );
       }
-    } catch (error) {
+      else{
+        Toastify("Account already exists, please Login or use a different email id to register", "info");
+      }
+    } 
+    catch (error) 
+    {
       Toastify(`${error.message}`, "error");
     }
   };
@@ -58,6 +59,7 @@ export default function SignUp() {
       <form id="signup-form" onSubmit={handleSignUp}>
         <h1>Register</h1>
         <FormInput
+        datatestid="name_test"
         label="Name"
         onInput={handleInputChange}
         pattern="^[A-Z]{4,20}$"
@@ -66,6 +68,7 @@ export default function SignUp() {
         span="Name should be in UpperCase"
         />
         <FormInput 
+        datatestid="email_test"
         label="Email"
         onInput={handleInputChange}
         type="email"
@@ -73,6 +76,7 @@ export default function SignUp() {
         span="Enter valid email id"
         />
         <FormInput
+        datatestid="password_test"
         label="Password"
         onInput={handleInputChange}
         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,15}$"
@@ -81,10 +85,11 @@ export default function SignUp() {
         span="must include 1 uppercase, 1 lowercase and 1 digit special character not allowed"
         />
         <FormInput 
+        datatestid="phoneno_test"
         label="PhoneNo"
         onInput={handleInputChange}
         pattern="^\d{10}$"
-        type="text"
+        type="number"
         name="phoneno"
         span="must be 10 digits"
         />

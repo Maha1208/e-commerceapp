@@ -57,18 +57,21 @@ const Payment = () => {
     <form className="paymentform" onSubmit={placingOrder}>
       <h3 className="title"> Address for the Delivery</h3>
       <FormInput
+      datatestid="fullname_test"
       label="Full Name"
       type="text"
       name="fullName"
       onInput={handleAddress}
       />
       <FormInput
+      datatestid="email_test"
       label="Email"
       type="email"
       name="email"
       onInput={handleAddress}
       />
       <FormInput
+      datatestid="address_test"
       label="Address"
       type="text"
       placeholder="Door No - street - locality"
@@ -76,20 +79,23 @@ const Payment = () => {
       onInput={handleAddress}
       />
       <FormInput
+      datatestid="city_test"
       label="City"
       type="text"
       name="city"
       onInput={handleAddress}
       />
       <FormInput
+      datatestid="state_test"
       label="State"
       type="text"
       name="state"
       onInput={handleAddress}
       />
       <FormInput
+      datatestid="zipcode_test"
       label="Zip Code"
-      type="text"
+      type="number"
       name="zipcode"
       onInput={handleAddress}
       />

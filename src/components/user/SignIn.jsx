@@ -41,6 +41,7 @@ export default function SignIn() {
         <h1>Login</h1>
         <div className="login-form__container">
           <FormInput
+          datatestid="email_test"
           label="Email"
           type="email"
           placeholder="Enter Email Id"
@@ -48,6 +49,7 @@ export default function SignIn() {
           name="email" 
           />
           <FormInput
+          datatestid="password_test"
           label="Password"
           type="password"
           placeholder="Enter password"
