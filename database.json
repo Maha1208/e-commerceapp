@@ -4,15 +4,8 @@
       "name": "MAHA",
       "email": "emahe1208@gmail.com",
       "password": "Maha1208",
-      "phone": "9176310412",
+      "phoneno": "9176310412",
       "id": 1
-    },
-    {
-      "name": "ASDFGHJ",
-      "email": "emahe18@gmail.com",
-      "password": "asd123ASD",
-      "phone": "9176310412",
-      "id": 2
     }
   ],
   "AddressPayment": [

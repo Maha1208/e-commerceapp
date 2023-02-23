@@ -1,13 +1,9 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 
-const Protected = ({ children }) => {
+function Protected({ children }) {
   const email = sessionStorage.getItem("email");
-  if (!email) {
-    return <Navigate to="/signin" />;
-  }
-  else {
-    return children;
-  }
-};
+  return email ? children : <Navigate to="/signin" />;
+}
+
 export default Protected;

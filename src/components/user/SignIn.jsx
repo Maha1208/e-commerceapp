@@ -12,11 +12,9 @@ export default function SignIn() {
   const navigate = useNavigate();
   const handleSignIn = (e) => {
     e.preventDefault();
-    fetch("http://localhost:4000/SignUp?email=" + email)
-      .then((response) => {
+    fetch("http://localhost:4000/SignUp?email=" + email).then((response) => {
         return response.json();
-      })
-      .then((response) => {
+      }).then((response) => {
         if (Object.keys(response).length === 0) {
           Toastify("Please Enter valid email!", "error");
         }
