@@ -56,3 +56,5 @@ describe("Input Elements from SignUp component", ()=>{
         expect(inputElementPassword).toBeInTheDocument();
         expect(inputElementPassword).toHaveAttribute("type","number");   
     })
+
+    

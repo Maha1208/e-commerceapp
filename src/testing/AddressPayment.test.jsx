@@ -78,3 +78,5 @@ describe("Input Elements from AddressPayment component", ()=>{
         expect(inputElementZipcode).toBeInTheDocument();
         expect(inputElementZipcode).toHaveAttribute("type","number")
     })
+
+    
